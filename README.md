@@ -4,7 +4,10 @@ Repository for ECE411 Project
 # Project Team
 Jake Heath
 
-'Edit by Jake Heath'
+'Progress Update'
+-Got github working
+-Installed eagleCAD
+-Started a Google Calendar for scheduling
 
 Saroj Bardewa
 
