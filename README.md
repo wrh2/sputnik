@@ -14,7 +14,7 @@ Saroj Bardewa
 
 William Harrington
 
-Shan Quinney
--added a "homework 2" page to the wiki
+Shan Quinney<br>
+-added a "homework 2" page to the wiki<br>
 Note: feel free to edit (get your HTML skills up to speed)
 
