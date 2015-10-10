@@ -19,4 +19,4 @@ Shan Quinney<br>
 Note: feel free to edit (get your HTML skills up to speed)
 <br>-Made my first circuit board using Eagle and the router in 
 the EPL. This little output stage amplifier has more crossover
-frequency than Darcell XV.
+distortion than Darcell XV.
