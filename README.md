@@ -17,6 +17,6 @@ William Harrington
 Shan Quinney<br>
 -added a "homework 2" page to the wiki<br>
 Note: feel free to edit (get your HTML skills up to speed)
--Made my first circuit board using Eagle and the router in 
+<br>-Made my first circuit board using Eagle and the router in 
 the EPL. This little output stage amplifier has more crossover
 frequency than Darcell XV.
