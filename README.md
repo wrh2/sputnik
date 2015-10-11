@@ -14,9 +14,4 @@ Saroj Bardewa
 
 William Harrington
 
-Shan Quinney<br>
--Added a "homework 2" page to the wiki
-
--Made my first circuit board using Eagle and the router in 
-the EPL. This little output stage amplifier has more crossover
-distortion than Darcell XV.
+Shan Quinney
