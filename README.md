@@ -1,17 +1,19 @@
 # ECE411
 Repository for ECE411 Project
 
-# Project Team
-Jake Heath
+## Table of contents
 
-'Progress Update'  
--Updated wiki with project proposal 10/8/15  
--Got github working  10/1/15  
--Installed eagleCAD  10/1/15  
--Started a Google Calendar for scheduling  10/1/15  
+datasheets - contains important datasheets for the hardware we are using
+
+requirements - contains product development specification
+
+## Project Team
+Jake Heath
 
 Saroj Bardewa
 
 William Harrington
 
 Shan Quinney
+
+Mike Mathis
