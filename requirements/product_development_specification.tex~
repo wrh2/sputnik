@@ -26,27 +26,21 @@ ECE411} %if necessary, replace with your course title
 		\textbf{Must}
 		\begin{itemize}
 			\item{Be able to fit within the CubeSat form factor\\ \textit{(no bigger than 10cm x 10cm x 10cm)}}
-			\item{Be a breakout board}
 			\item{Have access to UART}
 			\item{Have access to I2C}
 			\item{Have access to SPI}
 			\item{Have access to GPIO pins}
-			\item{Have a micro USB to serial adapter}
-			\item{Be capable of RF communication between with another device across a 5-6ft gap}
-			\item{Have visible indication of communication \textit{(such as LEDs)}}
-			\item{Have a bidirectional amplifier for RF communication}
-			\item{Have pre-amplifier on Rx side of RF circuit}
+			\item{Be capable of RF communication with another device}
 		\end{itemize}
 		\textbf{Should}
-		\begin{itemize}			
+		\begin{itemize}
 			\item{Be able to send/receive commands via RF communication}
 			\item{Be battery powered}
 			\item{If battery powered, utilize USB for recharging}
 		\end{itemize}
 		\textbf{May}
 		\begin{itemize}
-			\item{Be capable of long distance communication \textit{(Across campus for example)}}
-			\item{Be capable of actual data transfer between two units over RF}
+			\item{Be capable of long distance communication}
 			\item{Be capable of operation in space \textit{(e.g. really low temperatures)}}
 		\end{itemize}
 \end{description}
