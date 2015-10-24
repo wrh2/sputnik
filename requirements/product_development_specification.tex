@@ -20,6 +20,7 @@ ECE411} %if necessary, replace with your course title
 		A \textbf{ground station} is a radio station located on earth that is designed for communication with spacecraft.
 		Development of such a device is not trivial as it will need to eventually be "space ready" and will require multiple phases of development. \hfill \\ \\
 		The first phase of development will involve finding and de-risking a microcontroller that is capable of handling command, control, and communications. 
+		% be more "active"
 		Therefore, the device at this point will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, etc. 
 		\hfill \\ \\
 		\newpage
@@ -35,11 +36,10 @@ ECE411} %if necessary, replace with your course title
 			\item{Be capable of RF communication between with another device across a 5-6ft gap}
 			\item{Have visible indication of communication \textit{(such as LEDs)}}
 			\item{Have a bidirectional amplifier for RF communication}
-			\item{Have pre-amplifier on Rx side of RF circuit}
 		\end{itemize}
 		\textbf{Should}
-		\begin{itemize}			
-			\item{Be able to send/receive commands via RF communication}
+		\begin{itemize}
+			\item{Be able to send/receive data packets via RF communication}
 			\item{Be battery powered}
 			\item{If battery powered, utilize USB for recharging}
 		\end{itemize}
