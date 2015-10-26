@@ -20,59 +20,41 @@ ECE411} %if necessary, replace with your course title
 		A \textbf{ground station} is a radio station located on earth that is designed for communication with spacecraft.
 		Development of such a device is not trivial as it will need to eventually be "space ready" and will require multiple phases of development. \hfill \\ \\
 		The first phase of development will involve finding and de-risking a microcontroller that is capable of handling command, control, and communications.
-		% be more "active"
-		Therefore, the device at this point will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, etc.
+		Therefore, the device will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, GPIO, ADCs/DACs, etc. Access to these features will rely on miscellaneous connectors such as .1 inch pin headers, USB, 6-pin JTAG, etc. Furthermore, as project that is sponsored by PSAS it should adhere to their open source standards, while obeying governmental regulations.
 		\hfill \\ \\
 		\newpage
 	\item[Requirements] \hfill \\
 		\textbf{Must}
 		\begin{itemize}
+			\item{Have a transceiver for RF communications}
+      			\item{Have an antenna capable of 435 - 438MHz frequency band transmission}
+			\item{Have visible indication of communication \textit{(such as LEDs)}}
+			\item{Have a bidirectional amplifier for RF communication}
 			\item{Be able to fit within the CubeSat form factor\\ \textit{(no bigger than 10cm x 10cm x 10cm)}}
 			\item{Be a breakout board}
 			\item{Have access to UART}
 			\item{Have access to I2C}
 			\item{Have access to SPI}
 			\item{Have access to GPIO}
-			\item{Have a micro USB to serial adapter}
-			\item{Be capable of RF communication between another device across a 5-6ft gap}
-      \item{Be capable of transmitting and receiving data in the 433 MHz frequency band}
-			\item{Have visible indication of communication \textit{(such as LEDs)}}
-			\item{Have a bidirectional amplifier for RF communication}
+			\item{Have access to ADCs/DACs}
 		\end{itemize}
 		\textbf{Should}
 		\begin{itemize}
+			\item{Use USB for interfacing}
 			\item{Be able to send/receive data packets via RF communication}
+			\item{Be capable of RF communication at a distances greater than 6 feet}
 			\item{Be battery powered}
 			\item{If battery powered, utilize USB for recharging}
+			\item{Comply with ETSI and FCC regulatory requirements}
+			\item{Use a GNU GPL v3 license for all design work and software} 
 		\end{itemize}
 		\textbf{May}
 		\begin{itemize}
 			\item{Be capable of long distance communication \textit{(Across campus for example)}}
-			\item{Be capable of actual data transfer between two units over RF}
+			\item{Be capable of sending/receiving data packets}
 			\item{Be capable of operation in space \textit{(e.g. really low temperatures)}}
+			\item{Comply with FAA regulatory requirements}
 		\end{itemize}
-	\item[Performance]
-	\item[Functionality] \hfill
-		\begin{itemize}
-			\item{The device will have a transceiver for RF communications}
-			\item{The device will have a micro-USB port for interfacing and charging}
-			\item{The device will allow access to micro controller features via miscellaneous connectors such as .1-in pin headers}
-		\end{itemize}
-	\item[Economic]
-	\item[Energy]
-	\item[Environmental]
-	\item[Health and Safety]
-	\item[Legal] \hfill
-		\begin{itemize}
-			\item{The device must comply to ETSI and FCC regulatory requirements}
-		\end{itemize}
-	\item[Maintainability]
-	\item[Manufacturability]
-	\item[Operational]
-	\item[Political]
-	\item[Reliability and Availability]
-	\item[Social and Cultural]
-	\item[Usability]
 \end{description}
 
 \end{document}
