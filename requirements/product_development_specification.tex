@@ -10,18 +10,18 @@
 \title{Product Development Specification}%replace X with the appropriate number
 \author{William Harrington, Jake Heath, Saroj Bardewa,\\ Shan Quinney, Michael Mathis\\ \\ %replace with your name
 ECE411} %if necessary, replace with your course title
- 
+
 \maketitle
  \small
-\begin{description} 
+\begin{description}
 	\item[Customer requirements] \hfill \\ \\
 		The Portland State Aerospace Society (PSAS) needs a device that can be used for command, control, communications between a \textbf{CubeSat} and a \textbf{ground station}.
-		A \textbf{CubeSat} is a miniature satellite that can be used for scientific research in space. It has a volume of one liter (10cm cube), and has a mass of no more than 1.33kg. 
+		A \textbf{CubeSat} is a miniature satellite that can be used for scientific research in space. It has a volume of one liter (10cm cube), and has a mass of no more than 1.33kg.
 		A \textbf{ground station} is a radio station located on earth that is designed for communication with spacecraft.
 		Development of such a device is not trivial as it will need to eventually be "space ready" and will require multiple phases of development. \hfill \\ \\
-		The first phase of development will involve finding and de-risking a microcontroller that is capable of handling command, control, and communications. 
+		The first phase of development will involve finding and de-risking a microcontroller that is capable of handling command, control, and communications.
 		% be more "active"
-		Therefore, the device at this point will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, etc. 
+		Therefore, the device at this point will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, etc.
 		\hfill \\ \\
 		\newpage
 	\item[Requirements] \hfill \\
@@ -34,7 +34,8 @@ ECE411} %if necessary, replace with your course title
 			\item{Have access to SPI}
 			\item{Have access to GPIO}
 			\item{Have a micro USB to serial adapter}
-			\item{Be capable of RF communication between with another device across a 5-6ft gap}
+			\item{Be capable of RF communication between another device across a 5-6ft gap}
+      \item{Be capable of transmitting and receiving data in the 433 MHz frequency band}
 			\item{Have visible indication of communication \textit{(such as LEDs)}}
 			\item{Have a bidirectional amplifier for RF communication}
 		\end{itemize}
