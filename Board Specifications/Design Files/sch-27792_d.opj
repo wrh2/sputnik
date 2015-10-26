@@ -1,0 +1,167 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\sch-27792_d.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "allegro")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Input Board File"
+       "D:\Profiles\b36856\My Documents\FSL 2011\Portafolio\Navajo2\Design Files\27792_D\Design Files\LAY-27792_D.brd")
+    ("Allegro Netlist Output Board File"
+       "D:\Profiles\b36856\My Documents\FSL 2011\Portafolio\Navajo2\Design Files\27792_D\Design Files\LAY-27792_D.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Output Warnings" "TRUE")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Netlist_TAB "0")
+    (GATE_&_PIN_SWAP_Scope "0")
+    (GATE_&_PIN_SWAP_File_Name
+       "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.SWP")
+    (Backannotation_TAB "0")
+    (BOM_Scope "0")
+    (BOM_Mode "1")
+    (BOM_Report_File
+       "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{AGILE_PN}\t{ASSY_OPT}\t{Reference}\t{Value}\t{DESCRIPTION}\t{ASSY_NOTE}\t{MFG_NAME01}\t{MFG_PN01}\t{PCB Footprint}")
+    (BOM_Header
+       "Item\tQuantity\tAgilePN\tASSY_OPT\tReference\tValue\tDescription\tASSY_NOTE\tMfg Name\tMfg Part Number\tPCB Footprint")
+    (BOM_Include_File
+       "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "TRUE")
+    (BOM_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat"))
+    (File ".\allegro\pinview.dat"
+      (Type "Report")
+      (DisplayName "pinView.dat"))
+    (File ".\allegro\netview.dat"
+      (Type "Report")
+      (DisplayName "netView.dat"))
+    (File ".\allegro\funcview.dat"
+      (Type "Report")
+      (DisplayName "funcView.dat"))
+    (File ".\allegro\compview.dat"
+      (Type "Report")
+      (DisplayName "compView.dat"))
+    (File ".\allegro\sch-27792_d.swp"
+      (Type "Report")
+      (DisplayName "SCH-27792_D.swp"))
+    (File ".\sch-27792_d.bom"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_INDUCTOR.OLB")
+      (DeviceIndex "0"))
+    (MK01W_60P
+      (FullPartName "MK01W_60P.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_IC_FREESCALE.OLB")
+      (DeviceIndex "0"))
+    (SW_PB_2P
+      (FullPartName "SW_PB_2P.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_SWITCH.OLB")
+      (DeviceIndex "0"))
+    (CAP_NP
+      (FullPartName "CAP_NP.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_CAPACITOR.OLB")
+      (DeviceIndex "0"))
+    (HDR3X5
+      (FullPartName "HDR3X5.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\sch-27792_d.dsn")
+      (Path "Design Resources" ".\sch-27792_d.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources" ".\sch-27792_d.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -30 0 200 0 476"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 44 1739 58 572")
+        (Scroll "0 726")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "05 - POWER SUPPLY / GPIOs"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 110 1805 145 659")
+        (Scroll "396 1494")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "04 - MKW01Z128CHN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 132 1827 174 688")
+        (Scroll "169 796")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "03 - Block Diagram"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 154 1849 203 717")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "02 - NOTES"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 176 1871 232 746")
+        (Scroll "171 806")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36856\MY DOCUMENTS\FSL 2011\PORTAFOLIO\NAVAJO2\DESIGN FILES\27792_D\DESIGN FILES\SCH-27792_D.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "01 - TITLE PAGE")))
+  (ISPCBBASICLICENSE "false")
+  (MPSSessionName "B36856"))
