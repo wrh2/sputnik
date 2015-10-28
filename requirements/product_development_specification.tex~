@@ -52,7 +52,7 @@ ECE411} %if necessary, replace with your course title
 		\begin{itemize}
 			\item{Be capable of long distance communication \textit{(Across campus for example)}}
 			\item{Be capable of sending/receiving data packets}
-			\item{Be capable of operation in space temperature range \textit{(-30C to 60C )}}
+			\item{Be capable of operation in space \textit{(e.g. really low temperatures)}}
 			\item{Comply with FAA regulatory requirements}
 		\end{itemize}
 \end{description}
