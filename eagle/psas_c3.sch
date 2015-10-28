@@ -16110,18 +16110,18 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP2" library="SparkFun-v5" deviceset="M02" device="PTH"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10p"/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
-<part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.4p"/>
+<part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.3p"/>
 <part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="8.2p"/>
 <part name="GND17" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND18" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND19" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1nF"/>
 <part name="GND20" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="ANT1" library="discrete" deviceset="ANTENNA" device=""/>
-<part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK"/>
-<part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="17n"/>
+<part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n"/>
+<part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
 <part name="L3" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="8.2n"/>
 <part name="GND21" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
@@ -16163,14 +16163,16 @@ with prescaler of 1.5 to obtain
 48MHz, otherwise the MCU needs
 to run off internal clock reference
 (see datasheet for details)</text>
-<wire x1="119.38" y1="134.62" x2="119.38" y2="106.68" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="119.38" y1="139.7" x2="119.38" y2="106.68" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="119.38" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="160.02" y1="106.68" x2="160.02" y2="134.62" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="160.02" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="167.64" y1="129.54" x2="167.64" y2="73.66" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="167.64" y1="73.66" x2="241.3" y2="73.66" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="241.3" y1="73.66" x2="241.3" y2="129.54" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="241.3" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="160.02" y1="106.68" x2="160.02" y2="139.7" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="160.02" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="167.64" y1="134.62" x2="167.64" y2="73.66" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="167.64" y1="73.66" x2="266.7" y2="73.66" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="266.7" y1="73.66" x2="266.7" y2="134.62" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="266.7" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="97" style="dashdot"/>
+<text x="127" y="137.16" size="1.778" layer="97">AC Blocking Network</text>
+<text x="223.52" y="132.08" size="1.778" layer="97" rot="R180">Bidirectional Transceiver Circuit at 435MHz</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
