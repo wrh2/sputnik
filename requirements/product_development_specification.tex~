@@ -45,15 +45,15 @@ ECE411} %if necessary, replace with your course title
 			\item{Be capable of RF communication at a distances greater than 6 feet}
 			\item{Be battery powered}
 			\item{If battery powered, utilize USB for recharging}
-			\item{Comply with ETSI and FCC regulatory requirements}
+			\item{Comply with Eurpean Telecommunications Standard Institute(ETSI) and Federal Communications Commission (FCC) regulatory requirements}
 			\item{Use a GNU GPL v3 license for all design work and software} 
 		\end{itemize}
 		\textbf{May}
 		\begin{itemize}
-			\item{Be capable of long distance communication \textit{(Across campus for example)}}
+			\item{Be capable of long distance communication \textit{(250m-500m for example)}}
 			\item{Be capable of sending/receiving data packets}
-			\item{Be capable of operation in space \textit{(e.g. really low temperatures)}}
-			\item{Comply with FAA regulatory requirements}
+			\item{Be capable of operation in space temperature range \textit{(-30C to 60C )}}
+			\item{Comply with Federal Aviation Administration (FAA) regulatory requirements}
 		\end{itemize}
 \end{description}
 
