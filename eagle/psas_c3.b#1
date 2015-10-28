@@ -1238,42 +1238,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="0.79" y1="-0.4" x2="-0.79" y2="-0.4" width="0.1" layer="33"/>
 <text x="0" y="0" size="0.3" layer="33" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name=".0603-A-NOSILK">
-<description>&lt;b&gt;0603 (metric 1608) loose 'IPC-A' without silkscreen&lt;/b&gt;
-&lt;br&gt;In house package for generous spacing based on IPC-7351B.
-This package is identical to 0603-A, but has its tPlace silkscreen layer removed.</description>
-<smd name="1" x="-0.9" y="0" dx="1" dy="1.05" layer="1" roundness="40" stop="no"/>
-<smd name="2" x="0.9" y="0" dx="1" dy="1.05" layer="1" roundness="40" stop="no"/>
-<wire x1="1.795" y1="0.895" x2="-1.8" y2="0.9" width="0.01" layer="39"/>
-<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.01" layer="39"/>
-<wire x1="-1.8" y1="-0.9" x2="1.795" y2="-0.895" width="0.01" layer="39"/>
-<wire x1="1.795" y1="-0.895" x2="1.795" y2="0.895" width="0.01" layer="39"/>
-<text x="-1.4" y="0.95" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-1.4" y="-1.75" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<wire x1="-0.8" y1="-0.41" x2="-0.8" y2="0.41" width="0.08" layer="51"/>
-<wire x1="-0.79" y1="0.4" x2="0.79" y2="0.4" width="0.1" layer="51"/>
-<wire x1="0.8" y1="0.41" x2="0.8" y2="-0.41" width="0.08" layer="51"/>
-<wire x1="0.79" y1="-0.4" x2="-0.79" y2="-0.4" width="0.1" layer="51"/>
-<rectangle x1="-0.555" y1="-0.4" x2="-0.35" y2="0.4" layer="51"/>
-<rectangle x1="0.35" y1="-0.4" x2="0.555" y2="0.4" layer="51"/>
-<polygon width="0.52" layer="29">
-<vertex x="1.2" y="0.33"/>
-<vertex x="0.6" y="0.33"/>
-<vertex x="0.6" y="-0.33"/>
-<vertex x="1.2" y="-0.33"/>
-</polygon>
-<polygon width="0.52" layer="29">
-<vertex x="-0.6" y="0.33"/>
-<vertex x="-1.2" y="0.33"/>
-<vertex x="-1.2" y="-0.33"/>
-<vertex x="-0.6" y="-0.33"/>
-</polygon>
-<wire x1="-0.8" y1="-0.41" x2="-0.8" y2="0.41" width="0.08" layer="33"/>
-<wire x1="-0.79" y1="0.4" x2="0.79" y2="0.4" width="0.1" layer="33"/>
-<wire x1="0.8" y1="0.41" x2="0.8" y2="-0.41" width="0.08" layer="33"/>
-<wire x1="0.79" y1="-0.4" x2="-0.79" y2="-0.4" width="0.1" layer="33"/>
-<text x="0" y="0" size="0.3" layer="33" ratio="15" align="center">&gt;NAME</text>
-</package>
 </packages>
 </library>
 <library name="Vibrogait_prototype">
@@ -2463,9 +2427,10 @@ design rules under a new name.</description>
 <attribute name="DPN" value="490-11075-1-ND" x="-40.64" y="46.99" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="XTAL-08900" x="-40.64" y="46.99" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R2" library="rcl_custom" package=".0603-B-NOSILK" value="" x="-46.99" y="-2.54"/>
+<element name="R3" library="rcl_custom" package=".0603-B-NOSILK" value="0" x="-46.99" y="-6.35"/>
 <element name="JP3" library="pinhead" package="1X02" value="" x="-45.72" y="-12.7"/>
 <element name="JP4" library="pinhead" package="1X02" value="" x="-45.72" y="-19.05"/>
-<element name="R2" library="rcl_custom" package=".0603-A-NOSILK" value="0" x="-45.72" y="-24.13"/>
 </elements>
 <signals>
 <signal name="VDDA">
@@ -2518,15 +2483,19 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="C14" pad="2"/>
 <contactref element="C16" pad="1"/>
+<contactref element="R2" pad="2"/>
+<contactref element="R3" pad="2"/>
+<contactref element="R2" pad="1"/>
+<contactref element="R3" pad="1"/>
 <contactref element="U$1" pad="PGND2"/>
 <contactref element="U$1" pad="4"/>
 <contactref element="U$1" pad="20"/>
 <contactref element="JP4" pad="1"/>
-<contactref element="R2" pad="2"/>
-<contactref element="R2" pad="1"/>
-<wire x1="-44.82" y1="-24.13" x2="-46.62" y2="-24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.99" y1="-19.05" x2="-46.62" y2="-24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.1" y1="4.35" x2="-46.99" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.19" y1="-6.35" x2="-46.99" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.79" y1="-6.35" x2="-46.19" y2="-6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.19" y1="-2.54" x2="-46.19" y2="-6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.79" y1="-2.54" x2="-46.19" y2="-2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.1" y1="4.35" x2="-46.19" y2="-2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.45" y1="21.59" x2="-37.1" y2="4.35" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.95" y1="22.09" x2="-44.45" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.5525" y1="23.6925" x2="-46.95" y2="22.09" width="0" layer="19" extent="1-1"/>

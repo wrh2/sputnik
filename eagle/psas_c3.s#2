@@ -16123,12 +16123,13 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK"/>
 <part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK"/>
 <part name="L3" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK"/>
+<part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="GND21" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="P+4" library="psas_c3" deviceset="3.3V" device=""/>
 <part name="GND22" library="psas_c3" deviceset="GND" device=""/>
-<part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-A-NOSILK" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -16211,9 +16212,7 @@ to run off internal clock reference
 <attribute name="MFN" x="91.44" y="71.12" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="91.44" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND13" gate="1" x="86.36" y="7.62" smashed="yes">
-<attribute name="VALUE" x="83.82" y="5.08" size="1.778" layer="96"/>
-</instance>
+<instance part="GND13" gate="1" x="86.36" y="5.08"/>
 <instance part="Y1" gate="G$1" x="111.76" y="76.2" smashed="yes" rot="R90">
 <attribute name="MFN" x="111.76" y="76.2" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="111.76" y="76.2" size="1.778" layer="96" rot="R90" display="off"/>
@@ -16267,25 +16266,15 @@ to run off internal clock reference
 <instance part="L1" gate="L" x="147.32" y="109.22"/>
 <instance part="L2" gate="L" x="203.2" y="104.14"/>
 <instance part="L3" gate="L" x="223.52" y="104.14"/>
-<instance part="GND21" gate="1" x="96.52" y="7.62" smashed="yes">
-<attribute name="VALUE" x="93.98" y="5.08" size="1.778" layer="96"/>
-</instance>
-<instance part="JP3" gate="G$1" x="55.88" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.15" y="128.905" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="60.96" y="120.65" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="JP4" gate="G$1" x="40.64" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.37" y="131.445" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="45.72" y="120.65" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="R2" gate="R" x="91.44" y="7.62" rot="R180"/>
+<instance part="R3" gate="R" x="91.44" y="7.62" rot="R180"/>
+<instance part="GND21" gate="1" x="96.52" y="5.08"/>
+<instance part="JP3" gate="G$1" x="55.88" y="127" rot="R90"/>
+<instance part="JP4" gate="G$1" x="40.64" y="127" rot="R90"/>
 <instance part="P+4" gate="G$1" x="48.26" y="124.46" smashed="yes">
-<attribute name="VALUE" x="44.704" y="128.016" size="1.778" layer="96"/>
+<attribute name="VALUE" x="47.244" y="128.016" size="1.778" layer="96"/>
 </instance>
 <instance part="GND22" gate="1" x="38.1" y="114.3"/>
-<instance part="R2" gate="R" x="91.44" y="10.16" smashed="yes">
-<attribute name="NAME" x="92.71" y="11.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="11.938" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -16458,29 +16447,28 @@ to run off internal clock reference
 <wire x1="147.32" y1="129.54" x2="147.32" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="R2" gate="R" pin="2"/>
+<pinref part="R3" gate="R" pin="2"/>
+<junction x="86.36" y="7.62"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="VSS"/>
-<wire x1="86.36" y1="20.32" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="20.32" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND2"/>
-<wire x1="93.98" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="15.24" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="20.32" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="20.32" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VSS2"/>
-<wire x1="91.44" y1="15.24" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="15.24" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="96.52" y1="15.24" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R2" gate="R" pin="2"/>
-<junction x="96.52" y="10.16"/>
+<wire x1="91.44" y1="12.7" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="12.7" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R2" gate="R" pin="1"/>
-<junction x="86.36" y="10.16"/>
-<junction x="86.36" y="15.24"/>
-<junction x="91.44" y="15.24"/>
-<junction x="93.98" y="15.24"/>
-<junction x="96.52" y="15.24"/>
+<junction x="96.52" y="7.62"/>
+<pinref part="R3" gate="R" pin="1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
