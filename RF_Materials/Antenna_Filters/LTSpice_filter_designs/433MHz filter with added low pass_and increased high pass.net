@@ -1,0 +1,19 @@
+* C:\Users\TheBear\ECE411\Antenna_Filters\LTSpice_filter_designs\433MHz filter with added low pass_and increased high pass.asc
+L3 N001 N002 14n
+C5 In 0 15p
+C6 N002 0 15p
+C7 N002 0 8.2p
+C2 In N001 10p
+C3 N001 N002 2.4p
+R§Load OUT 0 50
+V3 In 0 SINE(0 5 1k) AC 1
+R3 In In 50
+L1 N002 N003 6.8n
+L2 N003 N004 15n
+C1 N003 0 6.8p
+C4 N004 0 3.3p
+C8 OUT N004 22p
+L5 OUT 0 55n
+.ac dec 100 10 100t
+.backanno
+.end

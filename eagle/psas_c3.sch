@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16110,7 +16110,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP2" library="SparkFun-v5" deviceset="M02" device="PTH"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10p"/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
-<part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.3p"/>
+<part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2p"/>
 <part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="8.2p"/>
 <part name="GND17" library="Vibrogait_prototype" deviceset="GND" device=""/>

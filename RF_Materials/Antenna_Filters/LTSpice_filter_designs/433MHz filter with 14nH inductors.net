@@ -1,0 +1,13 @@
+* C:\Users\TheBear\ECE411\Antenna_Filters\LTSpice_filter_designs\433MHz filter with 14nH inductors.asc
+L3 N001 OUT 14n
+C5 In 0 15p
+C6 OUT 0 15p
+C7 OUT 0 8.2p
+C2 In N001 10p
+C3 N001 OUT 2.4p
+R§Load OUT 0 50
+V3 In 0 SINE(0 5 1k) AC 1
+R3 In In 50
+.ac dec 100 10 100t
+.backanno
+.end
