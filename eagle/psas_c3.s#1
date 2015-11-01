@@ -17220,8 +17220,8 @@ to run off internal clock reference
 <segment>
 <wire x1="63.5" y1="-2.54" x2="226.06" y2="-2.54" width="0.762" layer="92"/>
 <wire x1="226.06" y1="-2.54" x2="226.06" y2="43.18" width="0.762" layer="92"/>
-<wire x1="226.06" y1="43.18" x2="190.5" y2="43.18" width="0.762" layer="92"/>
-<wire x1="190.5" y1="43.18" x2="190.5" y2="17.78" width="0.762" layer="92"/>
+<wire x1="226.06" y1="43.18" x2="193.04" y2="43.18" width="0.762" layer="92"/>
+<wire x1="193.04" y1="43.18" x2="193.04" y2="17.78" width="0.762" layer="92"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="-2.54" width="0.762" layer="92"/>
 </segment>
 </bus>
@@ -17982,8 +17982,7 @@ to run off internal clock reference
 </segment>
 <segment>
 <pinref part="JP6" gate="A" pin="7"/>
-<wire x1="205.74" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
-<label x="193.04" y="27.94" size="1.778" layer="95"/>
+<wire x1="205.74" y1="27.94" x2="193.04" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PTE18" class="0">
@@ -18000,15 +17999,13 @@ to run off internal clock reference
 </segment>
 <segment>
 <pinref part="JP6" gate="A" pin="15"/>
-<wire x1="205.74" y1="17.78" x2="190.5" y2="17.78" width="0.1524" layer="91"/>
-<label x="193.04" y="17.78" size="1.778" layer="95"/>
+<wire x1="205.74" y1="17.78" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PTE19" class="0">
 <segment>
 <pinref part="JP6" gate="A" pin="11"/>
-<wire x1="205.74" y1="22.86" x2="190.5" y2="22.86" width="0.1524" layer="91"/>
-<label x="193.04" y="22.86" size="1.778" layer="95"/>
+<wire x1="205.74" y1="22.86" x2="193.04" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
