@@ -17530,10 +17530,10 @@ to run off internal clock reference
 <wire x1="373.38" y1="33.02" x2="292.1" y2="33.02" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="292.1" y1="33.02" x2="292.1" y2="73.66" width="0.1524" layer="97" style="dashdot"/>
 <text x="294.64" y="68.58" size="1.778" layer="97">JTAG header</text>
-<wire x1="162.56" y1="40.64" x2="162.56" y2="-12.7" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="162.56" y1="45.72" x2="162.56" y2="-12.7" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="162.56" y1="-12.7" x2="279.4" y2="-12.7" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="279.4" y1="-12.7" x2="279.4" y2="40.64" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="279.4" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="279.4" y1="-12.7" x2="279.4" y2="45.72" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="279.4" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="97" style="dashdot"/>
 <text x="236.22" y="-10.16" size="1.778" layer="97" rot="R180">GPIO Mapping</text>
 </plain>
 <instances>

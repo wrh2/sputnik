@@ -17712,7 +17712,7 @@ to run off internal clock reference
 <wire x1="162.56" y1="-17.78" x2="279.4" y2="-17.78" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="279.4" y1="-17.78" x2="279.4" y2="45.72" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="279.4" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="97" style="dashdot"/>
-<text x="236.22" y="-10.16" size="1.778" layer="97" rot="R180">GPIO Mapping</text>
+<text x="233.68" y="-15.24" size="1.778" layer="97" rot="R180">GPIO Mapping</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="2.54" y="-24.13"/>
