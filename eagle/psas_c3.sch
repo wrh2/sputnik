@@ -19520,7 +19520,6 @@ protection</text>
 <pinref part="U$1" gate="G$1" pin="GND2"/>
 <wire x1="208.28" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="154.94" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="160.02" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VSS2"/>
@@ -19537,7 +19536,6 @@ protection</text>
 <junction x="208.28" y="154.94"/>
 <junction x="210.82" y="154.94"/>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
-<junction x="208.28" y="160.02"/>
 </segment>
 <segment>
 <pinref part="C20" gate="CE" pin="2"/>
