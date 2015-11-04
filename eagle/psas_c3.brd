@@ -3258,9 +3258,7 @@ design rules under a new name.</description>
 <signal name="PTB1">
 <contactref element="U$1" pad="18"/>
 <contactref element="JP17" pad="2"/>
-<contactref element="U$1" pad="48"/>
-<wire x1="-23.38" y1="19.135" x2="-86.36" y2="-293.37" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.88" y1="26.585" x2="-23.38" y2="19.135" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.88" y1="26.585" x2="-86.36" y2="-293.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PTB0">
 <contactref element="U$1" pad="17"/>
@@ -3331,6 +3329,9 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="1"/>
 <wire x1="-91.02" y1="-332.74" x2="-90.97" y2="-347.98" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.38" y1="19.135" x2="-91.02" y2="-332.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="U$1" pad="48"/>
 </signal>
 </signals>
 </board>
