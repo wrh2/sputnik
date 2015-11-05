@@ -16982,6 +16982,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="TP14" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 <part name="TP15" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="GND31" library="Vibrogait_prototype" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17324,6 +17325,7 @@ When connected, MCU uses
 <attribute name="VALUE" x="309.88" y="229.235" size="1.27" layer="95"/>
 </instance>
 <instance part="JP7" gate="G$1" x="154.94" y="231.14"/>
+<instance part="GND31" gate="1" x="523.24" y="208.28"/>
 </instances>
 <busses>
 </busses>
@@ -17623,6 +17625,10 @@ When connected, MCU uses
 <wire x1="154.94" y1="302.26" x2="154.94" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="304.8" x2="162.56" y2="304.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUTERCONDUCTOR"/>
+<pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -18599,7 +18605,6 @@ When connected, MCU uses
 <approved hash="113,1,156.168,183.011,JP4,,,,,"/>
 <approved hash="113,1,156.168,151.261,JP5,,,,,"/>
 <approved hash="113,1,156.168,120.781,JP6,,,,,"/>
-<approved hash="113,1,285.708,180.471,JP8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
