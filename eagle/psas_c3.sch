@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15738,48 +15738,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="discrete">
-<description>Discrete devices (Antenna, Arrrester, Thermistor)</description>
-<packages>
-<package name="PAD-01">
-<description>&lt;b&gt;PAD&lt;/b&gt;</description>
-<circle x="0" y="0" radius="0.889" width="0.762" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
-<text x="-1.27" y="1.524" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.27" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ANTENNA">
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="-5.08" visible="off" length="short" direction="out" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ANTENNA" prefix="ANT" uservalue="yes">
-<description>&lt;b&gt;Antenna&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="ANTENNA" x="0" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="PAD-01">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="silabs">
 <description>Silicon Laboratories&lt;p&gt;
 C8051Fxxx family of mixed-signal microcontrollers integrates world-class analog,&lt;br&gt;
@@ -16732,6 +16690,42 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SMAJ16-ND">
+<packages>
+<package name="SMAJ716-ND">
+<smd name="GND2" x="-4.191" y="0.508" dx="2.54" dy="4.064" layer="1"/>
+<smd name="GND1" x="4.191" y="0.508" dx="2.54" dy="4.064" layer="16"/>
+<smd name="P$3" x="0" y="0.508" dx="1.524" dy="4.064" layer="1"/>
+<smd name="GND4" x="4.191" y="0.508" dx="2.54" dy="4.064" layer="1"/>
+<smd name="GND3" x="-4.191" y="0.508" dx="2.54" dy="4.064" layer="16"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SMAJ716-ND">
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<pin name="OUTERCONDUCTOR" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
+<pin name="CENTERCONDUCTOR" x="7.62" y="0" visible="pad" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMAJ716-ND">
+<gates>
+<gate name="G$1" symbol="SMAJ716-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMAJ716-ND">
+<connects>
+<connect gate="G$1" pin="CENTERCONDUCTOR" pad="P$3"/>
+<connect gate="G$1" pin="OUTERCONDUCTOR" pad="GND1 GND2 GND3 GND4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16801,7 +16795,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1nF"/>
 <part name="GND20" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="ANT1" library="discrete" deviceset="ANTENNA" device="" value="Antenna"/>
 <part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n"/>
 <part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
 <part name="L3" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
@@ -16896,6 +16889,8 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <attribute name="MPN" value="GRM188R71C104KA01D"/>
 </part>
 <part name="GND30" library="Vibrogait_prototype" deviceset="GND" device=""/>
+<part name="U$2" library="SMAJ16-ND" deviceset="SMAJ716-ND" device=""/>
+<part name="P+6" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16964,7 +16959,7 @@ according to the databook</text>
 <text x="149.86" y="220.98" size="1.778" layer="97">PORTB</text>
 <text x="147.32" y="160.02" size="1.778" layer="97">PORTD</text>
 <text x="147.32" y="132.08" size="1.778" layer="97">PORTE</text>
-<text x="299.72" y="172.72" size="1.778" layer="97">This is for the transciever GPIO
+<text x="355.6" y="187.96" size="1.778" layer="97">This is for the transciever GPIO
 ..yes it has GPIO
 read the databook</text>
 <text x="264.16" y="215.9" size="1.778" layer="97">NC</text>
@@ -16974,6 +16969,12 @@ When connected, MCU uses
 32MHz for clock</text>
 <text x="187.96" y="243.84" size="0.8128" layer="97">bypass for VDDA</text>
 <text x="200.66" y="243.84" size="0.8128" layer="97">bypass for VREFH</text>
+<wire x1="510.54" y1="231.14" x2="535.94" y2="231.14" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="535.94" y1="231.14" x2="535.94" y2="200.66" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="535.94" y1="200.66" x2="510.54" y2="200.66" width="0.1524" layer="97" style="dashdot"/>
+<wire x1="510.54" y1="200.66" x2="510.54" y2="231.14" width="0.1524" layer="97" style="dashdot"/>
+<text x="518.16" y="223.52" size="1.778" layer="97">Antenna</text>
+<text x="515.62" y="200.66" size="1.778" layer="97">SMA J716-ND</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="454.66" y="337.82"/>
@@ -17020,11 +17021,11 @@ When connected, MCU uses
 <instance part="P+2" gate="G$1" x="238.76" y="256.54" smashed="yes">
 <attribute name="VALUE" x="236.855" y="259.334" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="CE" x="251.46" y="248.92">
-<attribute name="DIST" x="251.46" y="248.92" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="251.46" y="248.92" size="1.778" layer="96" display="off"/>
-<attribute name="MFG" x="251.46" y="248.92" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="251.46" y="248.92" size="1.778" layer="96" display="off"/>
+<instance part="C8" gate="CE" x="254" y="248.92">
+<attribute name="DIST" x="254" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="254" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="CF1" gate="CF" x="55.88" y="317.5" rot="MR270"/>
 <instance part="JP2" gate="G$1" x="414.02" y="170.18" rot="MR0"/>
@@ -17039,7 +17040,6 @@ When connected, MCU uses
 <instance part="C15" gate="CE" x="469.9" y="218.44" rot="R90"/>
 <instance part="C16" gate="CE" x="370.84" y="233.68"/>
 <instance part="GND20" gate="1" x="381" y="238.76"/>
-<instance part="ANT1" gate="A" x="482.6" y="231.14"/>
 <instance part="L1" gate="L" x="381" y="223.52" smashed="yes">
 <attribute name="NAME" x="383.54" y="228.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="383.54" y="227.33" size="1.778" layer="96" align="top-left"/>
@@ -17097,13 +17097,13 @@ When connected, MCU uses
 <instance part="GND23" gate="1" x="68.58" y="292.1" rot="MR0"/>
 <instance part="GND32" gate="1" x="99.06" y="325.12" rot="MR0"/>
 <instance part="GND33" gate="1" x="109.22" y="340.36" rot="MR0"/>
-<instance part="C18" gate="CE" x="289.56" y="210.82">
-<attribute name="DIST" x="289.56" y="210.82" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="289.56" y="210.82" size="1.778" layer="96" display="off"/>
-<attribute name="MFG" x="289.56" y="210.82" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="289.56" y="210.82" size="1.778" layer="96" display="off"/>
+<instance part="C18" gate="CE" x="287.02" y="208.28">
+<attribute name="DIST" x="287.02" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="287.02" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="287.02" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="287.02" y="208.28" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND22" gate="1" x="289.56" y="203.2"/>
+<instance part="GND22" gate="1" x="287.02" y="200.66"/>
 <instance part="C23" gate="CE" x="304.8" y="210.82">
 <attribute name="DIST" x="304.8" y="210.82" size="1.778" layer="96" display="off"/>
 <attribute name="DPN" x="304.8" y="210.82" size="1.778" layer="96" display="off"/>
@@ -17116,8 +17116,8 @@ When connected, MCU uses
 <attribute name="MFG" x="297.18" y="210.82" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="297.18" y="210.82" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND24" gate="1" x="297.18" y="203.2"/>
-<instance part="GND34" gate="1" x="304.8" y="203.2"/>
+<instance part="GND24" gate="1" x="297.18" y="200.66"/>
+<instance part="GND34" gate="1" x="304.8" y="200.66"/>
 <instance part="JTAG1" gate="G$1" x="294.64" y="119.38"/>
 <instance part="P+4" gate="G$1" x="284.48" y="137.16"/>
 <instance part="GND26" gate="1" x="279.4" y="116.84" smashed="yes">
@@ -17171,8 +17171,8 @@ When connected, MCU uses
 <attribute name="VALUE" x="215.9" y="259.08" size="1.778" layer="96"/>
 </instance>
 <instance part="GND35" gate="1" x="203.2" y="220.98"/>
-<instance part="GND12" gate="1" x="251.46" y="241.3" smashed="yes">
-<attribute name="VALUE" x="248.7676" y="239.395" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="254" y="241.3" smashed="yes">
+<attribute name="VALUE" x="251.3076" y="239.395" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="G$1" x="218.44" y="322.58" smashed="yes">
 <attribute name="VALUE" x="216.535" y="325.374" size="1.778" layer="96"/>
@@ -17181,7 +17181,7 @@ When connected, MCU uses
 <instance part="JP4" gate="A" x="154.94" y="180.34"/>
 <instance part="JP5" gate="A" x="154.94" y="149.86"/>
 <instance part="JP6" gate="A" x="154.94" y="119.38"/>
-<instance part="JP8" gate="A" x="287.02" y="177.8"/>
+<instance part="JP8" gate="A" x="373.38" y="177.8"/>
 <instance part="C9" gate="CE" x="190.5" y="236.22">
 <attribute name="DIST" x="190.5" y="236.22" size="1.778" layer="96" display="off"/>
 <attribute name="DPN" x="190.5" y="236.22" size="1.778" layer="96" display="off"/>
@@ -17189,6 +17189,10 @@ When connected, MCU uses
 <attribute name="MPN" x="190.5" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND30" gate="1" x="154.94" y="299.72" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="523.24" y="218.44" rot="MR0"/>
+<instance part="P+6" gate="G$1" x="287.02" y="241.3" smashed="yes">
+<attribute name="VALUE" x="285.115" y="244.094" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17404,10 +17408,12 @@ When connected, MCU uses
 <segment>
 <pinref part="C25" gate="CE" pin="2"/>
 <pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="297.18" y1="203.2" x2="297.18" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C23" gate="CE" pin="2"/>
 <pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="304.8" y1="203.2" x2="304.8" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JTAG1" gate="G$1" pin="9"/>
@@ -17511,20 +17517,13 @@ When connected, MCU uses
 <wire x1="243.84" y1="243.84" x2="243.84" y2="241.3" width="0.1524" layer="91"/>
 <junction x="238.76" y="243.84"/>
 <junction x="238.76" y="251.46"/>
-<wire x1="251.46" y1="251.46" x2="238.76" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="254" y1="251.46" x2="238.76" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="C8" gate="CE" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="VBAT1"/>
 <wire x1="261.62" y1="226.06" x2="269.24" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="226.06" x2="269.24" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="251.46" x2="251.46" y2="251.46" width="0.1524" layer="91"/>
-<junction x="251.46" y="251.46"/>
-<pinref part="U$1" gate="G$1" pin="VBAT2"/>
-<wire x1="261.62" y1="213.36" x2="269.24" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="213.36" x2="269.24" y2="226.06" width="0.1524" layer="91"/>
-<junction x="269.24" y="226.06"/>
-<pinref part="C18" gate="CE" pin="1"/>
-<wire x1="269.24" y1="213.36" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
-<junction x="269.24" y="213.36"/>
+<wire x1="269.24" y1="251.46" x2="254" y2="251.46" width="0.1524" layer="91"/>
+<junction x="254" y="251.46"/>
 </segment>
 <segment>
 <pinref part="JTAG1" gate="G$1" pin="1"/>
@@ -17557,6 +17556,15 @@ When connected, MCU uses
 <pinref part="P+7" gate="G$1" pin="3.3V"/>
 <wire x1="215.9" y1="248.92" x2="215.9" y2="256.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="248.92"/>
+</segment>
+<segment>
+<pinref part="C18" gate="CE" pin="1"/>
+<wire x1="287.02" y1="210.82" x2="287.02" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="G$1" pin="3.3V"/>
+<pinref part="U$1" gate="G$1" pin="VBAT2"/>
+<wire x1="287.02" y1="213.36" x2="287.02" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="213.36" x2="287.02" y2="213.36" width="0.1524" layer="91"/>
+<junction x="287.02" y="213.36"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -17717,9 +17725,8 @@ When connected, MCU uses
 <net name="N$19" class="0">
 <segment>
 <pinref part="C15" gate="CE" pin="2"/>
-<wire x1="474.98" y1="218.44" x2="482.6" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="482.6" y1="218.44" x2="482.6" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="ANT1" gate="A" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="CENTERCONDUCTOR"/>
+<wire x1="515.62" y1="218.44" x2="474.98" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VR_PA" class="0">
@@ -18172,7 +18179,7 @@ When connected, MCU uses
 <wire x1="144.78" y1="213.36" x2="152.4" y2="213.36" width="0.1524" layer="91"/>
 <label x="208.28" y="215.9" size="1.778" layer="95"/>
 <label x="165.1" y="218.44" size="1.778" layer="95"/>
-<label x="276.86" y="243.84" size="1.778" layer="95"/>
+<label x="228.6" y="266.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PTB1" class="0">
@@ -18302,47 +18309,47 @@ When connected, MCU uses
 <net name="DIO2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO2"/>
-<wire x1="261.62" y1="180.34" x2="274.32" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="180.34" x2="274.32" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="185.42" x2="294.64" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="185.42" x2="294.64" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="180.34" x2="360.68" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="180.34" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="185.42" x2="381" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="381" y1="185.42" x2="381" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="2"/>
-<wire x1="294.64" y1="180.34" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
-<label x="287.02" y="185.42" size="1.778" layer="95"/>
+<wire x1="381" y1="180.34" x2="375.92" y2="180.34" width="0.1524" layer="91"/>
+<label x="373.38" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIO5/CLKOUT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO5"/>
 <wire x1="261.62" y1="172.72" x2="261.62" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="170.18" x2="292.1" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="170.18" x2="355.6" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="170.18" x2="355.6" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="170.18" x2="355.6" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="172.72" x2="406.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="172.72" x2="378.46" y2="172.72" width="0.1524" layer="91"/>
 <label x="386.08" y="172.72" size="1.778" layer="95"/>
 <pinref part="JP8" gate="A" pin="4"/>
-<wire x1="289.56" y1="177.8" x2="292.1" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="177.8" x2="292.1" y2="170.18" width="0.1524" layer="91"/>
-<junction x="292.1" y="170.18"/>
+<wire x1="378.46" y1="172.72" x2="406.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="177.8" x2="378.46" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="177.8" x2="378.46" y2="172.72" width="0.1524" layer="91"/>
+<junction x="378.46" y="172.72"/>
 </segment>
 </net>
 <net name="DIO3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO3"/>
-<wire x1="261.62" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="177.8" x2="276.86" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="177.8" x2="363.22" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="177.8" x2="363.22" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="1"/>
-<wire x1="276.86" y1="180.34" x2="281.94" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="180.34" x2="368.3" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIO4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO4"/>
-<wire x1="261.62" y1="175.26" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="175.26" x2="279.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="175.26" x2="365.76" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="175.26" x2="365.76" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="3"/>
-<wire x1="279.4" y1="177.8" x2="281.94" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="177.8" x2="368.3" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
