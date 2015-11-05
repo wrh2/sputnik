@@ -11,6 +11,8 @@ eagle - contains eagleCAD designs of device
 
 requirements - contains product development specification
 
+schedule - contains the project schedule, gantt chart, and task list
+
 ## Project Team
 Jake Heath (jakeheath@gmail.com)
 
