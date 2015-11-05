@@ -2981,6 +2981,10 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="2"/>
 <contactref element="IC1" pad="23"/>
 <contactref element="TP9" pad="1"/>
+<contactref element="U$2" pad="GND4"/>
+<contactref element="U$2" pad="GND2"/>
+<contactref element="U$2" pad="GND3"/>
+<contactref element="U$2" pad="GND1"/>
 <wire x1="-87.05" y1="-160.02" x2="-87.05" y2="-165.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-87.05" y1="-170.18" x2="-87.05" y2="-165.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.37" y1="-179.07" x2="-87.05" y2="-170.18" width="0" layer="19" extent="1-1"/>
@@ -3039,8 +3043,12 @@ design rules under a new name.</description>
 <wire x1="-89.37" y1="-342.9" x2="-89.37" y2="-327.66" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.37" y1="-347.98" x2="-89.37" y2="-342.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.37" y1="-353.06" x2="-89.37" y2="-347.98" width="0" layer="19" extent="1-1"/>
-<wire x1="-124.93" y1="-378.46" x2="-89.37" y2="-353.06" width="0" layer="19" extent="1-1"/>
-<wire x1="-146.05" y1="-381" x2="-124.93" y2="-378.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-117.729" y1="-383.032" x2="-89.37" y2="-353.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-117.729" y1="-383.032" x2="-117.729" y2="-383.032" width="0" layer="19" extent="1-16"/>
+<wire x1="-126.111" y1="-383.032" x2="-117.729" y2="-383.032" width="0" layer="19" extent="1-1"/>
+<wire x1="-126.111" y1="-383.032" x2="-126.111" y2="-383.032" width="0" layer="19" extent="1-16"/>
+<wire x1="-124.93" y1="-378.46" x2="-126.111" y2="-383.032" width="0" layer="19" extent="1-1"/>
+<wire x1="-146.05" y1="-381" x2="-126.111" y2="-383.032" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="U1" pad="1"/>

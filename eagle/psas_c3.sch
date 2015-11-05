@@ -17373,8 +17373,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="JP4" library="pinhead" deviceset="PINHD-2X7" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-2X4" device=""/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-2X5" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-2X9" device=""/>
+<part name="GND31" library="Vibrogait_prototype" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17711,11 +17710,8 @@ When connected, MCU uses
 <attribute name="NAME" x="312.42" y="228.6" size="1.27" layer="95"/>
 <attribute name="VALUE" x="309.88" y="229.235" size="1.27" layer="95"/>
 </instance>
-<instance part="JP4" gate="A" x="154.94" y="193.04"/>
-<instance part="JP3" gate="A" x="154.94" y="210.82"/>
-<instance part="JP7" gate="G$1" x="182.88" y="266.7" rot="R180"/>
-<instance part="JP5" gate="A" x="154.94" y="172.72"/>
-<instance part="JP6" gate="A" x="154.94" y="149.86"/>
+<instance part="JP7" gate="G$1" x="154.94" y="231.14"/>
+<instance part="GND31" gate="1" x="523.24" y="208.28"/>
 </instances>
 <busses>
 </busses>
@@ -18015,6 +18011,10 @@ When connected, MCU uses
 <wire x1="154.94" y1="302.26" x2="154.94" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="304.8" x2="162.56" y2="304.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUTERCONDUCTOR"/>
+<pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
