@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18736,8 +18736,6 @@ When connected, MCU uses
 <net name="PTA2" class="0">
 <segment>
 <wire x1="180.34" y1="309.88" x2="180.34" y2="279.4" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="RXD"/>
-<wire x1="154.94" y1="309.88" x2="180.34" y2="309.88" width="0.1524" layer="91"/>
 <label x="180.34" y="302.26" size="1.778" layer="95" rot="R270"/>
 <wire x1="180.34" y1="279.4" x2="337.82" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="279.4" x2="337.82" y2="210.82" width="0.1524" layer="91"/>
@@ -18753,7 +18751,6 @@ When connected, MCU uses
 <wire x1="378.46" y1="160.02" x2="370.84" y2="160.02" width="0.1524" layer="91"/>
 <junction x="370.84" y="160.02"/>
 <pinref part="R420" gate="R" pin="2"/>
-<junction x="180.34" y="309.88"/>
 </segment>
 </net>
 <net name="N$30" class="0">
