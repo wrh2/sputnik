@@ -19434,13 +19434,6 @@ When connected, MCU uses
 <wire x1="177.8" y1="322.58" x2="177.8" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$150" class="0">
-<segment>
-<pinref part="CF1" gate="CF" pin="4"/>
-<pinref part="TP12" gate="G$1" pin="P$1"/>
-<wire x1="58.42" y1="314.96" x2="60.96" y2="314.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>

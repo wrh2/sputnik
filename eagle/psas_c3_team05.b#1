@@ -3037,7 +3037,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$4" library="mount" package="#2/.750-BARE" value="" x="97.028" y="2.794"/>
 <element name="U$5" library="mount" package="#2/.750-BARE" value="" x="97.282" y="68.072"/>
 <element name="U$6" library="mount" package="#2/.750-BARE" value="" x="2.794" y="68.326"/>
-<element name="TP12" library="microbuilder" package="TESTPOINT_ROUND_0.5MM" value="" x="6.858" y="50.8"/>
+<element name="TP12" library="microbuilder" package="TESTPOINT_ROUND_0.5MM" value="" x="6.858" y="52.578"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4606,13 +4606,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$176">
 <via x="84.836" y="20.32" extent="1-16" drill="0.3302"/>
-</signal>
-<signal name="N$150">
-<contactref element="CF1" pad="4"/>
-<contactref element="TP12" pad="P$1"/>
-<wire x1="4.5546" y1="54.65341875" x2="5.334" y2="54.61" width="0.3048" layer="1"/>
-<wire x1="5.334" y1="54.61" x2="6.858" y2="53.086" width="0.3048" layer="1"/>
-<wire x1="6.858" y1="53.086" x2="6.858" y2="50.8" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <errors>
