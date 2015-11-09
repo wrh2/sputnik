@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -136,7 +136,7 @@
 <wire x1="0" y1="71.11" x2="0" y2="0" width="0" layer="20"/>
 <text x="8.4836" y="1.3716" size="0.8128" layer="21" font="vector">Team 05
 William Harrington
-Jake Heath
+James Heath
 Saroj Bardewa
 Shan Quinney
 Michael Mathis</text>
