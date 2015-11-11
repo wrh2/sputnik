@@ -17010,60 +17010,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <rectangle x1="8.509" y1="-4.699" x2="9.271" y2="-2.921" layer="51"/>
 <rectangle x1="8.509" y1="-5.461" x2="9.271" y2="-4.699" layer="21"/>
 </package>
-<package name="2X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="2" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="3" x="1.27" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="4" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
-<text x="-2.54" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
-<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
-<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
-<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
-</package>
-<package name="2X02/90">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<pad name="2" x="-1.27" y="-3.81" drill="1.016" shape="octagon"/>
-<pad name="4" x="1.27" y="-3.81" drill="1.016" shape="octagon"/>
-<pad name="1" x="-1.27" y="-6.35" drill="1.016" shape="octagon"/>
-<pad name="3" x="1.27" y="-6.35" drill="1.016" shape="octagon"/>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
-<rectangle x1="-1.651" y1="-5.461" x2="-0.889" y2="-4.699" layer="21"/>
-<rectangle x1="-1.651" y1="-4.699" x2="-0.889" y2="-2.921" layer="51"/>
-<rectangle x1="0.889" y1="-4.699" x2="1.651" y2="-2.921" layer="51"/>
-<rectangle x1="0.889" y1="-5.461" x2="1.651" y2="-4.699" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="PINH2X4">
@@ -17195,18 +17141,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pin name="14" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="15" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="16" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PINH2X2">
-<wire x1="-8.89" y1="-2.54" x2="6.35" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="5.08" x2="-8.89" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-8.89" y1="5.08" x2="-8.89" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-8.89" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-8.89" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17512,36 +17446,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-2X2" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="PINH2X2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2X02">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="/90" package="2X02/90">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SMAJ16-ND">
@@ -17766,10 +17670,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="GND37" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="JP9" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="JP10" library="pinhead" deviceset="PINHD-2X8" device=""/>
-<part name="R420" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
-<part name="R69" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
-<part name="JP11" library="pinhead" deviceset="PINHD-2X2" device=""/>
-<part name="P+9" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
 <part name="GND14" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="TP12" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 </parts>
@@ -18123,21 +18023,6 @@ When connected, MCU uses
 <instance part="GND37" gate="1" x="317.5" y="200.66"/>
 <instance part="JP9" gate="A" x="233.68" y="330.2"/>
 <instance part="JP10" gate="A" x="373.38" y="157.48"/>
-<instance part="R420" gate="R" x="180.34" y="314.96" smashed="yes" rot="R270">
-<attribute name="NAME" x="183.9214" y="313.69" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="184.658" y="318.77" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R69" gate="R" x="177.8" y="317.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="173.7614" y="313.69" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="174.498" y="318.77" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="JP11" gate="A" x="180.34" y="332.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="174.625" y="328.93" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="185.42" y="323.85" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+9" gate="G$1" x="177.8" y="340.36" smashed="yes">
-<attribute name="VALUE" x="175.895" y="343.154" size="1.778" layer="96"/>
-</instance>
 <instance part="GND14" gate="1" x="269.24" y="198.12"/>
 <instance part="TP12" gate="G$1" x="60.96" y="314.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="58.42" y="314.96" size="1.27" layer="95"/>
@@ -18515,16 +18400,6 @@ When connected, MCU uses
 <junction x="309.88" y="213.36"/>
 <junction x="309.88" y="226.06"/>
 </segment>
-<segment>
-<pinref part="JP11" gate="A" pin="2"/>
-<pinref part="P+9" gate="G$1" pin="3.3V"/>
-<wire x1="177.8" y1="340.36" x2="177.8" y2="337.82" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="A" pin="4"/>
-<wire x1="177.8" y1="337.82" x2="177.8" y2="335.28" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="337.82" x2="180.34" y2="337.82" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="337.82" x2="180.34" y2="335.28" width="0.1524" layer="91"/>
-<junction x="177.8" y="337.82"/>
-</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -18733,8 +18608,6 @@ When connected, MCU uses
 <pinref part="JP10" gate="A" pin="4"/>
 <wire x1="378.46" y1="162.56" x2="370.84" y2="162.56" width="0.1524" layer="91"/>
 <junction x="370.84" y="162.56"/>
-<pinref part="R69" gate="R" pin="2"/>
-<junction x="177.8" y="312.42"/>
 </segment>
 </net>
 <net name="PTA2" class="0">
@@ -18754,10 +18627,8 @@ When connected, MCU uses
 <pinref part="JP10" gate="A" pin="6"/>
 <wire x1="378.46" y1="160.02" x2="370.84" y2="160.02" width="0.1524" layer="91"/>
 <junction x="370.84" y="160.02"/>
-<pinref part="R420" gate="R" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="RXD"/>
 <wire x1="154.94" y1="309.88" x2="180.34" y2="309.88" width="0.1524" layer="91"/>
-<junction x="180.34" y="309.88"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -19418,20 +19289,6 @@ When connected, MCU uses
 <pinref part="JP10" gate="A" pin="14"/>
 <wire x1="378.46" y1="149.86" x2="370.84" y2="149.86" width="0.1524" layer="91"/>
 <junction x="370.84" y="149.86"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R420" gate="R" pin="1"/>
-<pinref part="JP11" gate="A" pin="3"/>
-<wire x1="180.34" y1="320.04" x2="180.34" y2="327.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="R69" gate="R" pin="1"/>
-<pinref part="JP11" gate="A" pin="1"/>
-<wire x1="177.8" y1="322.58" x2="177.8" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$150" class="0">
