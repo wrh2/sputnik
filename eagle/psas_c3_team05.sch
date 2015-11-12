@@ -17541,8 +17541,8 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </part>
 <part name="CF1" library="Vibrogait_prototype" deviceset="CON_USB-MICRO-B-RECEPTACLE-*" device="PTH-HIROSE-ZX62D-B-5P8" value="CF1"/>
 <part name="JP2" library="SparkFun-v5" deviceset="M02" device="PTH"/>
-<part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10p"/>
-<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
+<part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
+<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="12p"/>
 <part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2p"/>
 <part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="15p"/>
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="8.2p"/>
@@ -17550,7 +17550,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="GND18" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND19" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1nF"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10nF"/>
 <part name="GND20" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n"/>
 <part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>

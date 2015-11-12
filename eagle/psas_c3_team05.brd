@@ -2860,13 +2860,13 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl_custom" package=".0603-B-NOSILK" value="10uF" x="21.01341875" y="46.2813375" rot="R270"/>
-<element name="C10" library="rcl_custom" package=".0603-B-NOSILK" value="10p" x="80.8228" y="35.0266" rot="R180"/>
-<element name="C11" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="77.724" y="35.8394" rot="R90"/>
+<element name="C10" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="80.8228" y="35.0266" rot="R180"/>
+<element name="C11" library="rcl_custom" package=".0603-B-NOSILK" value="12p" x="77.724" y="35.8394" rot="R90"/>
 <element name="C12" library="rcl_custom" package=".0603-B-NOSILK" value="2.2p" x="84.4042" y="37.31768125" rot="R180"/>
 <element name="C13" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="85.2678" y="39.8272" rot="R90"/>
 <element name="C14" library="rcl_custom" package=".0603-B-NOSILK" value="8.2p" x="90.6526" y="35.7886" rot="R90"/>
 <element name="C15" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="93.218" y="35.052"/>
-<element name="C16" library="rcl_custom" package=".0603-B-NOSILK" value="1nF" x="82.4001375" y="31.8389" rot="R180"/>
+<element name="C16" library="rcl_custom" package=".0603-B-NOSILK" value="10nF" x="82.4001375" y="31.8389" rot="R180"/>
 <element name="C2" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="37.538659375" y="59.0296"/>
 <element name="C3" library="rcl_custom" package=".0603-B-NOSILK" value="4.7uF" x="38.000940625" y="62.209678125" rot="R270"/>
 <element name="C4" library="rcl_custom" package=".0603-B-NOSILK" value="4.7uF" x="19.303996875" y="63.723521875" rot="R180"/>
