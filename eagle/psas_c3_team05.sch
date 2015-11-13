@@ -53,7 +53,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -17495,7 +17495,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </classes>
 <parts>
 <part name="U1" library="Vibrogait_prototype" deviceset="SPARKFUN-POWERIC_V_REG_MIC5219" device="3.3V" value="MIC5219 3.3V"/>
-<part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="battery_connector"/>
+<part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="BC"/>
 <part name="GND1" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="RT1" library="Vibrogait_prototype" deviceset="THERMISTOR-" device="_1206" value="10K (NTC)"/>
 <part name="GND3" library="Vibrogait_prototype" deviceset="GND" device=""/>
@@ -17525,7 +17525,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="GND10" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="S1" library="Vibrogait_prototype" deviceset="SWITCH-SPST" device="PTH"/>
 <part name="GND11" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="U$1" library="psas_c3" deviceset="MKW01Z128" device="">
+<part name="MC" library="psas_c3" deviceset="MKW01Z128" device="">
 <attribute name="DIST" value="Digi-Key"/>
 <attribute name="DPN" value="MKW01Z128CHN-ND"/>
 <attribute name="MFN" value="Freescale Semiconductor"/>
@@ -17754,7 +17754,10 @@ When connected, MCU uses
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="454.66" y="337.82"/>
-<instance part="JP1" gate="G$1" x="345.44" y="330.2" rot="MR0"/>
+<instance part="JP1" gate="G$1" x="345.44" y="330.2" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="347.98" y="325.12" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="347.98" y="336.042" size="1.778" layer="95" rot="MR0"/>
+</instance>
 <instance part="GND1" gate="1" x="337.82" y="299.72"/>
 <instance part="RT1" gate="RT" x="325.12" y="312.42"/>
 <instance part="GND3" gate="1" x="429.26" y="325.12"/>
@@ -17784,7 +17787,7 @@ When connected, MCU uses
 <instance part="GND10" gate="1" x="508" y="335.28"/>
 <instance part="S1" gate="1" x="441.96" y="332.74" rot="R180"/>
 <instance part="GND11" gate="1" x="317.5" y="322.58"/>
-<instance part="U$1" gate="G$1" x="241.3" y="185.42">
+<instance part="MC" gate="G$1" x="241.3" y="185.42">
 <attribute name="DIST" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
 <attribute name="DPN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
 <attribute name="MFN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
@@ -18167,15 +18170,15 @@ When connected, MCU uses
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
+<pinref part="MC" gate="G$1" pin="VSS"/>
 <wire x1="236.22" y1="134.62" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
+<pinref part="MC" gate="G$1" pin="GND2"/>
 <wire x1="243.84" y1="129.54" x2="246.38" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="129.54" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="134.62" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VSS2"/>
+<pinref part="MC" gate="G$1" pin="VSS2"/>
 <wire x1="241.3" y1="129.54" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="129.54" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
@@ -18184,7 +18187,7 @@ When connected, MCU uses
 <junction x="241.3" y="129.54"/>
 <junction x="243.84" y="129.54"/>
 <junction x="246.38" y="129.54"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
+<pinref part="MC" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
 <pinref part="C20" gate="CE" pin="2"/>
@@ -18265,10 +18268,10 @@ When connected, MCU uses
 <wire x1="190.5" y1="231.14" x2="190.5" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="223.52" x2="203.2" y2="223.52" width="0.1524" layer="91"/>
 <junction x="203.2" y="223.52"/>
-<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<pinref part="MC" gate="G$1" pin="VSSA"/>
 <wire x1="220.98" y1="231.14" x2="218.44" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="231.14" x2="218.44" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VREFL"/>
+<pinref part="MC" gate="G$1" pin="VREFL"/>
 <wire x1="218.44" y1="223.52" x2="220.98" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="223.52" x2="203.2" y2="223.52" width="0.1524" layer="91"/>
 <junction x="218.44" y="223.52"/>
@@ -18306,12 +18309,12 @@ When connected, MCU uses
 <pinref part="GND37" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND/SCAN"/>
+<pinref part="MC" gate="G$1" pin="GND/SCAN"/>
 <wire x1="261.62" y1="200.66" x2="269.24" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND_PA2"/>
+<pinref part="MC" gate="G$1" pin="GND_PA2"/>
 <wire x1="261.62" y1="203.2" x2="269.24" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="203.2" x2="269.24" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND_PA1"/>
+<pinref part="MC" gate="G$1" pin="GND_PA1"/>
 <wire x1="261.62" y1="205.74" x2="269.24" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="205.74" x2="269.24" y2="203.2" width="0.1524" layer="91"/>
 <junction x="269.24" y="203.2"/>
@@ -18334,7 +18337,7 @@ When connected, MCU uses
 <wire x1="474.98" y1="342.9" x2="474.98" y2="340.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="MC" gate="G$1" pin="VDD"/>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
 <wire x1="238.76" y1="256.54" x2="238.76" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="251.46" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
@@ -18364,10 +18367,10 @@ When connected, MCU uses
 <junction x="203.2" y="248.92"/>
 <pinref part="C9" gate="CE" pin="1"/>
 <wire x1="190.5" y1="238.76" x2="190.5" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDDA"/>
+<pinref part="MC" gate="G$1" pin="VDDA"/>
 <wire x1="220.98" y1="233.68" x2="215.9" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="233.68" x2="215.9" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VREFH"/>
+<pinref part="MC" gate="G$1" pin="VREFH"/>
 <wire x1="220.98" y1="226.06" x2="215.9" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="226.06" x2="215.9" y2="233.68" width="0.1524" layer="91"/>
 <junction x="215.9" y="233.68"/>
@@ -18376,7 +18379,7 @@ When connected, MCU uses
 <junction x="215.9" y="248.92"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD2"/>
+<pinref part="MC" gate="G$1" pin="VDD2"/>
 <wire x1="243.84" y1="241.3" x2="243.84" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
 <pinref part="C28" gate="CE" pin="1"/>
@@ -18385,7 +18388,7 @@ When connected, MCU uses
 <junction x="243.84" y="251.46"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VBAT1"/>
+<pinref part="MC" gate="G$1" pin="VBAT1"/>
 <pinref part="C29" gate="CE" pin="1"/>
 <wire x1="261.62" y1="226.06" x2="309.88" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="226.06" x2="317.5" y2="226.06" width="0.1524" layer="91"/>
@@ -18394,7 +18397,7 @@ When connected, MCU uses
 <junction x="317.5" y="226.06"/>
 <pinref part="C18" gate="CE" pin="1"/>
 <wire x1="309.88" y1="210.82" x2="309.88" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VBAT2"/>
+<pinref part="MC" gate="G$1" pin="VBAT2"/>
 <wire x1="261.62" y1="213.36" x2="309.88" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="213.36" x2="309.88" y2="226.06" width="0.1524" layer="91"/>
 <junction x="309.88" y="213.36"/>
@@ -18517,7 +18520,7 @@ When connected, MCU uses
 </net>
 <net name="RFIO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RFIO"/>
+<pinref part="MC" gate="G$1" pin="RFIO"/>
 <pinref part="C10" gate="CE" pin="2"/>
 <label x="340.36" y="218.44" size="1.778" layer="95"/>
 <wire x1="261.62" y1="218.44" x2="396.24" y2="218.44" width="0.1524" layer="91"/>
@@ -18565,7 +18568,7 @@ When connected, MCU uses
 </net>
 <net name="VR_PA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VR_PA"/>
+<pinref part="MC" gate="G$1" pin="VR_PA"/>
 <pinref part="C16" gate="CE" pin="2"/>
 <wire x1="370.84" y1="223.52" x2="370.84" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="1"/>
@@ -18599,7 +18602,7 @@ When connected, MCU uses
 <wire x1="335.28" y1="276.86" x2="335.28" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="208.28" x2="347.98" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="208.28" x2="347.98" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PTA1"/>
+<pinref part="MC" gate="G$1" pin="PTA1"/>
 <wire x1="347.98" y1="162.56" x2="261.62" y2="162.56" width="0.1524" layer="91"/>
 <label x="302.26" y="162.56" size="1.778" layer="95"/>
 <pinref part="JP10" gate="A" pin="3"/>
@@ -18618,7 +18621,7 @@ When connected, MCU uses
 <wire x1="337.82" y1="279.4" x2="337.82" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="210.82" x2="350.52" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="210.82" x2="350.52" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PTA2"/>
+<pinref part="MC" gate="G$1" pin="PTA2"/>
 <wire x1="261.62" y1="160.02" x2="350.52" y2="160.02" width="0.1524" layer="91"/>
 <label x="302.26" y="160.02" size="1.778" layer="95"/>
 <pinref part="JP10" gate="A" pin="5"/>
@@ -18710,7 +18713,7 @@ When connected, MCU uses
 <label x="302.26" y="152.4" size="1.778" layer="95"/>
 <wire x1="360.68" y1="152.4" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="170.18" x2="406.4" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PTA18/EXTAL0"/>
+<pinref part="MC" gate="G$1" pin="PTA18/EXTAL0"/>
 <wire x1="360.68" y1="152.4" x2="261.62" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <pinref part="JP10" gate="A" pin="11"/>
@@ -18723,7 +18726,7 @@ When connected, MCU uses
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VR_DIG"/>
+<pinref part="MC" gate="G$1" pin="VR_DIG"/>
 <wire x1="261.62" y1="231.14" x2="287.02" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="C23" gate="CE" pin="1"/>
 <wire x1="287.02" y1="231.14" x2="287.02" y2="210.82" width="0.1524" layer="91"/>
@@ -18731,7 +18734,7 @@ When connected, MCU uses
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VR_ANA"/>
+<pinref part="MC" gate="G$1" pin="VR_ANA"/>
 <pinref part="C25" gate="CE" pin="1"/>
 <wire x1="261.62" y1="228.6" x2="279.4" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="228.6" x2="279.4" y2="210.82" width="0.1524" layer="91"/>
@@ -18739,7 +18742,7 @@ When connected, MCU uses
 </net>
 <net name="PTA3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTA3"/>
+<pinref part="MC" gate="G$1" pin="PTA3"/>
 <wire x1="261.62" y1="157.48" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="157.48" x2="327.66" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="JTAG1" gate="G$1" pin="2"/>
@@ -18755,7 +18758,7 @@ When connected, MCU uses
 </net>
 <net name="PTA0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTA0"/>
+<pinref part="MC" gate="G$1" pin="PTA0"/>
 <wire x1="261.62" y1="165.1" x2="330.2" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="165.1" x2="330.2" y2="127" width="0.1524" layer="91"/>
 <pinref part="JTAG1" gate="G$1" pin="4"/>
@@ -18772,7 +18775,7 @@ When connected, MCU uses
 </net>
 <net name="PTB17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTB17"/>
+<pinref part="MC" gate="G$1" pin="PTB17"/>
 <wire x1="220.98" y1="208.28" x2="160.02" y2="208.28" width="0.1524" layer="91"/>
 <label x="165.1" y="208.28" size="1.778" layer="95"/>
 <pinref part="JP7" gate="A" pin="8"/>
@@ -18783,7 +18786,7 @@ When connected, MCU uses
 </net>
 <net name="PTA20/!RESET" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTA20/!RESET"/>
+<pinref part="MC" gate="G$1" pin="PTA20/!RESET"/>
 <wire x1="261.62" y1="147.32" x2="261.62" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="JTAG1" gate="G$1" pin="10"/>
 <wire x1="304.8" y1="119.38" x2="304.8" y2="109.22" width="0.1524" layer="91"/>
@@ -18811,7 +18814,7 @@ When connected, MCU uses
 </net>
 <net name="XTA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="XTA"/>
+<pinref part="MC" gate="G$1" pin="XTA"/>
 <wire x1="261.62" y1="193.04" x2="307.34" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="2"/>
 <label x="294.64" y="193.04" size="1.778" layer="95"/>
@@ -18829,7 +18832,7 @@ When connected, MCU uses
 </net>
 <net name="XTB" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="XTB"/>
+<pinref part="MC" gate="G$1" pin="XTB"/>
 <wire x1="261.62" y1="187.96" x2="299.72" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="187.96" x2="299.72" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="177.8" x2="345.44" y2="177.8" width="0.1524" layer="91"/>
@@ -18914,7 +18917,7 @@ When connected, MCU uses
 <net name="PTB0" class="0">
 <segment>
 <wire x1="185.42" y1="266.7" x2="185.42" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PTB0"/>
+<pinref part="MC" gate="G$1" pin="PTB0"/>
 <wire x1="185.42" y1="215.9" x2="220.98" y2="215.9" width="0.1524" layer="91"/>
 <label x="165.1" y="215.9" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -18929,7 +18932,7 @@ When connected, MCU uses
 </net>
 <net name="PTB1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTB1"/>
+<pinref part="MC" gate="G$1" pin="PTB1"/>
 <wire x1="220.98" y1="213.36" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
 <label x="165.1" y="213.36" size="1.778" layer="95"/>
 <pinref part="JP7" gate="A" pin="4"/>
@@ -18940,7 +18943,7 @@ When connected, MCU uses
 </net>
 <net name="PTB2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTB2"/>
+<pinref part="MC" gate="G$1" pin="PTB2"/>
 <wire x1="160.02" y1="210.82" x2="220.98" y2="210.82" width="0.1524" layer="91"/>
 <label x="165.1" y="210.82" size="1.778" layer="95"/>
 <pinref part="JP7" gate="A" pin="6"/>
@@ -18953,7 +18956,7 @@ When connected, MCU uses
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <label x="386.08" y="172.72" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="DIO5"/>
+<pinref part="MC" gate="G$1" pin="DIO5"/>
 <pinref part="JP8" gate="A" pin="7"/>
 <wire x1="276.86" y1="172.72" x2="261.62" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="8"/>
@@ -18983,21 +18986,21 @@ When connected, MCU uses
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA_BOOST"/>
+<pinref part="MC" gate="G$1" pin="PA_BOOST"/>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
 <wire x1="261.62" y1="220.98" x2="269.24" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RXTX"/>
+<pinref part="MC" gate="G$1" pin="RXTX"/>
 <pinref part="TP11" gate="G$1" pin="P$1"/>
 <wire x1="261.62" y1="215.9" x2="269.24" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET(RF)" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RESET(RF)"/>
+<pinref part="MC" gate="G$1" pin="RESET(RF)"/>
 <wire x1="261.62" y1="236.22" x2="276.86" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="266.7" x2="276.86" y2="266.7" width="0.1524" layer="91"/>
@@ -19007,7 +19010,7 @@ When connected, MCU uses
 </net>
 <net name="PTC1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC1"/>
+<pinref part="MC" gate="G$1" pin="PTC1"/>
 <pinref part="JP4" gate="A" pin="2"/>
 <wire x1="160.02" y1="200.66" x2="220.98" y2="200.66" width="0.1524" layer="91"/>
 <label x="165.1" y="200.66" size="1.778" layer="95"/>
@@ -19018,7 +19021,7 @@ When connected, MCU uses
 </net>
 <net name="PTC2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC2"/>
+<pinref part="MC" gate="G$1" pin="PTC2"/>
 <pinref part="JP4" gate="A" pin="4"/>
 <wire x1="160.02" y1="198.12" x2="220.98" y2="198.12" width="0.1524" layer="91"/>
 <label x="165.1" y="198.12" size="1.778" layer="95"/>
@@ -19029,7 +19032,7 @@ When connected, MCU uses
 </net>
 <net name="PTC3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC3"/>
+<pinref part="MC" gate="G$1" pin="PTC3"/>
 <pinref part="JP4" gate="A" pin="6"/>
 <wire x1="160.02" y1="195.58" x2="220.98" y2="195.58" width="0.1524" layer="91"/>
 <label x="165.1" y="195.58" size="1.778" layer="95"/>
@@ -19040,7 +19043,7 @@ When connected, MCU uses
 </net>
 <net name="PTC4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC4"/>
+<pinref part="MC" gate="G$1" pin="PTC4"/>
 <pinref part="JP4" gate="A" pin="8"/>
 <wire x1="160.02" y1="193.04" x2="220.98" y2="193.04" width="0.1524" layer="91"/>
 <label x="165.1" y="193.04" size="1.778" layer="95"/>
@@ -19051,7 +19054,7 @@ When connected, MCU uses
 </net>
 <net name="PTC5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC5"/>
+<pinref part="MC" gate="G$1" pin="PTC5"/>
 <pinref part="JP4" gate="A" pin="10"/>
 <wire x1="160.02" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
 <label x="165.1" y="190.5" size="1.778" layer="95"/>
@@ -19062,7 +19065,7 @@ When connected, MCU uses
 </net>
 <net name="PTC6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC6"/>
+<pinref part="MC" gate="G$1" pin="PTC6"/>
 <pinref part="JP4" gate="A" pin="12"/>
 <wire x1="160.02" y1="187.96" x2="220.98" y2="187.96" width="0.1524" layer="91"/>
 <label x="165.1" y="187.96" size="1.778" layer="95"/>
@@ -19073,7 +19076,7 @@ When connected, MCU uses
 </net>
 <net name="PTC7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTC7"/>
+<pinref part="MC" gate="G$1" pin="PTC7"/>
 <pinref part="JP4" gate="A" pin="14"/>
 <wire x1="160.02" y1="185.42" x2="220.98" y2="185.42" width="0.1524" layer="91"/>
 <label x="165.1" y="185.42" size="1.778" layer="95"/>
@@ -19084,7 +19087,7 @@ When connected, MCU uses
 </net>
 <net name="PTD0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTD0"/>
+<pinref part="MC" gate="G$1" pin="PTD0"/>
 <pinref part="JP5" gate="A" pin="2"/>
 <wire x1="160.02" y1="177.8" x2="220.98" y2="177.8" width="0.1524" layer="91"/>
 <label x="165.1" y="177.8" size="1.778" layer="95"/>
@@ -19095,7 +19098,7 @@ When connected, MCU uses
 </net>
 <net name="PTD4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTD4"/>
+<pinref part="MC" gate="G$1" pin="PTD4"/>
 <pinref part="JP5" gate="A" pin="4"/>
 <wire x1="160.02" y1="175.26" x2="220.98" y2="175.26" width="0.1524" layer="91"/>
 <label x="165.1" y="175.26" size="1.778" layer="95"/>
@@ -19106,7 +19109,7 @@ When connected, MCU uses
 </net>
 <net name="PTD5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTD5"/>
+<pinref part="MC" gate="G$1" pin="PTD5"/>
 <pinref part="JP5" gate="A" pin="6"/>
 <wire x1="160.02" y1="172.72" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
 <label x="165.1" y="172.72" size="1.778" layer="95"/>
@@ -19117,7 +19120,7 @@ When connected, MCU uses
 </net>
 <net name="PTD6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTD6"/>
+<pinref part="MC" gate="G$1" pin="PTD6"/>
 <pinref part="JP5" gate="A" pin="8"/>
 <wire x1="160.02" y1="170.18" x2="220.98" y2="170.18" width="0.1524" layer="91"/>
 <label x="165.1" y="170.18" size="1.778" layer="95"/>
@@ -19128,7 +19131,7 @@ When connected, MCU uses
 </net>
 <net name="PTD7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTD7"/>
+<pinref part="MC" gate="G$1" pin="PTD7"/>
 <pinref part="JP5" gate="A" pin="10"/>
 <wire x1="160.02" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
 <label x="165.1" y="167.64" size="1.778" layer="95"/>
@@ -19139,7 +19142,7 @@ When connected, MCU uses
 </net>
 <net name="PTE0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE0"/>
+<pinref part="MC" gate="G$1" pin="PTE0"/>
 <pinref part="JP6" gate="A" pin="2"/>
 <wire x1="160.02" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
 <label x="165.1" y="160.02" size="1.778" layer="95"/>
@@ -19149,7 +19152,7 @@ When connected, MCU uses
 </net>
 <net name="PTE1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE1"/>
+<pinref part="MC" gate="G$1" pin="PTE1"/>
 <pinref part="JP6" gate="A" pin="4"/>
 <wire x1="160.02" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
 <label x="165.1" y="157.48" size="1.778" layer="95"/>
@@ -19160,7 +19163,7 @@ When connected, MCU uses
 </net>
 <net name="PTE2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE2"/>
+<pinref part="MC" gate="G$1" pin="PTE2"/>
 <pinref part="JP6" gate="A" pin="6"/>
 <wire x1="160.02" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
 <label x="165.1" y="154.94" size="1.778" layer="95"/>
@@ -19171,7 +19174,7 @@ When connected, MCU uses
 </net>
 <net name="PTE3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE3"/>
+<pinref part="MC" gate="G$1" pin="PTE3"/>
 <pinref part="JP6" gate="A" pin="8"/>
 <wire x1="160.02" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
 <label x="165.1" y="152.4" size="1.778" layer="95"/>
@@ -19182,7 +19185,7 @@ When connected, MCU uses
 </net>
 <net name="PTE16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE16"/>
+<pinref part="MC" gate="G$1" pin="PTE16"/>
 <pinref part="JP6" gate="A" pin="10"/>
 <wire x1="160.02" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
 <label x="165.1" y="149.86" size="1.778" layer="95"/>
@@ -19193,7 +19196,7 @@ When connected, MCU uses
 </net>
 <net name="PTE17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE17"/>
+<pinref part="MC" gate="G$1" pin="PTE17"/>
 <pinref part="JP6" gate="A" pin="12"/>
 <wire x1="160.02" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
 <label x="165.1" y="147.32" size="1.778" layer="95"/>
@@ -19204,7 +19207,7 @@ When connected, MCU uses
 </net>
 <net name="PTE18" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE18"/>
+<pinref part="MC" gate="G$1" pin="PTE18"/>
 <pinref part="JP6" gate="A" pin="14"/>
 <wire x1="160.02" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 <label x="165.1" y="144.78" size="1.778" layer="95"/>
@@ -19215,7 +19218,7 @@ When connected, MCU uses
 </net>
 <net name="PTE19" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE19"/>
+<pinref part="MC" gate="G$1" pin="PTE19"/>
 <pinref part="JP6" gate="A" pin="16"/>
 <wire x1="160.02" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.778" layer="95"/>
@@ -19226,7 +19229,7 @@ When connected, MCU uses
 </net>
 <net name="PTE30" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTE30"/>
+<pinref part="MC" gate="G$1" pin="PTE30"/>
 <pinref part="JP6" gate="A" pin="18"/>
 <wire x1="160.02" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
 <label x="165.1" y="139.7" size="1.778" layer="95"/>
@@ -19237,7 +19240,7 @@ When connected, MCU uses
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DIO2"/>
+<pinref part="MC" gate="G$1" pin="DIO2"/>
 <pinref part="JP8" gate="A" pin="1"/>
 <wire x1="276.86" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="2"/>
@@ -19247,7 +19250,7 @@ When connected, MCU uses
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DIO3"/>
+<pinref part="MC" gate="G$1" pin="DIO3"/>
 <pinref part="JP8" gate="A" pin="3"/>
 <wire x1="276.86" y1="177.8" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="4"/>
@@ -19257,7 +19260,7 @@ When connected, MCU uses
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DIO4"/>
+<pinref part="MC" gate="G$1" pin="DIO4"/>
 <pinref part="JP8" gate="A" pin="5"/>
 <wire x1="276.86" y1="175.26" x2="261.62" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="6"/>
@@ -19273,7 +19276,7 @@ When connected, MCU uses
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTA4"/>
+<pinref part="MC" gate="G$1" pin="PTA4"/>
 <pinref part="JP10" gate="A" pin="9"/>
 <wire x1="261.62" y1="154.94" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="A" pin="10"/>
@@ -19283,7 +19286,7 @@ When connected, MCU uses
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PTA19/XTAL0"/>
+<pinref part="MC" gate="G$1" pin="PTA19/XTAL0"/>
 <pinref part="JP10" gate="A" pin="13"/>
 <wire x1="261.62" y1="149.86" x2="370.84" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="A" pin="14"/>
