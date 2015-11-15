@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -53,7 +53,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -18791,7 +18791,7 @@ When connected, MCU uses
 <pinref part="JTAG1" gate="G$1" pin="10"/>
 <wire x1="304.8" y1="119.38" x2="304.8" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="109.22" x2="261.62" y2="109.22" width="0.1524" layer="91"/>
-<label x="297.18" y="147.32" size="1.778" layer="95"/>
+<label x="302.26" y="147.32" size="1.778" layer="95"/>
 <wire x1="261.62" y1="109.22" x2="261.62" y2="81.28" width="0.1524" layer="91"/>
 <junction x="261.62" y="109.22"/>
 <pinref part="R1" gate="R" pin="1"/>
@@ -19274,7 +19274,7 @@ When connected, MCU uses
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="PTA4" class="0">
 <segment>
 <pinref part="MC" gate="G$1" pin="PTA4"/>
 <pinref part="JP10" gate="A" pin="9"/>
@@ -19282,9 +19282,10 @@ When connected, MCU uses
 <pinref part="JP10" gate="A" pin="10"/>
 <wire x1="378.46" y1="154.94" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
 <junction x="370.84" y="154.94"/>
+<label x="302.26" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="PTA19/XTAL0" class="0">
 <segment>
 <pinref part="MC" gate="G$1" pin="PTA19/XTAL0"/>
 <pinref part="JP10" gate="A" pin="13"/>
@@ -19292,6 +19293,7 @@ When connected, MCU uses
 <pinref part="JP10" gate="A" pin="14"/>
 <wire x1="378.46" y1="149.86" x2="370.84" y2="149.86" width="0.1524" layer="91"/>
 <junction x="370.84" y="149.86"/>
+<label x="302.26" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$150" class="0">
