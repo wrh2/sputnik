@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16919,7 +16919,7 @@ though the error can be "approved".</description>
 <part name="IC1" library="silabs" deviceset="CP210*" device="" technology="2"/>
 <part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1.0uF"/>
 <part name="C19" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="0.1uF"/>
-<part name="R411" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="C20" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
 <part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
 <part name="GND25" library="Vibrogait_prototype" deviceset="GND" device=""/>
@@ -17108,9 +17108,7 @@ according to the databook</text>
 <text x="152.4" y="223.52" size="1.778" layer="97">PORTB</text>
 <text x="137.16" y="172.72" size="1.778" layer="97">PORTD</text>
 <text x="137.16" y="149.86" size="1.778" layer="97">PORTE</text>
-<text x="419.1" y="167.64" size="1.778" layer="97">Clock selection
-When connected, MCU uses
-32MHz for clock</text>
+<text x="304.8" y="170.18" size="1.778" layer="97">Cuttable jumper for 32 MHz</text>
 <text x="187.96" y="243.84" size="0.8128" layer="97">bypass for VDDA</text>
 <text x="200.66" y="243.84" size="0.8128" layer="97">bypass for VREFH</text>
 <wire x1="474.98" y1="231.14" x2="500.38" y2="231.14" width="0.1524" layer="97" style="dashdot"/>
@@ -17327,7 +17325,7 @@ When connected, MCU uses
 <attribute name="NAME" x="92.456" y="330.581" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="94.996" y="328.041" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R411" gate="R" x="167.64" y="340.36" smashed="yes" rot="R270">
+<instance part="R13" gate="R" x="167.64" y="340.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="163.6014" y="339.09" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="164.338" y="344.17" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -17663,7 +17661,7 @@ When connected, MCU uses
 <attribute name="NAME" x="367.03" y="153.67" size="1.778" layer="95"/>
 <attribute name="VALUE" x="373.38" y="153.67" size="1.778" layer="96"/>
 </instance>
-<instance part="W1" gate="W" x="408.94" y="168.91" rot="R270"/>
+<instance part="W1" gate="W" x="328.93" y="172.72"/>
 </instances>
 <busses>
 </busses>
@@ -18278,7 +18276,7 @@ When connected, MCU uses
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="R411" gate="R" pin="2"/>
+<pinref part="R13" gate="R" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="!RST"/>
 <wire x1="167.64" y1="335.28" x2="154.94" y2="335.28" width="0.1524" layer="91"/>
 <junction x="167.64" y="335.28"/>
@@ -18338,18 +18336,16 @@ When connected, MCU uses
 </net>
 <net name="PTA18" class="0">
 <segment>
-<label x="386.08" y="170.18" size="1.778" layer="95"/>
+<label x="337.82" y="172.72" size="1.778" layer="95"/>
 <label x="302.26" y="152.4" size="1.778" layer="95"/>
-<wire x1="360.68" y1="152.4" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="170.18" x2="406.4" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="152.4" x2="360.68" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="PTA18/EXTAL0"/>
 <wire x1="360.68" y1="152.4" x2="261.62" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="152.4" x2="365.76" y2="152.4" width="0.1524" layer="91"/>
 <junction x="360.68" y="152.4"/>
 <pinref part="R11" gate="R" pin="2"/>
-<wire x1="406.4" y1="170.18" x2="406.4" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="W1" gate="W" pin="2"/>
-<wire x1="406.4" y1="165.1" x2="408.94" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="172.72" x2="332.74" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VR_DIG" class="0">
@@ -18493,7 +18489,7 @@ When connected, MCU uses
 <pinref part="TP13" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="335.28" x2="111.76" y2="345.44" width="0.1524" layer="91"/>
 <junction x="111.76" y="335.28"/>
-<pinref part="R411" gate="R" pin="1"/>
+<pinref part="R13" gate="R" pin="1"/>
 <wire x1="111.76" y1="345.44" x2="167.64" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -18604,12 +18600,12 @@ When connected, MCU uses
 </net>
 <net name="DIO5/CLKOUT" class="0">
 <segment>
-<label x="386.08" y="172.72" size="1.778" layer="95"/>
+<label x="302.26" y="172.72" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="DIO5"/>
 <wire x1="269.24" y1="172.72" x2="261.62" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R10" gate="R" pin="2"/>
 <junction x="269.24" y="172.72"/>
-<wire x1="299.72" y1="172.72" x2="408.94" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="172.72" x2="325.12" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="172.72" x2="269.24" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="167.64" x2="299.72" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="167.64" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
@@ -19035,25 +19031,24 @@ When connected, MCU uses
 <approved hash="104,1,307.34,340.36,U2,VBAT1,V+,,,"/>
 <approved hash="104,1,307.34,337.82,U2,VBAT2,V+,,,"/>
 <approved hash="104,1,307.34,314.96,U2,THERMAL,GND,,,"/>
-<approved hash="104,1,238.76,241.3,MC,VDD,3.3V,,,"/>
-<approved hash="104,1,243.84,241.3,MC,VDD2,3.3V,,,"/>
-<approved hash="104,1,220.98,233.68,MC,VDDA,3.3V,,,"/>
-<approved hash="104,1,261.62,226.06,MC,VBAT1,3.3V,,,"/>
-<approved hash="104,1,261.62,213.36,MC,VBAT2,3.3V,,,"/>
-<approved hash="104,1,261.62,200.66,MC,GND/SCAN,GND,,,"/>
-<approved hash="104,1,261.62,203.2,MC,GND_PA2,GND,,,"/>
-<approved hash="104,1,261.62,205.74,MC,GND_PA1,GND,,,"/>
-<approved hash="104,1,220.98,231.14,MC,VSSA,GND,,,"/>
-<approved hash="104,1,241.3,134.62,MC,VSS2,GND,,,"/>
-<approved hash="104,1,236.22,134.62,MC,VSS,GND,,,"/>
-<approved hash="104,1,243.84,134.62,MC,GND1,GND,,,"/>
-<approved hash="104,1,246.38,134.62,MC,GND2,GND,,,"/>
+<approved hash="104,1,261.62,200.66,U3,GND/SCAN,GND,,,"/>
+<approved hash="104,1,243.84,134.62,U3,GND1,GND,,,"/>
+<approved hash="104,1,246.38,134.62,U3,GND2,GND,,,"/>
+<approved hash="104,1,261.62,205.74,U3,GND_PA1,GND,,,"/>
+<approved hash="104,1,261.62,203.2,U3,GND_PA2,GND,,,"/>
+<approved hash="104,1,261.62,226.06,U3,VBAT1,3.3V,,,"/>
+<approved hash="104,1,261.62,213.36,U3,VBAT2,3.3V,,,"/>
+<approved hash="104,1,238.76,241.3,U3,VDD,3.3V,,,"/>
+<approved hash="104,1,243.84,241.3,U3,VDD2,3.3V,,,"/>
+<approved hash="104,1,220.98,233.68,U3,VDDA,3.3V,,,"/>
+<approved hash="104,1,236.22,134.62,U3,VSS,GND,,,"/>
+<approved hash="104,1,241.3,134.62,U3,VSS2,GND,,,"/>
+<approved hash="104,1,220.98,231.14,U3,VSSA,GND,,,"/>
 <approved hash="104,1,116.84,327.66,IC1,VDD,CP2102_VDD,,,"/>
 <approved hash="113,1,321.996,342.858,TP1,,,,,"/>
 <approved hash="113,1,321.996,353.018,TP2,,,,,"/>
 <approved hash="113,1,448.996,353.018,TP3,,,,,"/>
 <approved hash="113,1,499.796,350.478,TP4,,,,,"/>
-<approved hash="113,1,409.617,172.915,JP2,,,,,"/>
 <approved hash="113,1,167.056,353.018,TP5,,,,,"/>
 <approved hash="113,1,279.296,215.796,FRAME1,,,,,"/>
 <approved hash="113,1,158.557,330.2,TP6,,,,,"/>
@@ -19062,22 +19057,21 @@ When connected, MCU uses
 <approved hash="113,1,272.171,220.98,TP10,,,,,"/>
 <approved hash="113,1,272.171,215.9,TP11,,,,,"/>
 <approved hash="113,1,359.751,224.748,TP15,,,,,"/>
-<approved hash="113,1,185.289,266.937,JP3,,,,,"/>
 <approved hash="113,1,156.168,213.491,JP7,,,,,"/>
 <approved hash="113,1,156.168,194.441,JP4,,,,,"/>
 <approved hash="113,1,156.168,174.121,JP5,,,,,"/>
 <approved hash="113,1,156.168,151.261,JP6,,,,,"/>
-<approved hash="113,1,280.628,177.931,JP8,,,,,"/>
+<approved hash="113,1,288.248,177.931,JP8,,,,,"/>
 <approved hash="113,1,234.908,339.221,JP9,,,,,"/>
-<approved hash="113,1,374.608,157.611,JP10,,,,,"/>
+<approved hash="113,1,387.308,157.611,JP10,,,,,"/>
 <approved hash="113,1,60.7165,314.516,TP12,,,,,"/>
 <approved hash="113,1,101.356,337.143,TP13,,,,,"/>
-<approved hash="113,1,178.037,335.411,JP11,,,,,"/>
 <approved hash="113,1,158.115,317.5,TP9,,,,,"/>
 <approved hash="113,1,159.141,322.58,TP14,,,,,"/>
 <approved hash="113,1,159.141,320.04,TP16,,,,,"/>
 <approved hash="113,1,159.141,314.96,TP17,,,,,"/>
 <approved hash="113,1,159.141,304.8,TP18,,,,,"/>
+<approved hash="113,1,328.93,172.72,W1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
