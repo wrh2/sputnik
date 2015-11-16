@@ -15025,7 +15025,7 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <smd name="26" x="-0.5" y="2.3" dx="0.6" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="27" x="-1" y="2.3" dx="0.6" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="28" x="-1.5" y="2.3" dx="0.6" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="EXP" x="0" y="0" dx="3.3" dy="3.3" layer="1" stop="no" cream="no"/>
+<smd name="EXP" x="0" y="0" dx="3.3" dy="3.3" layer="1" cream="no"/>
 <smd name="M" x="-2.1025" y="2.1025" dx="0.435" dy="0.435" layer="1" stop="no" cream="no"/>
 <text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
@@ -15086,24 +15086,6 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <rectangle x1="-1.7575" y1="2.1275" x2="-1.2425" y2="2.3575" layer="51" rot="R270"/>
 <rectangle x1="-1.8" y1="2.15" x2="-1.2" y2="2.45" layer="29" rot="R270"/>
 <rectangle x1="-2.3525" y1="1.8525" x2="-1.8525" y2="2.3525" layer="29"/>
-<rectangle x1="-1.3" y1="1.1" x2="-0.7" y2="1.4" layer="29"/>
-<rectangle x1="-0.3" y1="1.1" x2="0.3" y2="1.4" layer="29"/>
-<rectangle x1="0.7" y1="1.1" x2="1.3" y2="1.4" layer="29"/>
-<rectangle x1="-1.3" y1="0.6" x2="-0.7" y2="0.9" layer="29"/>
-<rectangle x1="-0.3" y1="0.6" x2="0.3" y2="0.9" layer="29"/>
-<rectangle x1="0.7" y1="0.6" x2="1.3" y2="0.9" layer="29"/>
-<rectangle x1="-1.3" y1="0.1" x2="-0.7" y2="0.4" layer="29"/>
-<rectangle x1="-0.3" y1="0.1" x2="0.3" y2="0.4" layer="29"/>
-<rectangle x1="0.7" y1="0.1" x2="1.3" y2="0.4" layer="29"/>
-<rectangle x1="-1.3" y1="-0.4" x2="-0.7" y2="-0.1" layer="29"/>
-<rectangle x1="-0.3" y1="-0.4" x2="0.3" y2="-0.1" layer="29"/>
-<rectangle x1="0.7" y1="-0.4" x2="1.3" y2="-0.1" layer="29"/>
-<rectangle x1="-1.3" y1="-0.9" x2="-0.7" y2="-0.6" layer="29"/>
-<rectangle x1="-0.3" y1="-0.9" x2="0.3" y2="-0.6" layer="29"/>
-<rectangle x1="0.7" y1="-0.9" x2="1.3" y2="-0.6" layer="29"/>
-<rectangle x1="-1.3" y1="-1.4" x2="-0.7" y2="-1.1" layer="29"/>
-<rectangle x1="-0.3" y1="-1.4" x2="0.3" y2="-1.1" layer="29"/>
-<rectangle x1="0.7" y1="-1.4" x2="1.3" y2="-1.1" layer="29"/>
 <rectangle x1="-2.58" y1="1.37" x2="-2.02" y2="1.63" layer="31"/>
 <rectangle x1="-2.58" y1="0.87" x2="-2.02" y2="1.13" layer="31"/>
 <rectangle x1="-2.58" y1="0.37" x2="-2.02" y2="0.63" layer="31"/>
@@ -15132,25 +15114,11 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <rectangle x1="-0.78" y1="2.17" x2="-0.22" y2="2.43" layer="31" rot="R270"/>
 <rectangle x1="-1.28" y1="2.17" x2="-0.72" y2="2.43" layer="31" rot="R270"/>
 <rectangle x1="-1.78" y1="2.17" x2="-1.22" y2="2.43" layer="31" rot="R270"/>
-<rectangle x1="-1.28" y1="1.12" x2="-0.72" y2="1.38" layer="31"/>
-<rectangle x1="-0.28" y1="1.12" x2="0.28" y2="1.38" layer="31"/>
-<rectangle x1="0.72" y1="1.12" x2="1.28" y2="1.38" layer="31"/>
-<rectangle x1="-1.28" y1="0.62" x2="-0.72" y2="0.88" layer="31"/>
-<rectangle x1="-0.28" y1="0.62" x2="0.28" y2="0.88" layer="31"/>
-<rectangle x1="0.72" y1="0.62" x2="1.28" y2="0.88" layer="31"/>
-<rectangle x1="-1.28" y1="0.12" x2="-0.72" y2="0.38" layer="31"/>
-<rectangle x1="-0.28" y1="0.12" x2="0.28" y2="0.38" layer="31"/>
-<rectangle x1="0.72" y1="0.12" x2="1.28" y2="0.38" layer="31"/>
-<rectangle x1="-1.28" y1="-0.38" x2="-0.72" y2="-0.12" layer="31"/>
-<rectangle x1="-0.28" y1="-0.38" x2="0.28" y2="-0.12" layer="31"/>
-<rectangle x1="0.72" y1="-0.38" x2="1.28" y2="-0.12" layer="31"/>
-<rectangle x1="-1.28" y1="-0.88" x2="-0.72" y2="-0.62" layer="31"/>
-<rectangle x1="-0.28" y1="-0.88" x2="0.28" y2="-0.62" layer="31"/>
-<rectangle x1="0.72" y1="-0.88" x2="1.28" y2="-0.62" layer="31"/>
-<rectangle x1="-1.28" y1="-1.38" x2="-0.72" y2="-1.12" layer="31"/>
-<rectangle x1="-0.28" y1="-1.38" x2="0.28" y2="-1.12" layer="31"/>
-<rectangle x1="0.72" y1="-1.38" x2="1.28" y2="-1.12" layer="31"/>
 <rectangle x1="-2.3" y1="1.9" x2="-1.9" y2="2.3" layer="31"/>
+<rectangle x1="-1.27" y1="0.381" x2="-0.381" y2="1.27" layer="31"/>
+<rectangle x1="0.381" y1="0.381" x2="1.27" y2="1.27" layer="31"/>
+<rectangle x1="0.381" y1="-1.27" x2="1.27" y2="-0.381" layer="31"/>
+<rectangle x1="-1.27" y1="-1.27" x2="-0.381" y2="-0.381" layer="31"/>
 </package>
 </packages>
 <symbols>
