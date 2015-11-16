@@ -3708,11 +3708,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="64.897" y1="32.131" x2="64.190775" y2="32.131" width="0.254" layer="1"/>
 <wire x1="64.190775" y1="32.131" x2="64.135" y2="32.093" width="0.254" layer="1"/>
 <contactref element="LED3" pad="A"/>
+<contactref element="LED2" pad="2"/>
 <wire x1="79.695140625" y1="40.302184375" x2="79.695140625" y2="39.946584375" width="0" layer="19" extent="1-1"/>
 <wire x1="72.434521875" y1="33.0034" x2="72.909521875" y2="36.9784" width="0" layer="19" extent="1-1"/>
 <wire x1="66.434521875" y1="33.0034" x2="65.934521875" y2="33.0034" width="0" layer="19" extent="1-1"/>
 <wire x1="65.459521875" y1="32.693521875" x2="65.934521875" y2="33.0034" width="0" layer="19" extent="1-1"/>
-<wire x1="0.115" y1="-23.114" x2="25.747984375" y2="6.7030625" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.705" y1="-20.235" x2="25.747984375" y2="6.7030625" width="0" layer="19" extent="1-1"/>
+<wire x1="0.115" y1="-23.114" x2="-2.705" y2="-20.235" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="IC1" pad="8"/>
@@ -4241,6 +4243,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="66.76898125" y1="51.061621875" x2="70.385940625" y2="54.67858125" width="0.254" layer="1"/>
 <wire x1="70.385940625" y1="54.67858125" x2="70.385940625" y2="61.709303125" width="0.254" layer="1"/>
 <wire x1="70.385940625" y1="61.709303125" x2="66.29908125" y2="65.8469625" width="0.254" layer="1"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-0.851" y1="-30.099" x2="67.434521875" y2="40.4534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PTB2">
 <contactref element="MC" pad="21"/>
@@ -4251,6 +4255,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="68.934521875" y1="43.752959375" x2="72.82688125" y2="47.64531875" width="0.254" layer="1"/>
 <wire x1="72.82688125" y1="47.64531875" x2="72.80148125" y2="61.9099625" width="0.254" layer="1"/>
 <wire x1="72.80148125" y1="61.9099625" x2="68.83908125" y2="65.8469625" width="0.254" layer="1"/>
+<contactref element="R8" pad="2"/>
+<wire x1="-0.851" y1="-34.163" x2="68.934521875" y2="40.4534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PTB17">
 <contactref element="MC" pad="22"/>
@@ -4261,6 +4267,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="69.434521875" y1="43.29538125" x2="75.3999" y2="49.260759375" width="0.254" layer="1"/>
 <wire x1="75.3999" y1="49.260759375" x2="75.3999" y2="61.85154375" width="0.254" layer="1"/>
 <wire x1="75.3999" y1="61.85154375" x2="71.37908125" y2="65.8469625" width="0.254" layer="1"/>
+<contactref element="R9" pad="2"/>
+<wire x1="-0.851" y1="-38.227" x2="69.434521875" y2="40.4534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIO5/CLKOUT">
 <contactref element="JP2" pad="2"/>
@@ -4694,6 +4702,21 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LED3" pad="K"/>
 <contactref element="R2" pad="2"/>
 <wire x1="-1.385" y1="-23.114" x2="-0.851" y2="-26.035" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$32">
+<contactref element="LED2" pad="1"/>
+<contactref element="R9" pad="1"/>
+<wire x1="-1.105" y1="-20.235" x2="-2.451" y2="-38.227" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$33">
+<contactref element="LED2" pad="4"/>
+<contactref element="R8" pad="1"/>
+<wire x1="-1.105" y1="-19.135" x2="-2.451" y2="-34.163" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$34">
+<contactref element="LED2" pad="3"/>
+<contactref element="R7" pad="1"/>
+<wire x1="-2.705" y1="-19.135" x2="-2.451" y2="-30.099" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
