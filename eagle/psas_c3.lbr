@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5235,7 +5235,7 @@ slots specified by the manufactuer for this package (0.635&amp;nbsp;mm).</descri
 <smd name="59" x="2.75" y="1.75" dx="0.35" dy="0.35" layer="1"/>
 <smd name="58" x="1.75" y="2.75" dx="0.35" dy="0.35" layer="1"/>
 <smd name="60" x="2.75" y="2.75" dx="0.35" dy="0.35" layer="1"/>
-<smd name="PGND1" x="-1.5" y="1.4" dx="2.72" dy="2.72" layer="1"/>
+<smd name="PGND1" x="-1.5" y="1.5" dx="2.72" dy="2.72" layer="1"/>
 <smd name="PGND2" x="1.42" y="-1.5" dx="3" dy="2.87" layer="1"/>
 <text x="-3.429" y="-5.08" size="0.635" layer="21" font="vector" ratio="20">1</text>
 <text x="5" y="-5" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
@@ -8910,68 +8910,68 @@ DIN A3, landscape with location and doc. field</description>
 <devices>
 <device name="" package="MKW01Z128">
 <connects>
-<connect gate="G$1" pin="DIO2" pad="6"/>
-<connect gate="G$1" pin="DIO3" pad="5"/>
-<connect gate="G$1" pin="DIO4" pad="4"/>
-<connect gate="G$1" pin="DIO5" pad="3"/>
-<connect gate="G$1" pin="GND/SCAN" pad="21"/>
+<connect gate="G$1" pin="DIO2" pad="51"/>
+<connect gate="G$1" pin="DIO3" pad="52"/>
+<connect gate="G$1" pin="DIO4" pad="53"/>
+<connect gate="G$1" pin="DIO5" pad="54"/>
+<connect gate="G$1" pin="GND/SCAN" pad="36"/>
 <connect gate="G$1" pin="GND1" pad="PGND1"/>
 <connect gate="G$1" pin="GND2" pad="PGND2"/>
-<connect gate="G$1" pin="GND_PA1" pad="17"/>
-<connect gate="G$1" pin="GND_PA2" pad="19"/>
-<connect gate="G$1" pin="NC" pad="27"/>
-<connect gate="G$1" pin="PA_BOOST" pad="16"/>
-<connect gate="G$1" pin="PTA0" pad="47"/>
-<connect gate="G$1" pin="PTA1" pad="43"/>
-<connect gate="G$1" pin="PTA18/EXTAL0" pad="42"/>
-<connect gate="G$1" pin="PTA19/XTAL0" pad="41"/>
-<connect gate="G$1" pin="PTA2" pad="44"/>
-<connect gate="G$1" pin="PTA20/!RESET" pad="24"/>
-<connect gate="G$1" pin="PTA3" pad="46"/>
-<connect gate="G$1" pin="PTA4" pad="45"/>
-<connect gate="G$1" pin="PTB0" pad="40"/>
-<connect gate="G$1" pin="PTB1" pad="39"/>
-<connect gate="G$1" pin="PTB17" pad="35"/>
-<connect gate="G$1" pin="PTB2" pad="36"/>
-<connect gate="G$1" pin="PTC1" pad="33"/>
-<connect gate="G$1" pin="PTC2" pad="32"/>
-<connect gate="G$1" pin="PTC3" pad="31"/>
-<connect gate="G$1" pin="PTC4" pad="34"/>
-<connect gate="G$1" pin="PTC5" pad="58"/>
+<connect gate="G$1" pin="GND_PA1" pad="40"/>
+<connect gate="G$1" pin="GND_PA2" pad="38"/>
+<connect gate="G$1" pin="NC" pad="30"/>
+<connect gate="G$1" pin="PA_BOOST" pad="41"/>
+<connect gate="G$1" pin="PTA0" pad="10"/>
+<connect gate="G$1" pin="PTA1" pad="14"/>
+<connect gate="G$1" pin="PTA18/EXTAL0" pad="15"/>
+<connect gate="G$1" pin="PTA19/XTAL0" pad="16"/>
+<connect gate="G$1" pin="PTA2" pad="13"/>
+<connect gate="G$1" pin="PTA20/!RESET" pad="33"/>
+<connect gate="G$1" pin="PTA3" pad="11"/>
+<connect gate="G$1" pin="PTA4" pad="12"/>
+<connect gate="G$1" pin="PTB0" pad="17"/>
+<connect gate="G$1" pin="PTB1" pad="18"/>
+<connect gate="G$1" pin="PTB17" pad="22"/>
+<connect gate="G$1" pin="PTB2" pad="21"/>
+<connect gate="G$1" pin="PTC1" pad="24"/>
+<connect gate="G$1" pin="PTC2" pad="25"/>
+<connect gate="G$1" pin="PTC3" pad="26"/>
+<connect gate="G$1" pin="PTC4" pad="23"/>
+<connect gate="G$1" pin="PTC5" pad="59"/>
 <connect gate="G$1" pin="PTC6" pad="60"/>
 <connect gate="G$1" pin="PTC7" pad="57"/>
-<connect gate="G$1" pin="PTD0" pad="59"/>
-<connect gate="G$1" pin="PTD4" pad="30"/>
-<connect gate="G$1" pin="PTD5" pad="29"/>
-<connect gate="G$1" pin="PTD6" pad="28"/>
-<connect gate="G$1" pin="PTD7" pad="26"/>
-<connect gate="G$1" pin="PTE0" pad="25"/>
-<connect gate="G$1" pin="PTE1" pad="23"/>
-<connect gate="G$1" pin="PTE16" pad="52"/>
-<connect gate="G$1" pin="PTE17" pad="51"/>
-<connect gate="G$1" pin="PTE18" pad="50"/>
-<connect gate="G$1" pin="PTE19" pad="49"/>
-<connect gate="G$1" pin="PTE2" pad="8"/>
-<connect gate="G$1" pin="PTE3" pad="7"/>
-<connect gate="G$1" pin="PTE30" pad="48"/>
-<connect gate="G$1" pin="RESET(RF)" pad="9"/>
-<connect gate="G$1" pin="RFIO" pad="18"/>
-<connect gate="G$1" pin="RXTX" pad="20"/>
-<connect gate="G$1" pin="VBAT1" pad="14"/>
-<connect gate="G$1" pin="VBAT2" pad="22"/>
-<connect gate="G$1" pin="VDD" pad="38"/>
-<connect gate="G$1" pin="VDD2" pad="2"/>
-<connect gate="G$1" pin="VDDA" pad="1"/>
-<connect gate="G$1" pin="VREFH" pad="56"/>
-<connect gate="G$1" pin="VREFL" pad="55"/>
-<connect gate="G$1" pin="VR_ANA" pad="13"/>
-<connect gate="G$1" pin="VR_DIG" pad="12"/>
-<connect gate="G$1" pin="VR_PA" pad="15"/>
-<connect gate="G$1" pin="VSS" pad="53"/>
-<connect gate="G$1" pin="VSS2" pad="37"/>
-<connect gate="G$1" pin="VSSA" pad="54"/>
-<connect gate="G$1" pin="XTA" pad="10"/>
-<connect gate="G$1" pin="XTB" pad="11"/>
+<connect gate="G$1" pin="PTD0" pad="58"/>
+<connect gate="G$1" pin="PTD4" pad="27"/>
+<connect gate="G$1" pin="PTD5" pad="28"/>
+<connect gate="G$1" pin="PTD6" pad="29"/>
+<connect gate="G$1" pin="PTD7" pad="31"/>
+<connect gate="G$1" pin="PTE0" pad="32"/>
+<connect gate="G$1" pin="PTE1" pad="34"/>
+<connect gate="G$1" pin="PTE16" pad="5"/>
+<connect gate="G$1" pin="PTE17" pad="6"/>
+<connect gate="G$1" pin="PTE18" pad="7"/>
+<connect gate="G$1" pin="PTE19" pad="8"/>
+<connect gate="G$1" pin="PTE2" pad="49"/>
+<connect gate="G$1" pin="PTE3" pad="50"/>
+<connect gate="G$1" pin="PTE30" pad="9"/>
+<connect gate="G$1" pin="RESET(RF)" pad="48"/>
+<connect gate="G$1" pin="RFIO" pad="39"/>
+<connect gate="G$1" pin="RXTX" pad="37"/>
+<connect gate="G$1" pin="VBAT1" pad="43"/>
+<connect gate="G$1" pin="VBAT2" pad="35"/>
+<connect gate="G$1" pin="VDD" pad="19"/>
+<connect gate="G$1" pin="VDD2" pad="55"/>
+<connect gate="G$1" pin="VDDA" pad="56"/>
+<connect gate="G$1" pin="VREFH" pad="1"/>
+<connect gate="G$1" pin="VREFL" pad="2"/>
+<connect gate="G$1" pin="VR_ANA" pad="44"/>
+<connect gate="G$1" pin="VR_DIG" pad="45"/>
+<connect gate="G$1" pin="VR_PA" pad="42"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="VSS2" pad="20"/>
+<connect gate="G$1" pin="VSSA" pad="3"/>
+<connect gate="G$1" pin="XTA" pad="46"/>
+<connect gate="G$1" pin="XTB" pad="47"/>
 </connects>
 <technologies>
 <technology name=""/>
