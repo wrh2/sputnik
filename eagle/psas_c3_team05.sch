@@ -17691,7 +17691,7 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
 <part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
 <part name="TP5" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="C24" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="4.7uF"/>
+<part name="C24" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="4.7uF"/>
 <part name="GND16" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND23" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND32" library="Vibrogait_prototype" deviceset="GND" device=""/>
