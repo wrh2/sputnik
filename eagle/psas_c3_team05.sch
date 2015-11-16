@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18044,6 +18044,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
 <part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
 <part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
+<part name="P+9" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18097,7 +18098,7 @@ lipo cell battery</text>
 controlled by a GPIO
 according to the databook</text>
 <text x="137.16" y="193.04" size="1.778" layer="97">PORTC</text>
-<text x="137.16" y="210.82" size="1.778" layer="97">PORTB</text>
+<text x="152.4" y="223.52" size="1.778" layer="97">PORTB</text>
 <text x="137.16" y="172.72" size="1.778" layer="97">PORTD</text>
 <text x="137.16" y="149.86" size="1.778" layer="97">PORTE</text>
 <text x="419.1" y="167.64" size="1.778" layer="97">Clock selection
@@ -18624,9 +18625,9 @@ When connected, MCU uses
 <attribute name="NAME" x="162.56" y="304.8" size="1.27" layer="95"/>
 <attribute name="VALUE" x="160.655" y="307.34" size="1.27" layer="95" rot="R270"/>
 </instance>
-<instance part="LED2" gate="LED" x="160.02" y="236.22" smashed="yes" rot="MR270">
-<attribute name="NAME" x="157.48" y="248.92" size="1.778" layer="95"/>
-<attribute name="VALUE" x="157.48" y="246.38" size="1.778" layer="96"/>
+<instance part="LED2" gate="LED" x="119.38" y="233.68" smashed="yes" rot="MR0">
+<attribute name="NAME" x="76.2" y="231.14" size="1.778" layer="95"/>
+<attribute name="VALUE" x="76.2" y="233.68" size="1.778" layer="96"/>
 </instance>
 <instance part="LED3" gate="LED" x="477.52" y="345.44" smashed="yes">
 <attribute name="NAME" x="480.06" y="346.71" size="1.778" layer="95"/>
@@ -18639,17 +18640,20 @@ When connected, MCU uses
 <instance part="GND38" gate="1" x="477.52" y="327.66" smashed="yes">
 <attribute name="VALUE" x="474.98" y="325.12" size="1.778" layer="96"/>
 </instance>
-<instance part="R7" gate="R" x="172.72" y="241.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="171.45" y="243.84" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="173.99" y="243.84" size="1.778" layer="96" rot="R90"/>
+<instance part="R7" gate="R" x="124.46" y="223.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="121.92" y="222.25" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="121.92" y="224.79" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R8" gate="R" x="172.72" y="236.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="171.45" y="238.76" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="173.99" y="238.76" size="1.778" layer="96" rot="R90"/>
+<instance part="R8" gate="R" x="119.38" y="223.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="116.84" y="222.25" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="116.84" y="224.79" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R9" gate="R" x="172.72" y="231.14" smashed="yes" rot="R180">
-<attribute name="NAME" x="171.45" y="233.68" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="173.99" y="233.68" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="R" x="114.3" y="223.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="111.76" y="222.25" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="111.76" y="224.79" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+9" gate="G$1" x="119.38" y="236.22" smashed="yes">
+<attribute name="VALUE" x="119.38" y="238.76" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -19034,6 +19038,10 @@ When connected, MCU uses
 <junction x="309.88" y="213.36"/>
 <junction x="309.88" y="226.06"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="LED" pin="COMMON_ANODE"/>
+<pinref part="P+9" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -19394,6 +19402,11 @@ When connected, MCU uses
 <pinref part="JP7" gate="A" pin="7"/>
 <wire x1="152.4" y1="208.28" x2="160.02" y2="208.28" width="0.1524" layer="91"/>
 <junction x="160.02" y="208.28"/>
+<pinref part="R9" gate="R" pin="2"/>
+<wire x1="152.4" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="208.28" x2="114.3" y2="218.44" width="0.1524" layer="91"/>
+<junction x="152.4" y="208.28"/>
+<label x="139.7" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PTA20/!RESET" class="0">
@@ -19556,6 +19569,11 @@ When connected, MCU uses
 <pinref part="JP7" gate="A" pin="3"/>
 <wire x1="152.4" y1="213.36" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
 <junction x="160.02" y="213.36"/>
+<pinref part="R7" gate="R" pin="2"/>
+<wire x1="152.4" y1="213.36" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="213.36" x2="124.46" y2="218.44" width="0.1524" layer="91"/>
+<junction x="152.4" y="213.36"/>
+<label x="139.7" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PTB2" class="0">
@@ -19567,6 +19585,11 @@ When connected, MCU uses
 <pinref part="JP7" gate="A" pin="5"/>
 <wire x1="152.4" y1="210.82" x2="160.02" y2="210.82" width="0.1524" layer="91"/>
 <junction x="160.02" y="210.82"/>
+<pinref part="R8" gate="R" pin="2"/>
+<wire x1="152.4" y1="210.82" x2="119.38" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="210.82" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+<junction x="152.4" y="210.82"/>
+<label x="139.7" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIO5/CLKOUT" class="0">
@@ -19948,6 +19971,24 @@ When connected, MCU uses
 <segment>
 <pinref part="LED3" gate="LED" pin="K"/>
 <pinref part="R2" gate="R" pin="2"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="LED2" gate="LED" pin="BK"/>
+<pinref part="R9" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="LED2" gate="LED" pin="GK"/>
+<pinref part="R8" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="LED2" gate="LED" pin="RK"/>
+<pinref part="R7" gate="R" pin="1"/>
 </segment>
 </net>
 </nets>
