@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17797,9 +17797,9 @@ according to the databook</text>
 <instance part="GND14" gate="1" x="269.24" y="198.12" smashed="yes">
 <attribute name="VALUE" x="266.7" y="195.58" size="1.778" layer="96"/>
 </instance>
-<instance part="TP12" gate="G$1" x="60.96" y="314.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="58.42" y="314.96" size="1.27" layer="95"/>
-<attribute name="VALUE" x="63.5" y="309.245" size="1.27" layer="95" rot="R180"/>
+<instance part="TP12" gate="G$1" x="58.42" y="314.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="68.58" y="314.96" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="64.135" y="317.5" size="1.27" layer="95" rot="R270"/>
 </instance>
 <instance part="TP13" gate="G$1" x="101.6" y="335.28" smashed="yes">
 <attribute name="NAME" x="99.06" y="341.63" size="1.27" layer="95"/>
@@ -19319,7 +19319,6 @@ according to the databook</text>
 <segment>
 <pinref part="CF1" gate="CF" pin="4"/>
 <pinref part="TP12" gate="G$1" pin="P$1"/>
-<wire x1="58.42" y1="314.96" x2="60.96" y2="314.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -19429,27 +19428,30 @@ according to the databook</text>
 <approved hash="113,1,499.796,350.478,TP4,,,,,"/>
 <approved hash="113,1,167.056,353.018,TP5,,,,,"/>
 <approved hash="113,1,279.296,215.796,FRAME1,,,,,"/>
-<approved hash="113,1,158.557,330.2,TP6,,,,,"/>
-<approved hash="113,1,158.557,327.66,TP7,,,,,"/>
+<approved hash="113,1,158.472,330.2,TP6,,,,,"/>
+<approved hash="113,1,158.472,327.66,TP7,,,,,"/>
 <approved hash="113,1,158.115,307.34,TP8,,,,,"/>
-<approved hash="113,1,272.171,220.98,TP10,,,,,"/>
-<approved hash="113,1,272.171,215.9,TP11,,,,,"/>
-<approved hash="113,1,359.751,224.748,TP15,,,,,"/>
-<approved hash="113,1,156.168,213.491,JP7,,,,,"/>
-<approved hash="113,1,156.168,194.441,JP4,,,,,"/>
-<approved hash="113,1,156.168,174.121,JP5,,,,,"/>
-<approved hash="113,1,156.168,151.261,JP6,,,,,"/>
-<approved hash="113,1,288.248,177.931,JP8,,,,,"/>
+<approved hash="113,1,272.011,220.98,TP10,,,,,"/>
+<approved hash="113,1,271.944,215.9,TP11,,,,,"/>
+<approved hash="113,1,359.59,224.748,TP15,,,,,"/>
+<approved hash="113,1,159.079,211.578,JP7,,,,,"/>
+<approved hash="113,1,159.079,192.21,JP4,,,,,"/>
 <approved hash="113,1,234.908,339.221,JP9,,,,,"/>
-<approved hash="113,1,387.308,157.611,JP10,,,,,"/>
-<approved hash="113,1,60.7165,314.516,TP12,,,,,"/>
-<approved hash="113,1,101.356,337.143,TP13,,,,,"/>
+<approved hash="113,1,61.595,314.96,TP12,,,,,"/>
+<approved hash="113,1,101.196,337.143,TP13,,,,,"/>
 <approved hash="113,1,158.115,317.5,TP9,,,,,"/>
-<approved hash="113,1,159.141,322.58,TP14,,,,,"/>
-<approved hash="113,1,159.141,320.04,TP16,,,,,"/>
-<approved hash="113,1,159.141,314.96,TP17,,,,,"/>
-<approved hash="113,1,159.141,304.8,TP18,,,,,"/>
-<approved hash="113,1,328.93,172.72,W1,,,,,"/>
+<approved hash="113,1,158.981,322.58,TP14,,,,,"/>
+<approved hash="113,1,158.981,320.04,TP16,,,,,"/>
+<approved hash="113,1,158.981,314.96,TP17,,,,,"/>
+<approved hash="113,1,158.981,304.8,TP18,,,,,"/>
+<approved hash="113,1,363.22,158.75,W1,,,,,"/>
+<approved hash="113,1,159.079,149.86,JP2,,,,,"/>
+<approved hash="113,1,197.179,172.208,JP3,,,,,"/>
+<approved hash="113,1,387.308,137.291,JP5,,,,,"/>
+<approved hash="113,1,387.308,172.851,JP6,,,,,"/>
+<approved hash="113,1,178.037,335.411,JP8,,,,,"/>
+<approved hash="113,1,357.107,299.851,JP10,,,,,"/>
+<approved hash="113,1,500.617,299.851,JP11,,,,,"/>
 </errors>
 </schematic>
 </drawing>
