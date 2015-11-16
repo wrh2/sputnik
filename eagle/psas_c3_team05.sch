@@ -17046,7 +17046,12 @@ by exp-lbrs.ulp</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="Vibrogait_prototype" deviceset="SPARKFUN-POWERIC_V_REG_MIC5219" device="3.3V" value="MIC5319 3.3V"/>
+<part name="U1" library="Vibrogait_prototype" deviceset="SPARKFUN-POWERIC_V_REG_MIC5219" device="3.3V" value="MIC5319 3.3V">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="576-1910-1-ND"/>
+<attribute name="MFG" value="Microchip Technology"/>
+<attribute name="MFG-PN" value="MIC5319-3.3YD5-TR"/>
+</part>
 <part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="BC"/>
 <part name="GND1" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="RT1" library="Vibrogait_prototype" deviceset="THERMISTOR-" device="_1206" value="10K (NTC)"/>
@@ -17080,8 +17085,8 @@ by exp-lbrs.ulp</description>
 <part name="U3" library="psas_c3_team05" deviceset="MKW01Z128" device="">
 <attribute name="DIST" value="Digi-Key"/>
 <attribute name="DPN" value="MKW01Z128CHN-ND"/>
-<attribute name="MFN" value="Freescale Semiconductor"/>
-<attribute name="MPN" value="MKW01Z128CHN"/>
+<attribute name="MFG" value="Freescale Semiconductor"/>
+<attribute name="MFG-PN" value="MKW01Z128CHN"/>
 </part>
 <part name="GND13" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="P+2" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
@@ -17330,6 +17335,10 @@ according to the databook</text>
 <instance part="U1" gate="G$1" x="429.26" y="345.44" smashed="yes">
 <attribute name="NAME" x="421.64" y="354.584" size="1.778" layer="95"/>
 <attribute name="VALUE" x="419.1" y="330.2" size="1.778" layer="96"/>
+<attribute name="DIST" x="429.26" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="429.26" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="429.26" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="429.26" y="345.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP1" gate="G$1" x="345.44" y="337.82" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="347.98" y="332.74" size="1.778" layer="96" rot="MR0"/>
@@ -17441,8 +17450,8 @@ according to the databook</text>
 <instance part="U3" gate="G$1" x="241.3" y="185.42" smashed="yes">
 <attribute name="DIST" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
 <attribute name="DPN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="241.3" y="185.42" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="213.36" y="134.62" size="2.54" layer="95" font="vector" ratio="5"/>
 <attribute name="VALUE" x="213.36" y="132.08" size="2.54" layer="96" font="vector" ratio="5"/>
 </instance>

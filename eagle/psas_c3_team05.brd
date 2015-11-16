@@ -48,7 +48,7 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -206,7 +206,7 @@ Michael Mathis</text>
 <text x="18.2372" y="57.9374" size="0.635" layer="21" font="vector" ratio="20">GND</text>
 <text x="21.9202" y="56.5404" size="0.635" layer="21" font="vector" ratio="20">VOUT</text>
 <text x="17.7292" y="42.4434" size="0.635" layer="21" font="vector" ratio="20">CP2102_VDD</text>
-<text x="50.8762" y="37.6174" size="0.635" layer="21" font="vector" ratio="20">VR_PA</text>
+<text x="51.0032" y="37.9984" size="0.635" layer="21" font="vector" ratio="20">VR_PA</text>
 <text x="50.4444" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE17</text>
 <text x="55.6514" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE3</text>
 <text x="58.1914" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE2</text>
@@ -247,17 +247,6 @@ Michael Mathis</text>
 <text x="25.7556" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA18</text>
 <text x="28.2956" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA19</text>
 <text x="30.8356" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA20</text>
-<wire x1="22.225" y1="67.183" x2="22.987" y2="67.183" width="0.0254" layer="41"/>
-<wire x1="23.876" y1="66.167" x2="23.876" y2="65.659" width="0.0254" layer="41"/>
-<wire x1="22.86" y1="64.643" x2="22.352" y2="64.643" width="0.0254" layer="41"/>
-<wire x1="18.034" y1="49.911" x2="18.034" y2="49.403" width="0.0254" layer="41"/>
-<wire x1="19.431" y1="51.308" x2="19.939" y2="51.308" width="0.0254" layer="41"/>
-<wire x1="21.336" y1="49.911" x2="21.336" y2="49.403" width="0.0254" layer="41"/>
-<wire x1="19.431" y1="48.006" x2="19.939" y2="48.006" width="0.0254" layer="41"/>
-<wire x1="44.831" y1="36.322" x2="42.926" y2="36.322" width="0.0254" layer="41"/>
-<wire x1="41.529" y1="33.274" x2="41.529" y2="34.671" width="0.0254" layer="41"/>
-<wire x1="41.529" y1="35.433" x2="41.529" y2="35.941" width="0.0254" layer="41"/>
-<wire x1="41.529" y1="35.941" x2="41.783" y2="35.941" width="0.0254" layer="41"/>
 </plain>
 <libraries>
 <library name="rcl_custom">
@@ -3052,8 +3041,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="19.9034375" y="58.6587625" size="0.4064" layer="27" ratio="10"/>
 </element>
 <element name="U3" library="psas_c3_team05" package="MKW01Z128" value="MKW01Z128" x="44.704" y="33.274" smashed="yes" rot="R270">
-<attribute name="MFN" value="Freescale Semiconductor" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MKW01Z128CHN" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Freescale Semiconductor" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="MKW01Z128CHN" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digi-Key" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DPN" value="MKW01Z128CHN-ND" x="44.704" y="33.274" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="49.3738" y="28.5534" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3063,6 +3052,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="VREG-09872" x="27.813" y="56.896" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="29.21" y="56.5912" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="27.3431" y="69.3293" size="1.016" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="DIST" value="Digi-Key" x="27.813" y="56.896" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DPN" value="576-1910-1-ND" x="27.813" y="56.896" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Microchip Technology" x="27.813" y="56.896" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="MIC5319-3.3YD5-TR" x="27.813" y="56.896" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U2" library="microbuilder" package="QFN20_4MM" value="MCP73871" x="22.606" y="65.913" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.0284" y="62.992" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3699,8 +3692,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="55.753" y="33.782" extent="1-16" drill="0.3302"/>
 <via x="75.057" y="41.402" extent="1-16" drill="0.3302"/>
 <via x="43.942" y="34.163" extent="1-16" drill="0.3302"/>
-<via x="43.942" y="35.814" extent="1-16" drill="0.3302"/>
-<via x="43.18" y="35.179" extent="1-16" drill="0.3302"/>
+<via x="43.942" y="36.068" extent="1-16" drill="0.3302"/>
+<via x="43.18" y="35.306" extent="1-16" drill="0.3302"/>
 <via x="42.672" y="34.163" extent="1-16" drill="0.3302"/>
 <via x="43.942" y="30.988" extent="1-16" drill="0.3302"/>
 <via x="42.672" y="30.988" extent="1-16" drill="0.3302"/>
@@ -4997,19 +4990,14 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,16,9b28a927e918db17"/>
 <approved hash="3,16,919579b96252d98d"/>
 <approved hash="3,16,91b49a3e8508dab5"/>
-<approved hash="18,29,255407943990edc0"/>
-<approved hash="6,1,d13e1ccd73afcebe"/>
 <approved hash="19,1,39de12ea12313905"/>
-<approved hash="6,1,4617474a7467ff77"/>
-<approved hash="6,1,edb38cd277899ca5"/>
-<approved hash="6,1,f01801bb438bc2ca"/>
 <approved hash="19,1,47e067d4602c4018"/>
 <approved hash="19,1,3c2c281828283c1c"/>
 <approved hash="19,1,3c702844249c30a8"/>
-<approved hash="19,1,b07dc849c48cbcb8"/>
 <approved hash="19,1,b021c815c838b00c"/>
-<approved hash="19,1,3d7a164e1b8530b1"/>
+<approved hash="19,1,b07dc849c48cbcb8"/>
 <approved hash="19,1,3d3a160e15073e33"/>
+<approved hash="19,1,3d7a164e1b8530b1"/>
 <approved hash="19,1,b570ca44c98fb6bb"/>
 <approved hash="19,1,b53eca0ac90cb638"/>
 <approved hash="19,16,cfebdfcb53cd43ed"/>
