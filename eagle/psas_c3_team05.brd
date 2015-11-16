@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -171,7 +171,7 @@ Michael Mathis</text>
 <text x="42.9514" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE30</text>
 <text x="45.4914" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE19</text>
 <text x="47.9044" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE18</text>
-<text x="50.5714" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE16</text>
+<text x="53.1114" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE16</text>
 <text x="40.4114" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">3.3V</text>
 <text x="65.6844" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">GND</text>
 <text x="70.6628" y="10.3886" size="0.635" layer="21" font="vector" ratio="20" rot="R180">3.3V</text>
@@ -207,6 +207,46 @@ Michael Mathis</text>
 <text x="21.9202" y="56.5404" size="0.635" layer="21" font="vector" ratio="20">VOUT</text>
 <text x="17.7292" y="42.4434" size="0.635" layer="21" font="vector" ratio="20">CP2102_VDD</text>
 <text x="51.0032" y="37.9984" size="0.635" layer="21" font="vector" ratio="20">VR_PA</text>
+<text x="50.4444" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE17</text>
+<text x="55.6514" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE3</text>
+<text x="58.1914" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE2</text>
+<text x="60.7314" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE1</text>
+<text x="63.2714" y="65.5828" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTE0</text>
+<text x="70.5358" y="51.1556" size="0.635" layer="21" font="vector" ratio="20" rot="R180">DIO2</text>
+<text x="70.5358" y="51.1556" size="0.635" layer="21" font="vector" ratio="20" rot="R180">DIO2</text>
+<text x="70.5358" y="53.6956" size="0.635" layer="21" font="vector" ratio="20" rot="R180">DIO3</text>
+<text x="70.5358" y="56.2356" size="0.635" layer="21" font="vector" ratio="20" rot="R180">DIO4</text>
+<text x="70.5358" y="58.7756" size="0.635" layer="21" font="vector" ratio="20" rot="R180">DIO5</text>
+<text x="70.6628" y="13.0556" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD0</text>
+<text x="70.6628" y="15.5956" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD4</text>
+<text x="70.6628" y="15.5956" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD4</text>
+<text x="70.6628" y="18.1356" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD5</text>
+<text x="70.6628" y="18.1356" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD5</text>
+<text x="70.6628" y="20.5486" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD6</text>
+<text x="70.6628" y="23.0886" size="0.635" layer="21" font="vector" ratio="20" rot="R180">PTD7</text>
+<text x="50.4444" y="8.1788" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC1</text>
+<text x="52.9844" y="8.1788" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC2</text>
+<text x="55.5244" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC3</text>
+<text x="58.1914" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC4</text>
+<text x="60.7314" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC5</text>
+<text x="63.1444" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC6</text>
+<text x="65.6844" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTC7</text>
+<text x="37.7444" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTB0</text>
+<text x="40.4114" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTB1</text>
+<text x="40.4114" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTB1</text>
+<text x="42.8244" y="8.0518" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTB2</text>
+<text x="45.4914" y="8.5598" size="0.635" layer="21" font="vector" ratio="20" rot="R270">PTB17</text>
+<text x="10.5156" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">GND</text>
+<text x="13.0556" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA0</text>
+<text x="13.0556" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA0</text>
+<text x="15.5956" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA1</text>
+<text x="18.1356" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA2</text>
+<text x="18.1356" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA2</text>
+<text x="20.6756" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA3</text>
+<text x="23.2156" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA4</text>
+<text x="25.7556" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA18</text>
+<text x="28.2956" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA19</text>
+<text x="30.8356" y="5.6642" size="0.635" layer="21" font="vector" ratio="20" rot="R90">PTA20</text>
 </plain>
 <libraries>
 <library name="rcl_custom">
