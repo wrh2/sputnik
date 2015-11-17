@@ -2950,6 +2950,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="23.7428" y="58.8898" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="26.486" y="57.4804" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="26.162" y="59.309" size="0.3" layer="33" ratio="15" align="center"/>
+<attribute name="DSN" value="490-1532-1-ND" x="26.162" y="59.309" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C3" library="rcl_custom" package=".0805-B-NOSILK" value="4.7uF" x="25.781" y="61.341" smashed="yes">
 <attribute name="NAME" x="25.35824375" y="62.29848125" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -2967,6 +2968,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="30.9818" y="59.1184" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="25.5332" y="58.8008" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="29.3878" y="59.309" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="DSN" value="490-1532-1-ND" x="29.464" y="59.309" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C6" library="rcl_custom" package=".0805-B-NOSILK" value="2.2uF" x="29.845" y="61.341" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.566" y="61.0996" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -2977,6 +2979,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="27.6696375" y="53.19004375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.1814" y="51.765" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="27.8892" y="54.3814" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="DSN" value="490-1532-1-ND" x="27.813" y="54.483" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C8" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="100nF" x="37.719" y="39.497" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM188R71C104KA01D" x="37.719" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3026,11 +3029,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="RT1" library="Vibrogait_prototype" package="R1206" value="10K (NTC)" x="10.16" y="57.658" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.0364" y="59.0096" size="0.635" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="14.7803625" y="55.5384" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
-<attribute name="DPN" value="541-1151-1-ND" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DPN" value="480-3153-1-ND" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="S1" library="Vibrogait_prototype" package="SWITCH-SPDT" value="EG1218" x="2.6822375" y="36.68014375" smashed="yes">
 <attribute name="NAME" x="3.8760375" y="42.69994375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="-1.1277625" y="27.15514375" size="1.778" layer="27" ratio="10"/>
+<attribute name="DSN" value="EG1903-ND" x="2.6822375" y="36.68014375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP1" library="microbuilder" package="TESTPOINT_ROUND_0.5MM" value="" x="20.955" y="63.119" smashed="yes">
 <attribute name="NAME" x="19.321959375" y="61.0690375" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>

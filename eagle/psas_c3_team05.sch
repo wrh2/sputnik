@@ -17056,7 +17056,7 @@ by exp-lbrs.ulp</description>
 <part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="BC"/>
 <part name="GND1" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="RT1" library="Vibrogait_prototype" deviceset="THERMISTOR-" device="_1206" value="10K (NTC)">
-<attribute name="DPN" value="541-1151-1-ND"/>
+<attribute name="DPN" value="480-3153-1-ND"/>
 </part>
 <part name="GND3" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="P+1" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
@@ -17067,7 +17067,9 @@ by exp-lbrs.ulp</description>
 <part name="GND2" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="V+" device=""/>
 <part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF">
+<attribute name="DSN" value="490-1532-1-ND"/>
+</part>
 <part name="GND4" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="4.7uF">
 <attribute name="DPN" value="732-7657-1-ND"/>
@@ -17085,15 +17087,21 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 <part name="TP3" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF">
+<attribute name="DSN" value="490-1532-1-ND"/>
+</part>
 <part name="C6" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="2.2uF"/>
-<part name="C7" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
+<part name="C7" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF">
+<attribute name="DSN" value="490-1532-1-ND"/>
+</part>
 <part name="GND7" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND8" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND9" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="TP4" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 <part name="GND10" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="S1" library="Vibrogait_prototype" deviceset="SWITCH-SPST" device="PTH" value="EG1218"/>
+<part name="S1" library="Vibrogait_prototype" deviceset="SWITCH-SPST" device="PTH" value="EG1218">
+<attribute name="DSN" value="EG1903-ND"/>
+</part>
 <part name="GND11" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="U3" library="psas_c3_team05" deviceset="MKW01Z128" device="">
 <attribute name="DIST" value="Digi-Key"/>
@@ -17423,6 +17431,7 @@ according to the databook</text>
 <instance part="C2" gate="CE" x="391.16" y="347.98" smashed="yes">
 <attribute name="NAME" x="392.684" y="348.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="392.684" y="343.281" size="1.778" layer="96"/>
+<attribute name="DSN" x="391.16" y="347.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND4" gate="1" x="391.16" y="332.74" smashed="yes">
 <attribute name="VALUE" x="388.62" y="330.2" size="1.778" layer="96"/>
@@ -17464,6 +17473,7 @@ according to the databook</text>
 <instance part="C5" gate="CE" x="449.58" y="345.44" smashed="yes">
 <attribute name="NAME" x="451.104" y="345.821" size="1.778" layer="95"/>
 <attribute name="VALUE" x="451.104" y="340.741" size="1.778" layer="96"/>
+<attribute name="DSN" x="449.58" y="345.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C6" gate="CE" x="464.82" y="345.44" smashed="yes">
 <attribute name="NAME" x="466.344" y="345.821" size="1.778" layer="95"/>
@@ -17472,6 +17482,7 @@ according to the databook</text>
 <instance part="C7" gate="CE" x="439.42" y="337.82" smashed="yes">
 <attribute name="NAME" x="440.944" y="338.201" size="1.778" layer="95"/>
 <attribute name="VALUE" x="440.944" y="333.121" size="1.778" layer="96"/>
+<attribute name="DSN" x="439.42" y="337.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="439.42" y="327.66" smashed="yes">
 <attribute name="VALUE" x="436.88" y="325.12" size="1.778" layer="96"/>
@@ -17492,6 +17503,7 @@ according to the databook</text>
 <instance part="S1" gate="1" x="416.56" y="340.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="408.94" y="335.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="408.94" y="332.74" size="1.778" layer="96"/>
+<attribute name="DSN" x="416.56" y="340.36" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND11" gate="1" x="317.5" y="330.2" smashed="yes">
 <attribute name="VALUE" x="314.96" y="327.66" size="1.778" layer="96"/>
