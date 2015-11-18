@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2928,6 +2928,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="58.49" y="32.7278" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="59.7724" y="35.9662" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="58.7502" y="36.7284" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="DIST" value="Mouser" x="59.055" y="36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="AVX" x="59.055" y="36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="06031U2R2BAT2A" x="59.055" y="36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="59.055" y="36.576" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C13" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="59.817" y="38.862" smashed="yes" rot="R90">
 <attribute name="NAME" x="59.474" y="43.0592" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
@@ -2938,17 +2942,28 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="64.732" y="38.1954" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="65.3036" y="38.6904" size="0.8128" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="64.5668" y="36.0426" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="DIST" value="Mouser" x="64.389" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="AVX" x="64.389" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG-PN" value="06031U8R2BAT2A" x="64.389" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="64.389" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C15" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="66.675" y="35.052" smashed="yes">
 <attribute name="NAME" x="66.1608" y="36.9188" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="66.7196" y="36.119" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="66.675" y="35.052" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="490-1532-1-ND" x="66.675" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="66.675" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="AVX" x="66.675" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="0603YC104KAT2A" x="66.675" y="35.052" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C16" library="rcl_custom" package=".0603-B-NOSILK" value="10nF" x="55.88" y="37.973" smashed="yes" rot="R180">
 <attribute name="NAME" x="56.1976" y="38.7542" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="56.8514" y="36.8298" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="55.88" y="37.973" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="DIST" value="Digi-Key" x="55.88" y="37.973" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DPN" value="478-5007-1-ND" x="55.88" y="37.973" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="AVX" x="55.88" y="37.973" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="06035C103JAT2A" x="55.88" y="37.973" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C2" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="26.162" y="59.309" smashed="yes">
 <attribute name="NAME" x="23.7428" y="58.8898" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3028,16 +3043,19 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="54.4768" y="36.6902" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="54.4324" y="38.6142" size="0.8128" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="53.594" y="37.211" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="DIST" value="Digi-Key" x="53.594" y="37.211" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DPN" value="490-6874-1-ND" x="53.594" y="37.211" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Murata" x="53.594" y="37.211" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="LQW18AN22NG00D" x="53.594" y="37.211" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="L2" library="rcl_custom" package=".0603-B-NOSILK" value="15n" x="59.055" y="35.052" smashed="yes">
 <attribute name="NAME" x="58.6424" y="31.8642" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="58.7186" y="33.6298" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="59.055" y="35.052" size="0.3" layer="33" ratio="15" align="center"/>
-</element>
-<element name="L3" library="rcl_custom" package=".0603-B-NOSILK" value="15n" x="62.103" y="35.052" smashed="yes">
-<attribute name="NAME" x="61.8936" y="32.6516" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="61.3094" y="35.9412" size="0.8128" layer="27" font="vector" ratio="15"/>
-<attribute name="NAME" x="62.103" y="35.052" size="0.3" layer="33" ratio="15" align="center"/>
+<attribute name="DIST" value="Digi-Key" x="59.055" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="490-6866-1-ND" x="59.055" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata" x="59.055" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="LQW18AN15NG00D" x="59.055" y="35.052" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RP1" library="rcl_custom" package=".0603-B-NOSILK" value="5k" x="17.78" y="65.405" smashed="yes">
 <attribute name="NAME" x="15.4116" y="63.9444" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3518,6 +3536,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP11" library="pinhead" package="1X02" value="" x="28.194" y="50.546" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.2288" y="48.1838" size="0.635" layer="25" ratio="20"/>
 <attribute name="VALUE" x="30.734" y="53.721" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="L3" library="rcl_custom" package=".0603-B-NOSILK" value="15n" x="0" y="-2.032">
+<attribute name="MFG-PN" value="LQW18AN15NG00D" x="0" y="-2.032" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="490-6866-1-ND" x="0" y="-2.032" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata" x="0" y="-2.032" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="0" y="-2.032" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4234,11 +4258,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C13" pad="1"/>
 <contactref element="C12" pad="1"/>
 <contactref element="L2" pad="2"/>
-<contactref element="L3" pad="1"/>
-<wire x1="61.303" y1="35.052" x2="59.855" y2="35.052" width="0.762" layer="1"/>
 <wire x1="59.855" y1="36.576" x2="59.855" y2="35.052" width="0.762" layer="1"/>
 <wire x1="59.855" y1="36.576" x2="59.855" y2="38.024" width="0.762" layer="1"/>
 <wire x1="59.855" y1="38.024" x2="59.817" y2="38.062" width="0.762" layer="1"/>
+<contactref element="L3" pad="1"/>
+<wire x1="-0.8" y1="-2.032" x2="59.855" y2="35.052" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="C10" pad="1"/>
@@ -4270,13 +4294,13 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$21">
 <contactref element="C14" pad="1"/>
 <contactref element="C15" pad="1"/>
-<contactref element="L3" pad="2"/>
 <wire x1="65.875" y1="35.052" x2="64.516" y2="35.052" width="0.762" layer="1"/>
-<wire x1="64.516" y1="35.052" x2="62.903" y2="35.052" width="0.762" layer="1"/>
 <wire x1="64.516" y1="35.052" x2="64.389" y2="35.052" width="0.254" layer="1"/>
 <wire x1="64.389" y1="35.052" x2="64.262" y2="34.925" width="0.254" layer="1"/>
 <wire x1="64.262" y1="34.925" x2="64.3" y2="34.925" width="0.254" layer="1"/>
 <wire x1="64.3" y1="34.925" x2="64.389" y2="35.014" width="0.254" layer="1"/>
+<contactref element="L3" pad="2"/>
+<wire x1="0.8" y1="-2.032" x2="64.262" y2="34.925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PTA1">
 <contactref element="IC1" pad="26"/>
