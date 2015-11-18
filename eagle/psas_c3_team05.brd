@@ -3346,16 +3346,19 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="44.793" y="12.135" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="41.834" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="43.434" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="DPN" value="311-1.00KHRCT-ND" x="43.434" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R8" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="41.91" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.126" y="10.103" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="40.31" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="41.91" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="DPN" value="311-1.00KHRCT-ND" x="41.91" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R9" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="40.386" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.586" y="12.262" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="38.786" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="40.386" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="DPN" value="311-1.00KHRCT-ND" x="40.386" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J1" library="apdm-ic-v2" package="PINHEADER-2X5-0.05+POL+SILK" value="3220-10-0100-00" x="3.175" y="23.368" smashed="yes" rot="R270">
 <attribute name="DIGIKEY-PN" value="1175-1627-ND" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>

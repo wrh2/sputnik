@@ -17292,9 +17292,15 @@ by exp-lbrs.ulp</description>
 <attribute name="DPN" value="311-1.00KHRCT-ND"/>
 </part>
 <part name="GND38" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
-<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<attribute name="DPN" value="311-1.00KHRCT-ND"/>
+</part>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<attribute name="DPN" value="311-1.00KHRCT-ND"/>
+</part>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<attribute name="DPN" value="311-1.00KHRCT-ND"/>
+</part>
 <part name="P+9" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
 <part name="J1" library="apdm-ic-v2" deviceset="JTAG_ARM-10-*" device="50MIL" value="3220-10-0100-00">
 <attribute name="DIGIKEY-PN" value="1175-1627-ND"/>
@@ -17925,14 +17931,17 @@ according to the databook</text>
 <instance part="R7" gate="R" x="124.46" y="223.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="121.92" y="222.25" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="121.92" y="224.79" size="1.778" layer="96" rot="R180"/>
+<attribute name="DPN" x="124.46" y="223.52" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R8" gate="R" x="119.38" y="223.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="116.84" y="222.25" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="116.84" y="224.79" size="1.778" layer="96" rot="R180"/>
+<attribute name="DPN" x="119.38" y="223.52" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R9" gate="R" x="114.3" y="223.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.76" y="222.25" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="111.76" y="224.79" size="1.778" layer="96" rot="R180"/>
+<attribute name="DPN" x="114.3" y="223.52" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="P+9" gate="G$1" x="119.38" y="236.22" smashed="yes">
 <attribute name="VALUE" x="119.38" y="238.76" size="1.778" layer="96"/>
