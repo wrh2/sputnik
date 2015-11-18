@@ -17185,12 +17185,30 @@ by exp-lbrs.ulp</description>
 <part name="GND18" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="GND19" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF">
-<attribute name="DPN" value="490-1532-1-ND"/>
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="478-5778-1-ND"/>
+<attribute name="MFG" value="AVX"/>
+<attribute name="MFG-PN" value="06035C104JAT2A"/>
 </part>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10nF"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10nF">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="478-6208-1-ND"/>
+<attribute name="MFG" value="AVX"/>
+<attribute name="MFG-PN" value="0603YC103JAT2A"/>
+</part>
 <part name="GND20" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n"/>
-<part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
+<part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="490-6874-1-ND"/>
+<attribute name="MFG" value="Murata"/>
+<attribute name="MFG-PN" value="LQW18AN22NG00D"/>
+</part>
+<part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="490-6866-1-ND"/>
+<attribute name="MFG" value="Murata"/>
+<attribute name="MFG-PN" value="LQW18AN15NG00D"/>
+</part>
 <part name="GND21" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="IC1" library="silabs" deviceset="CP210*" device="" technology="2">
 <attribute name="DIST" value="Digi-Key"/>
@@ -17340,7 +17358,12 @@ by exp-lbrs.ulp</description>
 <attribute name="MFG" value="Murata Electronics North America"/>
 <attribute name="MPN" value="GRM188R71C104KA01D"/>
 </part>
-<part name="U$2" library="SMAJ16-ND" deviceset="SMAJ716-ND" device=""/>
+<part name="U$2" library="SMAJ16-ND" deviceset="SMAJ716-ND" device="">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="J716-ND"/>
+<attribute name="MFG" value="Cinch Connectivity Solutions"/>
+<attribute name="MFG-PN" value="142-0701-806"/>
+</part>
 <part name="P+6" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
 <part name="TP6" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 <part name="TP7" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
@@ -17437,7 +17460,6 @@ by exp-lbrs.ulp</description>
 <part name="JP11" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND44" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="P+14" library="Vibrogait_prototype" deviceset="3.3V" device=""/>
-<part name="L3" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="12p">
 <attribute name="DIST" value="Mouser"/>
 <attribute name="DPN" value="581-06035A120FAT2A"/>
@@ -17449,6 +17471,12 @@ by exp-lbrs.ulp</description>
 <attribute name="DPN" value="478-6024-1-ND"/>
 <attribute name="MFG" value="AVX"/>
 <attribute name="MFG-PN" value="06031A150FAT2A"/>
+</part>
+<part name="L3" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="490-6866-1-ND"/>
+<attribute name="MFG" value="Murata"/>
+<attribute name="MFG-PN" value="LQW18AN15NG00D"/>
 </part>
 </parts>
 <sheets>
@@ -17749,10 +17777,17 @@ according to the databook</text>
 <attribute name="NAME" x="461.899" y="219.964" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="466.979" y="219.964" size="1.778" layer="96" rot="R90"/>
 <attribute name="DPN" x="462.28" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DIST" x="462.28" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG" x="462.28" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG-PN" x="462.28" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C16" gate="CE" x="370.84" y="233.68" smashed="yes">
 <attribute name="NAME" x="374.65" y="232.41" size="1.778" layer="95"/>
 <attribute name="VALUE" x="374.65" y="229.87" size="1.778" layer="96"/>
+<attribute name="DIST" x="370.84" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="370.84" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="370.84" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="370.84" y="233.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND20" gate="1" x="381" y="238.76" smashed="yes">
 <attribute name="VALUE" x="378.46" y="236.22" size="1.778" layer="96"/>
@@ -17760,10 +17795,18 @@ according to the databook</text>
 <instance part="L1" gate="L" x="381" y="223.52" smashed="yes">
 <attribute name="NAME" x="375.92" y="226.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="382.27" y="226.06" size="1.778" layer="96" rot="MR180" align="top-left"/>
+<attribute name="DIST" x="381" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="381" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="381" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="381" y="223.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="L2" gate="L" x="426.72" y="218.44" smashed="yes">
 <attribute name="NAME" x="420.37" y="220.98" size="1.778" layer="95"/>
 <attribute name="VALUE" x="426.72" y="220.98" size="1.778" layer="96" rot="MR180" align="top-left"/>
+<attribute name="DIST" x="426.72" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="426.72" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="426.72" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="426.72" y="218.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND21" gate="1" x="246.38" y="121.92" smashed="yes">
 <attribute name="VALUE" x="243.84" y="119.38" size="1.778" layer="96"/>
@@ -18005,7 +18048,12 @@ according to the databook</text>
 <attribute name="NAME" x="192.024" y="236.601" size="1.778" layer="95"/>
 <attribute name="VALUE" x="192.024" y="231.521" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="487.68" y="218.44" smashed="yes" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="487.68" y="218.44" smashed="yes" rot="MR0">
+<attribute name="DIST" x="487.68" y="218.44" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="487.68" y="218.44" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG" x="487.68" y="218.44" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG-PN" x="487.68" y="218.44" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="P+6" gate="G$1" x="317.5" y="226.06" smashed="yes">
 <attribute name="VALUE" x="315.595" y="228.854" size="1.778" layer="96"/>
 </instance>
@@ -18222,10 +18270,6 @@ according to the databook</text>
 <instance part="P+14" gate="G$1" x="492.76" y="302.26" smashed="yes">
 <attribute name="VALUE" x="491.744" y="305.816" size="1.778" layer="96"/>
 </instance>
-<instance part="L3" gate="L" x="447.04" y="218.44" smashed="yes">
-<attribute name="NAME" x="440.69" y="220.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="447.04" y="220.98" size="1.778" layer="96" rot="MR180" align="top-left"/>
-</instance>
 <instance part="C11" gate="CE" x="396.24" y="213.36" smashed="yes">
 <attribute name="NAME" x="392.43" y="210.82" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="392.43" y="214.63" size="1.778" layer="96" rot="R180"/>
@@ -18241,6 +18285,14 @@ according to the databook</text>
 <attribute name="MFG" x="436.88" y="213.36" size="1.778" layer="96" display="off"/>
 <attribute name="MFG-PN" x="436.88" y="213.36" size="1.778" layer="96" display="off"/>
 <attribute name="DPN" x="436.88" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L3" gate="L" x="447.04" y="218.44" smashed="yes">
+<attribute name="NAME" x="440.69" y="220.98" size="1.778" layer="95"/>
+<attribute name="VALUE" x="447.04" y="220.98" size="1.778" layer="96" rot="MR180" align="top-left"/>
+<attribute name="DIST" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -18856,8 +18908,8 @@ according to the databook</text>
 <pinref part="L2" gate="L" pin="2"/>
 <wire x1="431.8" y1="218.44" x2="436.88" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="218.44" x2="439.42" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="L3" gate="L" pin="1"/>
 <pinref part="C13" gate="CE" pin="1"/>
+<pinref part="L3" gate="L" pin="1"/>
 </segment>
 </net>
 <net name="N$18" class="0">
