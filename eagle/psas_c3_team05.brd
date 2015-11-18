@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2910,6 +2910,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="15.6272" y="61.7218" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="21.971" y="60.833" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="DPN" value="732-7657-1-ND" x="21.971" y="60.833" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="21.971" y="60.833" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Wurth Electronics Inc" x="21.971" y="60.833" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="885012207025" x="21.971" y="60.833" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C10" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="56.007" y="35.052" smashed="yes" rot="R180">
 <attribute name="NAME" x="55.2134" y="32.677" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -2952,36 +2955,54 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="26.486" y="57.4804" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="26.162" y="59.309" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="490-1532-1-ND" x="26.162" y="59.309" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="26.162" y="59.309" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="26.162" y="59.309" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="26.162" y="59.309" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C3" library="rcl_custom" package=".0805-B-NOSILK" value="4.7uF" x="25.781" y="61.341" smashed="yes">
 <attribute name="NAME" x="25.35824375" y="62.29848125" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="27.88015625" y="62.98671875" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="26.1112" y="61.1124" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="732-7657-1-ND" x="25.781" y="61.341" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="25.781" y="61.341" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Wurth Electronics Inc" x="25.781" y="61.341" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="885012207025" x="25.781" y="61.341" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C4" library="rcl_custom" package=".0805-B-NOSILK" value="4.7uF" x="18.796" y="63.373" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.129" y="61.722" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.7956" y="61.2392" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="18.796" y="63.373" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="DPN" value="732-7657-1-ND" x="18.796" y="63.373" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="18.796" y="63.373" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Wurth Electronics Inc" x="18.796" y="63.373" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="885012207025" x="18.796" y="63.373" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C5" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="29.464" y="59.309" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.9818" y="59.1184" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="25.5332" y="58.8008" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="29.3878" y="59.309" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="DPN" value="490-1532-1-ND" x="29.464" y="59.309" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="29.464" y="59.309" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="29.464" y="59.309" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="29.464" y="59.309" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C6" library="rcl_custom" package=".0805-B-NOSILK" value="2.2uF" x="29.845" y="61.341" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.566" y="61.0996" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="26.7524" y="60.5026" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="29.845" y="61.341" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="DPN" value="490-3906-1-ND" x="29.845" y="61.341" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="29.845" y="61.341" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="29.845" y="61.341" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="GRM21BR71C225KA12L" x="29.845" y="61.341" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C7" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="27.813" y="54.483" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.6696375" y="53.19004375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.1814" y="51.765" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="27.8892" y="54.3814" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="DPN" value="490-1532-1-ND" x="27.813" y="54.483" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="27.813" y="54.483" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="27.813" y="54.483" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="27.813" y="54.483" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C8" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="100nF" x="37.719" y="39.497" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM188R71C104KA01D" x="37.719" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2996,6 +3017,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="2.2926" y="47.5551625" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="DIST" value="Digi-Key" x="1.905" y="55.245" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DPN" value="H11610CT-ND" x="1.905" y="55.245" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Hirose Electric Co Ltd" x="1.905" y="55.245" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="ZX62D-B-5P8" x="1.905" y="55.245" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="JP1" library="Vibrogait_prototype" package="SPARKFUN-CONNECTORS_JST-2-SMD-VERT" value="BC" x="10.16" y="67.183" smashed="yes">
 <attribute name="NAME" x="6.858" y="64.2112" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3021,22 +3044,34 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="15.437" y="63.6018" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.78" y="65.405" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="YAG1305CT-ND" x="17.78" y="65.405" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="17.78" y="65.405" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="17.78" y="65.405" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-074K99P" x="17.78" y="65.405" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RP3" library="rcl_custom" package=".0603-B-NOSILK" value="100k" x="17.78" y="66.929" smashed="yes">
 <attribute name="NAME" x="15.367" y="67.691" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="15.5894" y="68.6818" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.9324" y="67.0052" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="311-100KHRCT-ND" x="17.78" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="17.78" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="17.78" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-07100KL" x="17.78" y="66.929" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RT1" library="Vibrogait_prototype" package="R1206" value="10K (NTC)" x="10.16" y="57.658" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.0364" y="59.0096" size="0.635" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="14.7803625" y="55.5384" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="DPN" value="480-3153-1-ND" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFG" value="Honeywell Sensing and Control" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFG-PN" value="175-103LAE-301" x="10.16" y="57.658" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="S1" library="Vibrogait_prototype" package="SWITCH-SPDT" value="EG1218" x="2.6822375" y="36.68014375" smashed="yes">
 <attribute name="NAME" x="3.8760375" y="42.69994375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="-1.1277625" y="27.15514375" size="1.778" layer="27" ratio="10"/>
 <attribute name="DPN" value="EG1903-ND" x="2.6822375" y="36.68014375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="2.6822375" y="36.68014375" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="E-Switch" x="2.6822375" y="36.68014375" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="EG1218" x="2.6822375" y="36.68014375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP1" library="microbuilder" package="TESTPOINT_ROUND_0.5MM" value="" x="20.955" y="63.119" smashed="yes">
 <attribute name="NAME" x="19.321959375" y="61.0690375" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
@@ -3074,6 +3109,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U2" library="microbuilder" package="QFN20_4MM" value="MCP73871" x="22.606" y="65.913" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.0284" y="62.992" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="21.5646" y="63.0174" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
+<attribute name="DIST" value="Digi-Key" x="22.606" y="65.913" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DPN" value="MCP73871-2CCI/ML-ND" x="22.606" y="65.913" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Microchip Technology" x="22.606" y="65.913" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG-PN" value="MCP73871-2CCI/ML" x="22.606" y="65.913" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IC1" library="silabs" package="MLP28" value="CP2102" x="19.685" y="49.657" smashed="yes">
 <attribute name="OC_NEWARK" value="30K5635" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
@@ -3082,6 +3121,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="FARNELL" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.8236875" y="46.3905625" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="22.8117375" y="52.595775" size="1.016" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="DIST" value="Digi-Key" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="336-1160-1-ND" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Silicon Labs" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="CP2102-GMR" x="19.685" y="49.657" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C17" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="7.747" y="57.404" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.37579375" y="57.1372" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3089,6 +3132,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="7.747" y="57.404" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 <attribute name="DIST" value="Digi-Key" x="7.747" y="57.404" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DPN" value="490-1532-1-ND" x="7.747" y="57.404" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="7.747" y="57.404" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="7.747" y="57.404" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C19" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="14.478" y="46.736" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.151" y="48.1138" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
@@ -3096,12 +3141,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="14.478" y="46.736" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="DIST" value="Digi-Key" x="14.478" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DPN" value="490-1532-1-ND" x="14.478" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="14.478" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="14.478" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R13" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="17.526" y="44.831" smashed="yes">
 <attribute name="NAME" x="17.49948125" y="43.4516875" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="18.56851875" y="49.0167125" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="17.526" y="44.831" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="YAG1317CT-ND" x="17.526" y="44.831" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="17.526" y="44.831" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="17.526" y="44.831" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603JR-074K7P" x="17.526" y="44.831" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C20" library="rcl_custom" package=".0603-B-NOSILK" value="100nF" x="2.667" y="61.087" smashed="yes">
 <attribute name="NAME" x="5.0636375" y="60.723675" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3109,6 +3159,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="2.667" y="61.087" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DIST" value="Digi-Key" x="2.667" y="61.087" size="1.778" layer="27" display="off"/>
 <attribute name="DPN" value="490-1532-1-ND" x="2.667" y="61.087" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="2.667" y="61.087" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="GRM188R71C104KA01D" x="2.667" y="61.087" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R14" library="rcl_custom" package=".0603-B-NOSILK" value="1M" x="2.667" y="62.611" smashed="yes">
 <attribute name="NAME" x="5.11951875" y="62.2832375" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3116,6 +3168,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="2.667" y="62.611" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DIST" value="Digi-Key" x="2.667" y="62.611" size="1.778" layer="27" display="off"/>
 <attribute name="DPN" value="311-1.00MHRCT-ND" x="2.667" y="62.611" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="2.667" y="62.611" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071ML" x="2.667" y="62.611" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED1" library="Vibrogait_prototype" package="KINGBRITE_RGBLED_1.6X1.26" value="APHFT1612PBASURKVGAC" x="37.465" y="66.929" smashed="yes" rot="R90">
 <attribute name="DPN" value="754-1100-1-ND" x="37.465" y="66.929" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3125,18 +3179,27 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="35.2998" y="68.1484" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="34.544" y="66.929" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="34.544" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="34.544" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="34.544" y="66.929" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="34.544" y="66.929" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R4" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="34.544" y="64.389" smashed="yes">
 <attribute name="NAME" x="34.862925" y="65.14835625" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.8802" y="64.1098" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="34.544" y="64.389" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="34.544" y="64.389" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="34.544" y="64.389" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="34.544" y="64.389" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="34.544" y="64.389" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R5" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="34.544" y="69.469" smashed="yes">
 <attribute name="NAME" x="36.1126" y="69.2022" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="31.0326" y="69.0882" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="34.544" y="69.469" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="34.544" y="69.469" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="34.544" y="69.469" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="34.544" y="69.469" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="34.544" y="69.469" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP5" library="microbuilder" package="TESTPOINT_ROUND_0.5MM" value="" x="10.16" y="56.642" smashed="yes" rot="R180">
 <attribute name="NAME" x="9.271" y="55.245" size="0.635" layer="25" font="vector" ratio="20"/>
@@ -3148,6 +3211,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="12.319" y="46.609" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="DIST" value="Digi-Key" x="12.319" y="46.609" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DPN" value="732-7657-1-ND" x="12.319" y="46.609" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Wurth Electronics Inc" x="12.319" y="46.609" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="885012207025" x="12.319" y="46.609" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C18" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="100nF" x="51.816" y="32.893" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM188R71C104KA01D" x="51.816" y="32.893" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3180,12 +3245,25 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="10.103" y="16.294" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.5498" y="15.672" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="8.382" y="16.637" size="0.3" layer="33" ratio="15" align="center"/>
+<attribute name="DIST" value="Digi-Key" x="8.382" y="16.637" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="311-10.0KHRCT-ND" x="8.382" y="16.637" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="8.382" y="16.637" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-0710KL" x="8.382" y="16.637" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S2" library="Vibrogait_prototype" package="TACTILE_SWITCH_TALL" value="SWITCH-MOMENTARY-2" x="3.81" y="10.795" smashed="yes" rot="R90"/>
+<element name="S2" library="Vibrogait_prototype" package="TACTILE_SWITCH_TALL" value="SWITCH-MOMENTARY-2" x="3.81" y="10.795" smashed="yes" rot="R90">
+<attribute name="DIST" value="Digi-Key" x="3.81" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN" value="450-1759-1-ND" x="3.81" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="TE Connectivity Alcoswitch Switches" x="3.81" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG-PN" value="FSM4JSMATR" x="3.81" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="C21" library="rcl_custom" package=".0603-B-NOSILK" value="1nF" x="8.382" y="14.859" smashed="yes">
 <attribute name="NAME" x="10.9412" y="14.5414" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="8.6552" y="16.18" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="8.382" y="14.859" size="0.3" layer="33" ratio="15" align="center"/>
+<attribute name="DIST" value="Digi-Key" x="8.382" y="14.859" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="399-8984-1-ND" x="8.382" y="14.859" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Kemet" x="8.382" y="14.859" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="C0603C102K8RACTU" x="8.382" y="14.859" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X1" library="crystal" package="FC-12M" value="32 MHz" x="45.974" y="42.037" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.2444" y="39.488" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -3341,31 +3419,44 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="32.709" y="61.138" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="33.909" y="62.738" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="33.909" y="62.738" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="33.909" y="62.738" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Yageo" x="33.909" y="62.738" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="33.909" y="62.738" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R7" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="43.434" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.793" y="12.135" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="41.834" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="43.434" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="43.434" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="43.434" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Yageo" x="43.434" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="43.434" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R8" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="41.91" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.126" y="10.103" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="40.31" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="41.91" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="41.91" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="41.91" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Yageo" x="41.91" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="41.91" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R9" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="40.386" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.586" y="12.262" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="38.786" y="13.9" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="40.386" y="12.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="DPN" value="311-1.00KHRCT-ND" x="40.386" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="40.386" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Yageo" x="40.386" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="RC0603FR-071KL" x="40.386" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J1" library="apdm-ic-v2" package="PINHEADER-2X5-0.05+POL+SILK" value="3220-10-0100-00" x="3.175" y="23.368" smashed="yes" rot="R270">
-<attribute name="DIGIKEY-PN" value="1175-1627-ND" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DPN" value="1175-1627-ND" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFG" value="CNC Tech" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFG-PN" value="3220-10-0100-00" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="6.877" y="22.615" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="0.175" y="28.068" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="top-left"/>
+<attribute name="DIST" value="Digi-Key" x="3.175" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J2" library="headers" package="1.27MM_2X1" value="1.27MM_HDR_2X12X1" x="39.624" y="23.241" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.351" y="20.988" size="0.635" layer="25" ratio="20"/>
