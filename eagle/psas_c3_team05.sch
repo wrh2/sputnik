@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17325,7 +17325,13 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND27" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="X1" library="crystal" deviceset="FC-12M" device="" value="32 MHz">
-<attribute name="DPN" value="SER3672CT-ND"/>
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="1253-1161-1-ND"/>
+<attribute name="DPN2" value="CTX1364CT-ND"/>
+<attribute name="MFG" value="AVX Corp/Kyocera Corp"/>
+<attribute name="MFG-PN" value="CX3225GA32000D0PTVCC"/>
+<attribute name="MFG2" value="CTS-Frequency Controls"/>
+<attribute name="MFG2-PN" value="402F3201XIAR"/>
 </part>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="C22" library="Vibrogait_prototype" deviceset="C-EU" device="0603-B-NOSILK" value="11pF">
@@ -17993,6 +17999,12 @@ according to the databook</text>
 <attribute name="NAME" x="327.66" y="187.96" size="1.778" layer="95"/>
 <attribute name="VALUE" x="324.2056" y="195.0466" size="1.778" layer="96"/>
 <attribute name="DPN" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DIST" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFG" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFG-PN" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN2" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFG2" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFG2-PN" x="328.93" y="193.04" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R6" gate="R" x="312.42" y="193.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="308.61" y="194.31" size="1.778" layer="95"/>

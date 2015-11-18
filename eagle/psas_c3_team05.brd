@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3280,7 +3280,13 @@ Please make sure your boards conform to these design rules.</description>
 <element name="X1" library="crystal" package="FC-12M" value="32 MHz" x="45.974" y="42.037" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.2444" y="39.488" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="45.33" y="45.2284" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
-<attribute name="DPN" value="SER3672CT-ND" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN" value="1253-1161-1-ND" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="AVX Corp/Kyocera Corp" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG-PN" value="CX3225GA32000D0PTVCC" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN2" value="CTX1364CT-ND" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG2" value="CTS-Frequency Controls" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG2-PN" value="402F3201XIAR" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R6" library="rcl_custom" package=".0603-B-NOSILK" value="0" x="47.752" y="42.037" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.0696" y="43.504" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
