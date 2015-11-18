@@ -17134,7 +17134,7 @@ by exp-lbrs.ulp</description>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF">
 <attribute name="DPN" value="490-1532-1-ND"/>
 </part>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="cmd-showzoom"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10nF"/>
 <part name="GND20" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="L1" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="22n"/>
 <part name="L2" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="15n"/>
