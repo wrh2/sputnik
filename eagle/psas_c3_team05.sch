@@ -17053,7 +17053,12 @@ by exp-lbrs.ulp</description>
 <attribute name="MFG" value="Microchip Technology"/>
 <attribute name="MFG-PN" value="MIC5319-3.3YD5-TR"/>
 </part>
-<part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="BC"/>
+<part name="JP1" library="Vibrogait_prototype" deviceset="SPARKFUN-CONNECTORS_M02" device="4UCON-15767" value="BC">
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="455-1749-1-ND"/>
+<attribute name="MFG" value="JST Sales America Inc."/>
+<attribute name="MFG-PN" value="S2B-PH-SM4-TB(LF)(SN)"/>
+</part>
 <part name="GND1" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="RT1" library="Vibrogait_prototype" deviceset="THERMISTOR-" device="_1206" value="10K (NTC)">
 <attribute name="DIST" value="Digi-Key"/>
@@ -17248,7 +17253,10 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND25" library="Vibrogait_prototype" deviceset="GND" device=""/>
 <part name="LED1" library="Vibrogait_prototype" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="APHFT1612PBASURKVGAC">
-<attribute name="DPN" value="754-1100-1-ND"/>
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="160-2022-1-ND"/>
+<attribute name="MFG" value="Lite-On Inc."/>
+<attribute name="MFG-PN" value="LTST-C19FD1WT"/>
 </part>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
 <attribute name="DIST" value="Digi-Key"/>
@@ -17406,10 +17414,16 @@ by exp-lbrs.ulp</description>
 <part name="TP17" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 <part name="TP18" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 <part name="LED2" library="Vibrogait_prototype" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="APHFT1612PBASURKVGAC">
-<attribute name="DPN" value="754-1100-1-ND"/>
+<attribute name="DIST" value="Digi-Key"/>
+<attribute name="DPN" value="160-2022-1-ND"/>
+<attribute name="MFG" value="Lite-On Inc."/>
+<attribute name="MFG-PN" value="LTST-C19FD1WT"/>
 </part>
 <part name="LED3" library="Vibrogait_prototype" deviceset="LED" device="-0603" value="GRN">
+<attribute name="DIST" value="Digi-Key"/>
 <attribute name="DPN" value="160-1446-1-ND"/>
+<attribute name="MFG" value="Lite-On Inc."/>
+<attribute name="MFG-PN" value="LTST-C191KGKT"/>
 </part>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
 <attribute name="DIST" value="Digi-Key"/>
@@ -17564,6 +17578,10 @@ according to the databook</text>
 <instance part="JP1" gate="G$1" x="345.44" y="337.82" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="347.98" y="332.74" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="347.98" y="343.662" size="1.778" layer="95" rot="MR0"/>
+<attribute name="DIST" x="345.44" y="337.82" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="345.44" y="337.82" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG" x="345.44" y="337.82" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG-PN" x="345.44" y="337.82" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="337.82" y="307.34" smashed="yes">
 <attribute name="VALUE" x="335.28" y="304.8" size="1.778" layer="96"/>
@@ -17872,6 +17890,9 @@ according to the databook</text>
 <attribute name="NAME" x="210.82" y="322.58" size="1.778" layer="95"/>
 <attribute name="VALUE" x="210.82" y="320.04" size="1.778" layer="96"/>
 <attribute name="DPN" x="213.36" y="309.88" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="DIST" x="213.36" y="309.88" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="MFG" x="213.36" y="309.88" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="MFG-PN" x="213.36" y="309.88" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="R3" gate="R" x="226.06" y="314.96" smashed="yes" rot="MR0">
 <attribute name="NAME" x="229.87" y="316.4586" size="1.778" layer="95" rot="MR0"/>
@@ -18171,11 +18192,17 @@ according to the databook</text>
 <attribute name="NAME" x="76.2" y="231.14" size="1.778" layer="95"/>
 <attribute name="VALUE" x="76.2" y="233.68" size="1.778" layer="96"/>
 <attribute name="DPN" x="119.38" y="233.68" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DIST" x="119.38" y="233.68" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG" x="119.38" y="233.68" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFG-PN" x="119.38" y="233.68" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="LED3" gate="LED" x="477.52" y="345.44" smashed="yes">
 <attribute name="NAME" x="480.06" y="346.71" size="1.778" layer="95"/>
 <attribute name="VALUE" x="480.06" y="344.17" size="1.778" layer="96"/>
 <attribute name="DPN" x="477.52" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="477.52" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="477.52" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFG-PN" x="477.52" y="345.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R2" gate="R" x="477.52" y="337.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="480.06" y="339.09" size="1.778" layer="95"/>
