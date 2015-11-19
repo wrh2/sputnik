@@ -3291,27 +3291,24 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIST" value="Digi-Key" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="AVX Corp/Kyocera Corp" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFG-PN" value="CX3225GA32000D0PTVCC" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DPN2" value="CTX1364CT-ND" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG2" value="CTS-Frequency Controls" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG2-PN" value="402F3201XIAR" x="45.974" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R6" library="rcl_custom" package=".0603-B-NOSILK" value="0" x="47.752" y="42.037" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.0696" y="43.504" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="48.6412" y="43.11" size="0.8128" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="47.9806" y="42.1386" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C22" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="11pF" x="45.212" y="44.577" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM188R71C104KA01D" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DPN" value="490-1532-1-ND" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C22" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="4pF" x="45.212" y="44.577" smashed="yes" rot="R180">
+<attribute name="MPN" value="GRM1885C1H4R0CA01D" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DPN" value="490-10720-6-ND" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digi-Key" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFG" value="Murata Electronics North America" x="45.212" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="45.29724375" y="45.24491875" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="45.19564375" y="45.56271875" size="0.8128" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="45.1866" y="44.577" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C26" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="11pF" x="44.069" y="42.037" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM188R71C104KA01D" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DPN" value="490-1532-1-ND" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C26" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="4pF" x="44.069" y="42.037" smashed="yes" rot="R90">
+<attribute name="MPN" value="GRM1885C1H4R0CA01D" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN" value="490-10720-6-ND" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digi-Key" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="Murata Electronics North America" x="44.069" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="42.6848" y="41.4466" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -3551,6 +3548,24 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG-PN" value="LQW18AN15NG00D" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
 <attribute name="MFG" value="Murata" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digi-Key" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X2" library="crystal" package="FC-12M" value="32 MHz" x="-0.127" y="-23.241">
+<attribute name="DIST" value="Digi-Key" x="-0.127" y="-23.241" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="CTS-Frequency Controls" x="-0.127" y="-23.241" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="402F3201XIAR" x="-0.127" y="-23.241" size="1.778" layer="27" display="off"/>
+<attribute name="DPN" value="CTX1364CT-ND" x="-0.127" y="-23.241" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C30" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="5pF" x="0" y="-27.813">
+<attribute name="DPN" value="490-10720-6-ND" x="0" y="-27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="0" y="-27.813" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="0" y="-27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM1885C1H4R0CA01D" x="0" y="-27.813" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C31" library="Vibrogait_prototype" package=".0603-B-NOSILK" value="5pF" x="0" y="-31.877">
+<attribute name="DPN" value="490-10720-6-ND" x="0" y="-31.877" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata Electronics North America" x="0" y="-31.877" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="0" y="-31.877" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM1885C1H4R0CA01D" x="0" y="-31.877" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3941,6 +3956,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP11" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C13" pad="2"/>
+<contactref element="C31" pad="2"/>
+<contactref element="C30" pad="2"/>
 <wire x1="73.279" y1="63.5" x2="75.311" y2="70.231" width="0" layer="19" extent="1-1"/>
 <wire x1="74.549" y1="60.96" x2="73.279" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="73.279" y1="59.69" x2="74.549" y2="60.96" width="0" layer="19" extent="1-1"/>
@@ -4286,6 +4303,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.161" y1="11.049" x2="18.161" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="0.8" y1="-10.16" x2="0.889" y2="0.889" width="0" layer="19" extent="1-1"/>
 <wire x1="0.8" y1="-14.224" x2="0.8" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8" y1="-27.813" x2="0.8" y2="-14.224" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8" y1="-31.877" x2="0.8" y2="-27.813" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="U1" pad="1"/>
@@ -5510,6 +5529,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.94" y1="18.542" x2="27.94" y2="15.621" width="0.254" layer="1"/>
 <wire x1="27.94" y1="15.621" x2="25.4" y2="13.081" width="0.254" layer="1"/>
 <wire x1="25.4" y1="13.081" x2="25.4" y2="4.191" width="0.254" layer="1"/>
+</signal>
+<signal name="N$14">
+<contactref element="C31" pad="1"/>
+<contactref element="X2" pad="2"/>
+<wire x1="0.723" y1="-23.241" x2="-0.8" y2="-31.877" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="C30" pad="1"/>
+<contactref element="X2" pad="1"/>
+<wire x1="-0.977" y1="-23.241" x2="-0.8" y2="-27.813" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
