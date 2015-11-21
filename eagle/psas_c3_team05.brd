@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26,16 +26,16 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -3531,23 +3531,23 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="27.2288" y="48.1838" size="0.635" layer="25" ratio="20"/>
 <attribute name="VALUE" x="30.734" y="53.721" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C11" library="rcl_custom" package=".0603-B-NOSILK" value="12p" x="0" y="-10.16">
-<attribute name="MFG" value="AVX" x="0" y="-10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Mouser" x="0" y="-10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MFG-PN" value="06035A120FAT2A" x="0" y="-10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DPN" value="581-06035A120FAT2A" x="0" y="-10.16" size="1.778" layer="27" display="off"/>
+<element name="C11" library="rcl_custom" package=".0603-B-NOSILK" value="12p" x="53.594" y="34.163" rot="R270">
+<attribute name="MFG" value="AVX" x="53.594" y="34.163" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Mouser" x="53.594" y="34.163" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG-PN" value="06035A120FAT2A" x="53.594" y="34.163" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DPN" value="581-06035A120FAT2A" x="53.594" y="34.163" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C13" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="0" y="-14.224">
-<attribute name="MFG" value="AVX" x="0" y="-14.224" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digi-Key" x="0" y="-14.224" size="1.778" layer="27" display="off"/>
-<attribute name="MFG-PN" value="06031A150FAT2A" x="0" y="-14.224" size="1.778" layer="27" display="off"/>
-<attribute name="DPN" value="478-6024-1-ND" x="0" y="-14.224" size="1.778" layer="27" display="off"/>
+<element name="C13" library="rcl_custom" package=".0603-B-NOSILK" value="15p" x="59.817" y="38.735" rot="R90">
+<attribute name="MFG" value="AVX" x="59.817" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="59.817" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG-PN" value="06031A150FAT2A" x="59.817" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN" value="478-6024-1-ND" x="59.817" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="L3" library="rcl_custom" package=".0603-B-NOSILK" value="15n" x="0" y="-18.288">
-<attribute name="DPN" value="490-6866-1-ND" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
-<attribute name="MFG-PN" value="LQW18AN15NG00D" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
-<attribute name="MFG" value="Murata" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digi-Key" x="0" y="-18.288" size="1.778" layer="27" display="off"/>
+<element name="L3" library="rcl_custom" package=".0603-B-NOSILK" value="15n" x="62.23" y="35.052">
+<attribute name="DPN" value="490-6866-1-ND" x="62.23" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG-PN" value="LQW18AN15NG00D" x="62.23" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Murata" x="62.23" y="35.052" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="62.23" y="35.052" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X2" library="crystal" package="FC-12M" value="32 MHz" x="-0.127" y="-23.241">
 <attribute name="DIST" value="Digi-Key" x="-0.127" y="-23.241" size="1.778" layer="27" display="off"/>
@@ -4301,9 +4301,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.447" y1="13.335" x2="20.447" y2="15.621" width="0" layer="19" extent="1-1"/>
 <wire x1="18.161" y1="13.335" x2="20.447" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="18.161" y1="11.049" x2="18.161" y2="13.335" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8" y1="-10.16" x2="0.889" y2="0.889" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8" y1="-14.224" x2="0.8" y2="-10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8" y1="-27.813" x2="0.8" y2="-14.224" width="0" layer="19" extent="1-1"/>
+<wire x1="53.594" y1="33.363" x2="0.889" y2="0.889" width="0" layer="19" extent="1-1"/>
+<wire x1="59.817" y1="39.535" x2="53.594" y2="33.363" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8" y1="-27.813" x2="59.817" y2="39.535" width="0" layer="19" extent="1-1"/>
 <wire x1="0.8" y1="-31.877" x2="0.8" y2="-27.813" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT">
@@ -4620,22 +4620,24 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="L1" pad="2"/>
 <wire x1="48.5818" y1="35.024" x2="50.546" y2="35.024" width="0.254" layer="1"/>
-<wire x1="50.546" y1="35.024" x2="53.533" y2="35.024" width="0.762" layer="1"/>
 <wire x1="55.207" y1="35.052" x2="53.683" y2="35.052" width="0.762" layer="1"/>
 <contactref element="C11" pad="1"/>
-<wire x1="53.683" y1="35.052" x2="53.594" y2="36.411" width="0" layer="19" extent="1-1"/>
-<wire x1="53.533" y1="35.024" x2="53.683" y2="35.052" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.8" y1="-10.16" x2="48.5818" y2="35.024" width="0" layer="19" extent="1-1"/>
+<wire x1="53.594" y1="36.411" x2="53.594" y2="35.306" width="0.762" layer="1"/>
+<wire x1="53.594" y1="35.306" x2="53.594" y2="35.141" width="0.762" layer="1"/>
+<wire x1="53.594" y1="35.141" x2="53.683" y2="35.052" width="0.762" layer="1"/>
+<wire x1="53.683" y1="35.052" x2="50.574" y2="35.052" width="0.762" layer="1"/>
+<wire x1="50.574" y1="35.052" x2="50.546" y2="35.024" width="0.762" layer="1"/>
+<wire x1="53.594" y1="34.963" x2="53.594" y2="35.141" width="0.762" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="C12" pad="1"/>
 <contactref element="L2" pad="2"/>
 <wire x1="59.855" y1="36.576" x2="59.855" y2="35.052" width="0.762" layer="1"/>
-<wire x1="59.855" y1="36.576" x2="59.855" y2="38.024" width="0.762" layer="1"/>
 <contactref element="C13" pad="1"/>
 <contactref element="L3" pad="1"/>
-<wire x1="-0.8" y1="-14.224" x2="59.855" y2="35.052" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.8" y1="-18.288" x2="-0.8" y2="-14.224" width="0" layer="19" extent="1-1"/>
+<wire x1="59.855" y1="35.052" x2="61.43" y2="35.052" width="0.762" layer="1"/>
+<wire x1="59.855" y1="38.024" x2="59.817" y2="37.935" width="0" layer="19" extent="1-1"/>
+<wire x1="59.855" y1="38.024" x2="59.855" y2="36.576" width="0.762" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="C10" pad="1"/>
@@ -4673,7 +4675,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="64.262" y1="34.925" x2="64.3" y2="34.925" width="0.254" layer="1"/>
 <wire x1="64.3" y1="34.925" x2="64.389" y2="35.014" width="0.254" layer="1"/>
 <contactref element="L3" pad="2"/>
-<wire x1="0.8" y1="-18.288" x2="64.262" y2="34.925" width="0" layer="19" extent="1-1"/>
+<wire x1="63.03" y1="35.052" x2="64.389" y2="35.052" width="0.762" layer="1"/>
+<wire x1="64.389" y1="35.052" x2="64.389" y2="35.014" width="0.762" layer="1"/>
 </signal>
 <signal name="PTA1">
 <contactref element="IC1" pad="26"/>
