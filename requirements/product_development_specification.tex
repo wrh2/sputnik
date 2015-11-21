@@ -8,7 +8,7 @@
 \begin{document}
 
 \title{Product Development Specification}%replace X with the appropriate number
-\author{William Harrington, Jake Heath, Saroj Bardewa,\\ Shan Quinney, Michael Mathis\\ \\ %replace with your name
+\author{Team 05\\William Harrington, Jake Heath, Saroj Bardewa,\\ Shan Quinney, Michael Mathis\\ \\ %replace with your name
 ECE411} %if necessary, replace with your course title
 
 \maketitle
@@ -18,7 +18,7 @@ ECE411} %if necessary, replace with your course title
 		The Portland State Aerospace Society (PSAS) needs a device that can be used for command, control, communications between a \textbf{CubeSat} and a \textbf{ground station}.
 		A \textbf{CubeSat} is a miniature satellite that can be used for scientific research in space. It has a volume of one liter (10cm cube), and has a mass of no more than 1.33kg.
 		A \textbf{ground station} is a radio station located on earth that is designed for communication with spacecraft.
-		Development of such a device is not trivial as it will need to eventually be "space ready" and will require multiple phases of development. \hfill \\ \\
+		Development of such a device is not trivial as it will need to eventually be "space ready" (for example being able to operate in -30C to 150C temperature ranges and withstand ionizing radiation from space environment)  and will require multiple phases of development. \hfill \\ \\
 		The first phase of development will involve finding and de-risking a microcontroller that is capable of handling command, control, and communications.
 		Therefore, the device will be a communications module "breakout board" that will allow easy access to the features of the microcontroller like UART, I2C, SPI, GPIO, ADCs/DACs, etc. Access to these features will rely on miscellaneous connectors such as .1 inch pin headers, USB, 6-pin JTAG, etc. Furthermore, as a project that is sponsored by PSAS it should adhere to their open source standards, while obeying governmental regulations.
 		\hfill \\ \\
@@ -43,9 +43,9 @@ ECE411} %if necessary, replace with your course title
 			\item{Use USB for interfacing}
 			\item{Be able to send/receive data packets via RF communication}
 			\item{Be capable of RF communication at a distances greater than 6 feet}
-			\item{Be battery powered}
+			\item{Be battery powered (as opposed to using lab power supplies) }
 			\item{If battery powered, utilize USB for recharging}
-			\item{Comply with Eurpean Telecommunications Standard Institute(ETSI) and Federal Communications Commission (FCC) regulatory requirements}
+			\item{Comply with European Telecommunications Standard Institute(ETSI) and Federal Communications Commission (FCC) regulatory requirements}
 			\item{Use a GNU GPL v3 license for all design work and software} 
 		\end{itemize}
 		\textbf{May}
