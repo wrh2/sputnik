@@ -1,17 +1,6 @@
-# ECE411
-Repository for ECE411 Project
+# C3 Prototype
 
-## Table of contents
-
-Antenna_Filters - contains analog circuit designs in LTSpice for Antenna
-
-datasheets - contains important datasheets for the hardware we are using
-
-eagle - contains eagleCAD designs of device
-
-requirements - contains product development specification
-
-schedule - contains the project schedule, gantt chart, and task list
+[Project details] (https://github.com/wrh2/ECE411/wiki)
 
 ## Project Team
 Jake Heath (jakeheath@gmail.com)
