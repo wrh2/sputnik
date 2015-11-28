@@ -1,5 +1,7 @@
 # C3 Prototype
 
+Project repo for Portland State Aerospace Society C3 Prototype
+
 [Project details] (https://github.com/wrh2/ECE411/wiki)
 
 ## Project Team
