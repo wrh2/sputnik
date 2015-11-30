@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17495,26 +17495,6 @@ by exp-lbrs.ulp</description>
 <attribute name="MFG" value="Murata"/>
 <attribute name="MFG-PN" value="LQW18AN15NG00D"/>
 </part>
-<part name="X2" library="crystal" deviceset="FC-12M" device="" value="32 MHz">
-<attribute name="DIST" value="Digi-Key"/>
-<attribute name="DPN" value="CTX1364CT-ND"/>
-<attribute name="MFG" value="CTS-Frequency Controls"/>
-<attribute name="MFG-PN" value="402F3201XIAR"/>
-</part>
-<part name="C30" library="Vibrogait_prototype" deviceset="C-EU" device="0603-B-NOSILK" value="5pF">
-<attribute name="DIST" value="Digi-Key"/>
-<attribute name="DPN" value="490-10720-6-ND"/>
-<attribute name="MFG" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM1885C1H4R0CA01D"/>
-</part>
-<part name="C31" library="Vibrogait_prototype" deviceset="C-EU" device="0603-B-NOSILK" value="5pF">
-<attribute name="DIST" value="Digi-Key"/>
-<attribute name="DPN" value="490-10720-6-ND"/>
-<attribute name="MFG" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM1885C1H4R0CA01D"/>
-</part>
-<part name="GND45" library="Vibrogait_prototype" deviceset="GND" device=""/>
-<part name="GND46" library="Vibrogait_prototype" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18347,36 +18327,6 @@ according to the databook</text>
 <attribute name="MFG" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
 <attribute name="MFG-PN" x="447.04" y="218.44" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="X2" gate="G$1" x="370.84" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="369.57" y="195.58" size="1.778" layer="95"/>
-<attribute name="VALUE" x="366.1156" y="202.6666" size="1.778" layer="96"/>
-<attribute name="DIST" x="370.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="370.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFG" x="370.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFG-PN" x="370.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C30" gate="CE" x="375.92" y="193.04" smashed="yes">
-<attribute name="DIST" x="375.92" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="375.92" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="MFG" x="375.92" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="375.92" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="378.46" y="190.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="378.46" y="187.96" size="1.778" layer="96"/>
-</instance>
-<instance part="C31" gate="CE" x="365.76" y="193.04" smashed="yes">
-<attribute name="DIST" x="365.76" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="365.76" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="MFG" x="365.76" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="365.76" y="193.04" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="368.3" y="190.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="368.3" y="187.96" size="1.778" layer="96"/>
-</instance>
-<instance part="GND45" gate="1" x="365.76" y="185.42" smashed="yes">
-<attribute name="VALUE" x="363.22" y="182.88" size="1.778" layer="96"/>
-</instance>
-<instance part="GND46" gate="1" x="375.92" y="185.42" smashed="yes">
-<attribute name="VALUE" x="373.38" y="182.88" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -18722,14 +18672,6 @@ according to the databook</text>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="500.38" y1="297.18" x2="492.76" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="492.76" y1="297.18" x2="492.76" y2="294.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C31" gate="CE" pin="2"/>
-<pinref part="GND45" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C30" gate="CE" pin="2"/>
-<pinref part="GND46" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -19854,22 +19796,6 @@ according to the databook</text>
 <wire x1="383.54" y1="132.08" x2="391.16" y2="132.08" width="0.1524" layer="91"/>
 <junction x="383.54" y="132.08"/>
 <pinref part="JP5" gate="A" pin="14"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="C31" gate="CE" pin="1"/>
-<wire x1="365.76" y1="195.58" x2="365.76" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="200.66" x2="368.3" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="C30" gate="CE" pin="1"/>
-<wire x1="375.92" y1="195.58" x2="375.92" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="200.66" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
