@@ -1,0 +1,7 @@
+1) Footprint for crystal is wrong, needs to be for 32MHz
+2) LED footprint needs to be changed to match LED that was actually used
+3) The battery charger setup is completely wrong.
+   !TE needs to be tied LOW
+   SEL needs to be tied LOW
+   CE needs to be tied HIGH
+   PROG2 needs to be tied HIGH
