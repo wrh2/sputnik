@@ -1,0 +1,2 @@
+Origin is suppose to be in the center
+Set the grid so everything snaps to the correct grid
