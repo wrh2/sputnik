@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabulary}
+
+
+\begin{document}
+
+\title{Sputnik Product Development Specification}%replace X with the appropriate number
+\author{William Harrington, Jake Heath, Shan Quinney, Michael Mathis\\ \\ %replace with your name
+ECE412 Capstone} %if necessary, replace with your course title
+
+\maketitle
+ \small
+\begin{description}
+	\item[Requirements] \hfill \\ \\
+		\textbf{Must}
+		\begin{itemize}
+			\item Environment
+			\begin{itemize}
+				\item Have a radiation tolerant watchdog system
+				\item Be able to operate in an Industrial Operating Temperature Range (-40°C to 80°C)
+				\item Acceleration: must handle 15g in the "Z" axis
+				\item Vibration TBD
+			\end{itemize}
+			\item Communication block ("radio")
+			\begin{itemize}
+				\item Operate in the 70 cm band (436 to 438 MHz)
+				\begin{itemize}
+					\item Use IARU specified frequency for RF comms and make appropriate changes if necessary
+				\end{itemize}
+				\item Meet FCC Amateur Radio Licensing requirements (Title 47 CFR part 97)
+				\item Meet 400km ISS orbit link budget by a margin of 6 dB
+				\item Have bidirectional communication interface to Payload and System Controller
+				\item Local storage for communication in/out queues
+			\end{itemize}
+			\item Energy storage
+			\begin{itemize}
+				\item Use an energy storage system to power the energy when not in sunlight
+				\item Monitor the state of charge of the battery
+				\begin{itemize}
+					\item Voltage
+					\item Current
+					\item Charge (Coulombs)
+				\end{itemize}
+				\item Charge the energy storage using input from energy harvesting system
+			\end{itemize}
+			\item Energy harvesting
+			\begin{itemize}
+				\item Handle 6 photovoltaic panel inputs
+			\end{itemize}
+			\item Energy Switching/Control
+			\begin{itemize}
+				\item Be able to seamlessly switch energy sources to the load
+			\end{itemize}
+			\item System controller
+			\begin{itemize}
+				\item Radiation tolerant "system watchdog" controller
+				\item Power switches to turn other blocks on and off
+				\item Monitor energy storage and energy harvesting systems
+				\item Communication link with communication block
+			\end{itemize}
+			\item CubeSat requirements
+			\begin{itemize}
+				\item Conforms to latest CubeSat specification where applicable
+				\item Fits in 1/4 1U CubeSat
+				\item Weighs less than 250 g
+			\end{itemize}
+		\end{itemize}
+		\textbf{Should}
+		\begin{itemize}
+			\item{In general}
+			\begin{itemize}
+				\item Use as many COTS (Commercial Off The Shelf) parts as possible
+			\end{itemize}
+			\item Environment
+			\begin{itemize}
+				\item Operate in Automotive Operating Temperature Range (-40C to 125C)
+			\end{itemize}
+			\item Communication block ("radio")
+			\begin{itemize}
+				\item Use a frequency of 436.5 MHz for RF communication
+			\end{itemize}
+		\end{itemize}
+	
+		\textbf{May}
+		\begin{itemize}
+			\item Environment
+			\begin{itemize}
+				\item Operate in Military Operating Temperature Range (-55°C to 125°C)
+			\end{itemize}
+		\end{itemize}
+	\newpage
+	\item[Deliverables] \hfill \\
+		\begin{itemize}
+			\item Hardware
+			\begin{itemize}
+				\item 2 working Sputnik boards
+				\item 1 running Sputnik demo (not flight) code
+				\item 1 running UART to Sputnik radio adapter for test/debug
+				\item 1 working test setup
+			\end{itemize}
+			\item Firmware
+			\begin{itemize}
+				\item Basic Sputnik functionality for KW0x microcontroller
+				\item Drivers
+				\begin{itemize}
+					\item Timers and Interrupts
+					\item SPI
+					\item UART
+					\item Radio
+				\end{itemize}
+				\item System Controller
+				\begin{itemize}
+					\item Simple monitoring of power system
+					\item Simple watchdog system to turn on and off other system blocks
+				\end{itemize}
+			\end{itemize}
+			\item System Level
+			\begin{itemize}
+				\item Radio works, demonstrated over 10 km
+				\item System controller can turn other blocks on and off
+				\item Power system charges batteries from external input
+			\end{itemize}
+		\end{itemize}
+\end{description}
+\end{document}
