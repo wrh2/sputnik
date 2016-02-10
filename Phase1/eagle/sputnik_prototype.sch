@@ -377,6 +377,26 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <smd name="GND4" x="4.191" y="0.508" dx="2.54" dy="4.064" layer="1"/>
 <smd name="P$3" x="0" y="0.508" dx="1.524" dy="4.064" layer="1"/>
 </package>
+<package name="SKY65116">
+<wire x1="0" y1="0" x2="8.385" y2="0" width="0.127" layer="1"/>
+<wire x1="8.385" y1="0" x2="8.385" y2="-8.385" width="0.127" layer="1"/>
+<wire x1="8.385" y1="-8.385" x2="0" y2="-8.385" width="0.127" layer="1"/>
+<wire x1="0" y1="-8.385" x2="0" y2="0" width="0.127" layer="1"/>
+<wire x1="0.507" y1="-0.0299" x2="0.0333" y2="-0.5075" width="0.127" layer="1"/>
+<smd name="1" x="0.4827" y="-2.3565" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="2" x="0.4827" y="-4.1925" dx="0.893" dy="0.81" layer="1"/>
+<smd name="3" x="0.4827" y="-6.0285" dx="0.893" dy="0.81" layer="1"/>
+<smd name="4" x="2.3565" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="5" x="4.1925" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="6" x="6.0285" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="7" x="7.8986" y="-6.0285" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="8" x="7.8986" y="-4.1925" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="9" x="7.8986" y="-2.3565" dx="0.893" dy="0.81" layer="1"/>
+<smd name="10" x="6.0285" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="11" x="4.1925" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="12" x="2.3565" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<circle x="4.1925" y="-4.1925" radius="2.54" width="0.127" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MKW01Z128">
@@ -520,6 +540,26 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
 <pin name="CENTERCONDUCTOR" x="7.62" y="0" visible="pad" rot="R180"/>
 <pin name="OUTERCONDUCTOR" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
+</symbol>
+<symbol name="SKY65116">
+<description>SKY65116 Linear Power Amplifier</description>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="5.08" length="short"/>
+<pin name="RFIN" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="VCC1" x="-12.7" y="-2.54" length="short" direction="pwr"/>
+<pin name="GND2" x="-12.7" y="-5.08" length="short"/>
+<pin name="GND3" x="-12.7" y="-7.62" length="short"/>
+<pin name="GND4" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="RFOUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="GND5" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VREF" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="VCNT" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC2" x="12.7" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND1" x="-12.7" y="0" length="short" swaplevel="1"/>
+<text x="-5.08" y="7.62" size="1.778" layer="94">SKY65116</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -685,6 +725,34 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <connects>
 <connect gate="G$1" pin="CENTERCONDUCTOR" pad="P$3"/>
 <connect gate="G$1" pin="OUTERCONDUCTOR" pad="GND1 GND2 GND3 GND4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SKY65116">
+<description>SKYWORK SKY65116
+LINEAR POWER AMPLIFIER</description>
+<gates>
+<gate name="G$1" symbol="SKY65116" x="-15.24" y="15.24"/>
+</gates>
+<devices>
+<device name="" package="SKY65116">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GND1" pad="3"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="GND3" pad="6"/>
+<connect gate="G$1" pin="GND4" pad="7"/>
+<connect gate="G$1" pin="GND5" pad="9"/>
+<connect gate="G$1" pin="RFIN" pad="2"/>
+<connect gate="G$1" pin="RFOUT" pad="8"/>
+<connect gate="G$1" pin="VCC1" pad="4"/>
+<connect gate="G$1" pin="VCC2" pad="10"/>
+<connect gate="G$1" pin="VCNT" pad="11"/>
+<connect gate="G$1" pin="VREF" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -911,9 +979,9 @@ Based on the following sources:&lt;p&gt;
 <pin name="AREF" x="-27.94" y="38.1" length="middle" direction="pas"/>
 <pin name="XTAL1" x="-27.94" y="43.18" length="middle"/>
 <pin name="XTAL2" x="-27.94" y="48.26" length="middle"/>
-<pin name="VCC1" x="-27.94" y="27.94" visible="pad" length="middle" direction="pwr"/>
+<pin name="VCC@1" x="-27.94" y="27.94" length="middle" direction="pwr"/>
 <pin name="VCC" x="-27.94" y="25.4" length="middle" direction="pwr"/>
-<pin name="GND1" x="-27.94" y="20.32" visible="pad" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-27.94" y="20.32" length="middle" direction="pwr"/>
 <pin name="GND" x="-27.94" y="22.86" length="middle" direction="pwr"/>
 <pin name="PG3(TOSC2)" x="-27.94" y="10.16" length="middle"/>
 <pin name="PG4(TOSC1)" x="-27.94" y="5.08" length="middle"/>
@@ -983,8 +1051,8 @@ Source: avr.lbr</description>
 <connect gate="G$1" pin="AREF" pad="62"/>
 <connect gate="G$1" pin="AVCC" pad="64"/>
 <connect gate="G$1" pin="GND" pad="22"/>
-<connect gate="G$1" pin="GND1" pad="53"/>
 <connect gate="G$1" pin="GND@1" pad="63"/>
+<connect gate="G$1" pin="GND@2" pad="53"/>
 <connect gate="G$1" pin="PEN" pad="1"/>
 <connect gate="G$1" pin="PF0(ADC0)" pad="61"/>
 <connect gate="G$1" pin="PF1(ADC1)" pad="60"/>
@@ -1002,12 +1070,17 @@ Source: avr.lbr</description>
 <connect gate="G$1" pin="RESET" pad="20"/>
 <connect gate="G$1" pin="THERMAL" pad="TH"/>
 <connect gate="G$1" pin="VCC" pad="21"/>
-<connect gate="G$1" pin="VCC1" pad="52"/>
+<connect gate="G$1" pin="VCC@1" pad="52"/>
 <connect gate="G$1" pin="XTAL1" pad="24"/>
 <connect gate="G$1" pin="XTAL2" pad="23"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ATMEGA128-16MU" constant="no"/>
+<attribute name="OC_FARNELL" value="1455093" constant="no"/>
+<attribute name="OC_NEWARK" value="58M3717" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7353,11 +7426,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK"/>
 <part name="U$2" library="psas_c3_team05" deviceset="SMAJ716-ND" device=""/>
 <part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
+<part name="U$3" library="psas_c3_team05" deviceset="SKY65116" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="327.66" y="30.48" size="2.54" layer="97">William Harrington</text>
+<text x="327.66" y="30.48" size="2.54" layer="97">William Harrington, James Heath</text>
 <wire x1="10.16" y1="254" x2="63.5" y2="254" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="254" x2="63.5" y2="167.64" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="167.64" x2="10.16" y2="167.64" width="0.1524" layer="97" style="longdash"/>
@@ -7411,6 +7485,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <instance part="C14" gate="CE" x="480.06" y="365.76" rot="R270"/>
 <instance part="U$2" gate="G$1" x="515.62" y="345.44" rot="MR0"/>
 <instance part="GND13" gate="1" x="515.62" y="330.2"/>
+<instance part="U$3" gate="G$1" x="510.54" y="378.46"/>
 </instances>
 <busses>
 </busses>
@@ -7451,7 +7526,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <pinref part="JP3" gate="G$1" pin="10"/>
 <wire x1="86.36" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <junction x="68.58" y="66.04"/>
-<pinref part="U1" gate="G$1" pin="GND1"/>
+<pinref part="U1" gate="G$1" pin="GND@2"/>
 <wire x1="144.78" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
 <junction x="68.58" y="132.08"/>
 <pinref part="U1" gate="G$1" pin="GND@1"/>
@@ -7559,7 +7634,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <pinref part="U1" gate="G$1" pin="AVCC"/>
 <wire x1="144.78" y1="147.32" x2="96.52" y2="147.32" width="0.1524" layer="91"/>
 <junction x="96.52" y="147.32"/>
-<pinref part="U1" gate="G$1" pin="VCC1"/>
+<pinref part="U1" gate="G$1" pin="VCC@1"/>
 <wire x1="144.78" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
 <junction x="96.52" y="139.7"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
