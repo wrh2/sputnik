@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -377,26 +377,6 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <smd name="GND4" x="4.191" y="0.508" dx="2.54" dy="4.064" layer="1"/>
 <smd name="P$3" x="0" y="0.508" dx="1.524" dy="4.064" layer="1"/>
 </package>
-<package name="SKY65116">
-<wire x1="0" y1="0" x2="8.385" y2="0" width="0.127" layer="1"/>
-<wire x1="8.385" y1="0" x2="8.385" y2="-8.385" width="0.127" layer="1"/>
-<wire x1="8.385" y1="-8.385" x2="0" y2="-8.385" width="0.127" layer="1"/>
-<wire x1="0" y1="-8.385" x2="0" y2="0" width="0.127" layer="1"/>
-<wire x1="0.507" y1="-0.0299" x2="0.0333" y2="-0.5075" width="0.127" layer="1"/>
-<smd name="1" x="0.4827" y="-2.3565" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="2" x="0.4827" y="-4.1925" dx="0.893" dy="0.81" layer="1"/>
-<smd name="3" x="0.4827" y="-6.0285" dx="0.893" dy="0.81" layer="1"/>
-<smd name="4" x="2.3565" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="5" x="4.1925" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="6" x="6.0285" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="7" x="7.8986" y="-6.0285" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="8" x="7.8986" y="-4.1925" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="9" x="7.8986" y="-2.3565" dx="0.893" dy="0.81" layer="1"/>
-<smd name="10" x="6.0285" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
-<smd name="11" x="4.1925" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
-<smd name="12" x="2.3565" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
-<circle x="4.1925" y="-4.1925" radius="2.54" width="0.127" layer="1"/>
-</package>
 <package name="SKY13405-490LF">
 <wire x1="0" y1="0" x2="2" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="0" x2="2" y2="-2" width="0.127" layer="21"/>
@@ -424,6 +404,47 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <vertex x="0.5" y="-1.27639375"/>
 <vertex x="0.5" y="-0.72360625"/>
 </polygon>
+</package>
+<package name="SKY65116">
+<wire x1="0" y1="0" x2="8.385" y2="0" width="0.127" layer="21"/>
+<wire x1="8.385" y1="0" x2="8.385" y2="-8.385" width="0.127" layer="21"/>
+<wire x1="8.385" y1="-8.385" x2="0" y2="-8.385" width="0.127" layer="21"/>
+<wire x1="0" y1="-8.385" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0.507" y1="-0.0299" x2="0.0333" y2="-0.5075" width="0.127" layer="21"/>
+<smd name="1" x="0.4827" y="-2.3565" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="2" x="0.4827" y="-4.1925" dx="0.893" dy="0.81" layer="1"/>
+<smd name="3" x="0.4827" y="-6.0285" dx="0.893" dy="0.81" layer="1"/>
+<smd name="4" x="2.3565" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="5" x="4.1925" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="6" x="6.0285" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="7" x="7.8986" y="-6.0285" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="8" x="7.8986" y="-4.1925" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="9" x="7.8986" y="-2.3565" dx="0.893" dy="0.81" layer="1"/>
+<smd name="10" x="6.0285" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="11" x="4.1925" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="12" x="2.3565" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<polygon width="0.127" layer="1">
+<vertex x="2.2" y="-5.8" curve="-180"/>
+<vertex x="6.2" y="-2.6" curve="-180"/>
+</polygon>
+</package>
+<package name="LD39200">
+<wire x1="0" y1="0" x2="2.5" y2="0" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0" x2="2.5" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3.1" x2="0" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.1" x2="0" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="1">
+<vertex x="0" y="-0.675"/>
+<vertex x="2.5" y="-0.675"/>
+<vertex x="2.5" y="-2.425"/>
+<vertex x="0" y="-2.425"/>
+</polygon>
+<smd name="5" x="1.25" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="0.3" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="2.2" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="2.2" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="1.25" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="1" x="0.3" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -569,6 +590,25 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <pin name="CENTERCONDUCTOR" x="7.62" y="0" visible="pad" rot="R180"/>
 <pin name="OUTERCONDUCTOR" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
 </symbol>
+<symbol name="SKY13405-490LF">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-15.24" y="0" length="short"/>
+<pin name="CTRL" x="-15.24" y="-5.08" length="short" direction="in"/>
+<pin name="GND1" x="-5.08" y="-15.24" length="short" rot="R90"/>
+<pin name="RF3" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="GND2" x="5.08" y="-15.24" length="short" rot="R90"/>
+<pin name="GND3" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="RF1" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="GND4" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="GND5" x="5.08" y="15.24" length="short" rot="R270"/>
+<pin name="RF2" x="0" y="15.24" length="short" rot="R270"/>
+<pin name="GND6" x="-5.08" y="15.24" length="short" rot="R270"/>
+<text x="-10.16" y="2.54" size="1.778" layer="94">SKY13405-490LF</text>
+</symbol>
 <symbol name="SKY65116">
 <description>SKY65116 Linear Power Amplifier</description>
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -589,24 +629,18 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 <pin name="GND1" x="-12.7" y="0" length="short" swaplevel="1"/>
 <text x="-5.08" y="7.62" size="1.778" layer="94">SKY65116</text>
 </symbol>
-<symbol name="SKY13405-490LF">
-<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
-<pin name="VDD" x="-15.24" y="5.08" length="short" direction="pwr"/>
-<pin name="GND" x="-15.24" y="0" length="short"/>
-<pin name="CTRL" x="-15.24" y="-5.08" length="short" direction="in"/>
-<pin name="GND1" x="-5.08" y="-15.24" length="short" rot="R90"/>
-<pin name="RF3" x="0" y="-15.24" length="short" rot="R90"/>
-<pin name="GND2" x="5.08" y="-15.24" length="short" rot="R90"/>
-<pin name="GND3" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="RF1" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="GND4" x="15.24" y="5.08" length="short" rot="R180"/>
-<pin name="GND5" x="5.08" y="15.24" length="short" rot="R270"/>
-<pin name="RF2" x="0" y="15.24" length="short" rot="R270"/>
-<pin name="GND6" x="-5.08" y="15.24" length="short" rot="R270"/>
-<text x="-10.16" y="2.54" size="1.778" layer="94">SKY13405-490LF</text>
+<symbol name="LD39200">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="OUT" x="-2.54" y="-5.08" length="short" direction="out"/>
+<pin name="ADJ" x="-2.54" y="-10.16" length="short"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short"/>
+<pin name="IN" x="17.78" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="EN" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="PG" x="17.78" y="-15.24" length="short" rot="R180"/>
+<text x="2.54" y="-2.54" size="1.778" layer="94">LD39200</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -779,6 +813,32 @@ Parts include Samtech SHF-105-01-L-D-TH and similar and Don Connex P/N: C42.</de
 </device>
 </devices>
 </deviceset>
+<deviceset name="SKY13405-490LF">
+<gates>
+<gate name="G$1" symbol="SKY13405-490LF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SKY13405-490LF">
+<connects>
+<connect gate="G$1" pin="CTRL" pad="12"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="GND3" pad="4"/>
+<connect gate="G$1" pin="GND4" pad="6"/>
+<connect gate="G$1" pin="GND5" pad="7"/>
+<connect gate="G$1" pin="GND6" pad="9"/>
+<connect gate="G$1" pin="RF1" pad="5"/>
+<connect gate="G$1" pin="RF2" pad="8"/>
+<connect gate="G$1" pin="RF3" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="SKY65116">
 <description>SKYWORK SKY65116
 LINEAR POWER AMPLIFIER</description>
@@ -807,25 +867,19 @@ LINEAR POWER AMPLIFIER</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SKY13405-490LF">
+<deviceset name="LD39200">
 <gates>
-<gate name="G$1" symbol="SKY13405-490LF" x="0" y="0"/>
+<gate name="G$1" symbol="LD39200" x="-7.62" y="7.62"/>
 </gates>
 <devices>
-<device name="" package="SKY13405-490LF">
+<device name="" package="LD39200">
 <connects>
-<connect gate="G$1" pin="CTRL" pad="12"/>
-<connect gate="G$1" pin="GND" pad="11"/>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="3"/>
-<connect gate="G$1" pin="GND3" pad="4"/>
-<connect gate="G$1" pin="GND4" pad="6"/>
-<connect gate="G$1" pin="GND5" pad="7"/>
-<connect gate="G$1" pin="GND6" pad="9"/>
-<connect gate="G$1" pin="RF1" pad="5"/>
-<connect gate="G$1" pin="RF2" pad="8"/>
-<connect gate="G$1" pin="RF3" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="ADJ" pad="2"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="PG" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10481,7 +10535,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK"/>
 <part name="U$2" library="psas_c3_team05" deviceset="SMAJ716-ND" device=""/>
 <part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="U$3" library="psas_c3_team05" deviceset="SKY65116" device=""/>
 <part name="GND14" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND15" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND16" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -10547,6 +10600,8 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="C39" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
 <part name="Y2" library="Lilypad_Arduino_USB_v12" deviceset="SPARKFUN-FREQCTRL_RESONATOR" device="8MHZ" value="8MHZ"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X5" device="5X2MM"/>
+<part name="U$6" library="psas_c3_team05" deviceset="SKY65116" device=""/>
+<part name="U$3" library="psas_c3_team05" deviceset="LD39200" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10599,6 +10654,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <text x="20.32" y="218.44" size="1.778" layer="97">i2c</text>
 <text x="17.78" y="233.68" size="1.778" layer="97">power</text>
 <text x="15.24" y="195.58" size="1.778" layer="97">control</text>
+<text x="345.44" y="264.16" size="1.778" layer="97">This is the LDO</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10647,7 +10703,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="C14" gate="CE" x="363.22" y="386.08" rot="R270"/>
 <instance part="U$2" gate="G$1" x="543.56" y="307.34" rot="MR0"/>
 <instance part="GND13" gate="1" x="543.56" y="294.64"/>
-<instance part="U$3" gate="G$1" x="426.72" y="383.54"/>
 <instance part="GND14" gate="1" x="403.86" y="365.76"/>
 <instance part="GND15" gate="1" x="462.28" y="373.38"/>
 <instance part="GND16" gate="1" x="429.26" y="401.32" rot="MR0"/>
@@ -10742,6 +10797,8 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <attribute name="VALUE" x="139.7" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="JP4" gate="A" x="27.94" y="195.58" rot="MR0"/>
+<instance part="U$6" gate="G$1" x="426.72" y="383.54"/>
+<instance part="U$3" gate="G$1" x="345.44" y="261.62"/>
 </instances>
 <busses>
 </busses>
@@ -10875,31 +10932,31 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="403.86" y1="368.3" x2="403.86" y2="375.92" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="375.92" x2="403.86" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="378.46" x2="403.86" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="383.54" x2="403.86" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="388.62" x2="414.02" y2="388.62" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND1"/>
 <wire x1="414.02" y1="383.54" x2="403.86" y2="383.54" width="0.1524" layer="91"/>
 <junction x="403.86" y="383.54"/>
-<pinref part="U$3" gate="G$1" pin="GND2"/>
 <wire x1="414.02" y1="378.46" x2="403.86" y2="378.46" width="0.1524" layer="91"/>
 <junction x="403.86" y="378.46"/>
-<pinref part="U$3" gate="G$1" pin="GND3"/>
 <wire x1="414.02" y1="375.92" x2="403.86" y2="375.92" width="0.1524" layer="91"/>
 <junction x="403.86" y="375.92"/>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="U$6" gate="G$1" pin="GND2"/>
+<pinref part="U$6" gate="G$1" pin="GND3"/>
+<pinref part="U$6" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND4"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="439.42" y1="388.62" x2="462.28" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="462.28" y1="388.62" x2="462.28" y2="383.54" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND5"/>
 <wire x1="462.28" y1="383.54" x2="462.28" y2="375.92" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="383.54" x2="462.28" y2="383.54" width="0.1524" layer="91"/>
 <junction x="462.28" y="383.54"/>
+<pinref part="U$6" gate="G$1" pin="GND4"/>
+<pinref part="U$6" gate="G$1" pin="GND5"/>
 </segment>
 <segment>
 <pinref part="C15" gate="CE" pin="1"/>
@@ -11144,7 +11201,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <junction x="101.6" y="368.3"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCC1"/>
 <wire x1="414.02" y1="381" x2="408.94" y2="381" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="381" x2="408.94" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="414.02" x2="416.56" y2="414.02" width="0.1524" layer="91"/>
@@ -11155,6 +11211,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="C16" gate="CE" pin="2"/>
 <junction x="416.56" y="414.02"/>
 <pinref part="SUPPLY5" gate="1" pin="V+"/>
+<pinref part="U$6" gate="G$1" pin="VCC1"/>
 </segment>
 <segment>
 <wire x1="454.66" y1="414.02" x2="467.36" y2="414.02" width="0.1524" layer="91"/>
@@ -11166,8 +11223,8 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="454.66" y1="414.02" x2="444.5" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="444.5" y1="414.02" x2="444.5" y2="381" width="0.1524" layer="91"/>
 <junction x="454.66" y="414.02"/>
-<pinref part="U$3" gate="G$1" pin="VCC2"/>
 <wire x1="444.5" y1="381" x2="439.42" y2="381" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="VCC2"/>
 </segment>
 <segment>
 <wire x1="477.52" y1="347.98" x2="487.68" y2="347.98" width="0.1524" layer="91"/>
@@ -11176,14 +11233,13 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="C19" gate="CE" pin="2"/>
 <junction x="487.68" y="347.98"/>
 <pinref part="C20" gate="CE" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="VREF"/>
 <wire x1="439.42" y1="375.92" x2="457.2" y2="375.92" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="375.92" x2="457.2" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="347.98" x2="477.52" y2="347.98" width="0.1524" layer="91"/>
 <junction x="477.52" y="347.98"/>
+<pinref part="U$6" gate="G$1" pin="VREF"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCNT"/>
 <wire x1="439.42" y1="378.46" x2="477.52" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="378.46" x2="487.68" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="378.46" x2="487.68" y2="383.54" width="0.1524" layer="91"/>
@@ -11192,6 +11248,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <junction x="477.52" y="378.46"/>
 <pinref part="C22" gate="CE" pin="2"/>
 <junction x="487.68" y="378.46"/>
+<pinref part="U$6" gate="G$1" pin="VCNT"/>
 </segment>
 <segment>
 <pinref part="R1" gate="R" pin="2"/>
@@ -11418,17 +11475,17 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <pinref part="C14" gate="CE" pin="1"/>
 <wire x1="365.76" y1="386.08" x2="414.02" y2="386.08" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="RFIN"/>
+<pinref part="U$6" gate="G$1" pin="RFIN"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="RFOUT"/>
 <wire x1="439.42" y1="386.08" x2="452.12" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="386.08" x2="452.12" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="RF2"/>
 <wire x1="452.12" y1="330.2" x2="500.38" y2="330.2" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="330.2" x2="500.38" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="RFOUT"/>
 </segment>
 </net>
 <net name="N$24" class="0">
