@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19042,6 +19042,10 @@ PE0 is connected to PTA2</text>
 <text x="15.24" y="299.72" size="1.778" layer="97">Sense</text>
 <text x="406.4" y="332.74" size="1.778" layer="97">Need to figure out resistor value, 
 since there is fluctuating voltage here</text>
+<text x="502.92" y="335.28" size="1.778" layer="97">GND lines for RF2 and RF3 need to go along
+their respective transmission lines to prevent
+intereference from other signals. I have left
+them this way though to conserve space.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
