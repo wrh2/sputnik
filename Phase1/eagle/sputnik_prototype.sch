@@ -10389,39 +10389,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 <rectangle x1="4.699" y1="-2.921" x2="5.461" y2="-1.905" layer="21"/>
 </package>
-<package name="1X03">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-</package>
 <package name="1_05X2MM">
 <description>CON-M-1X5-200</description>
 <text x="-4.5" y="1.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
@@ -10473,46 +10440,8 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <pad name="5" x="4" y="0" drill="1.016" diameter="1.3" rot="R90"/>
 <rectangle x1="3.746" y1="-0.254" x2="4.254" y2="0.254" layer="51"/>
 </package>
-<package name="1X03/90">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
-<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
-<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
-<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
-<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
-<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
-<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
-<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
-</package>
 </packages>
 <symbols>
-<symbol name="PINHD3">
-<wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
 <symbol name="PINHD5">
 <wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-7.62" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
@@ -10528,34 +10457,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X3" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="PINHD3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X03">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="/90" package="1X03/90">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PINHD-1X5" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -18898,8 +18799,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND23" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="U$4" library="sputnik" deviceset="MAAL-010704" device=""/>
 <part name="GND24" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="500"/>
-<part name="L8" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK" value="150nH"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK"/>
+<part name="L8" library="rcl_custom" deviceset="L-US" device="0603-B-NOSILK"/>
 <part name="GND26" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="psas_c3_team05" deviceset="V+" device=""/>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -18936,8 +18837,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X5" device="5X2MM"/>
 <part name="U$6" library="psas_c3_team05" deviceset="SKY65116" device=""/>
 <part name="JP5" library="psas_c3_team05" deviceset="PINHD-1X2" device=""/>
-<part name="JP6" library="psas_c3_team05" deviceset="PINHD-1X2" device=""/>
-<part name="JP7" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="U2" library="Lilypad_Arduino_USB_v12" deviceset="SPARKFUN-POWERIC_V_REG_MIC5219" device="3.3V" value="MIC5219 3.3V"/>
 <part name="SUPPLY12" library="psas_c3_team05" deviceset="V+" device=""/>
 <part name="P+1" library="SparkFun-v5" deviceset="3.3V" device=""/>
@@ -18945,13 +18844,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+3" library="SparkFun-v5" deviceset="3.3V" device=""/>
 <part name="P+4" library="SparkFun-v5" deviceset="3.3V" device=""/>
 <part name="TP1" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="TP2" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="TP3" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP4" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP5" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="TP7" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="TP8" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="TP9" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP10" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP11" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP12" library="testpad" deviceset="TPS" device="PAD1-13"/>
@@ -18964,12 +18858,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND35" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C42" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="470pF"/>
 <part name="GND36" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="TP6" library="testpad" deviceset="TPS" device="PAD1-13"/>
-<part name="C23" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="1nF"/>
-<part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="10nF"/>
+<part name="C23" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK"/>
+<part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK"/>
 <part name="C25" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="1nF"/>
-<part name="C43" library="rcl" deviceset="CPOL-US" device="CT6032" value="100uF"/>
-<part name="L7" library="rcl_custom" deviceset="L-US" device="0402-B-NOSILK" value="24nH"/>
+<part name="C43" library="rcl" deviceset="CPOL-US" device="CT6032"/>
+<part name="L7" library="rcl_custom" deviceset="L-US" device="0402-B-NOSILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -19038,10 +18931,7 @@ PE0 is connected to PTA2</text>
 <wire x1="10.16" y1="281.94" x2="10.16" y2="350.52" width="0.1524" layer="97" style="longdash"/>
 <text x="12.7" y="345.44" size="1.778" layer="97">Payload interface</text>
 <text x="15.24" y="335.28" size="1.778" layer="97">UART</text>
-<text x="17.78" y="317.5" size="1.778" layer="97">i2c</text>
-<text x="15.24" y="299.72" size="1.778" layer="97">Sense</text>
-<text x="406.4" y="332.74" size="1.778" layer="97">Need to figure out resistor value, 
-since there is fluctuating voltage here</text>
+<text x="406.4" y="332.74" size="1.778" layer="97">Need to figure out values for LNA</text>
 <text x="502.92" y="335.28" size="1.778" layer="97">GND lines for RF2 and RF3 need to go along
 their respective transmission lines to prevent
 intereference from other signals. I have left
@@ -19185,8 +19075,6 @@ them this way though to conserve space.</text>
 <instance part="JP4" gate="A" x="27.94" y="195.58" rot="MR0"/>
 <instance part="U$6" gate="G$1" x="426.72" y="383.54"/>
 <instance part="JP5" gate="G$1" x="25.4" y="335.28" rot="MR0"/>
-<instance part="JP6" gate="G$1" x="25.4" y="317.5" rot="MR0"/>
-<instance part="JP7" gate="A" x="25.4" y="299.72" rot="MR0"/>
 <instance part="U2" gate="G$1" x="96.52" y="20.32"/>
 <instance part="SUPPLY12" gate="1" x="63.5" y="33.02"/>
 <instance part="P+1" gate="G$1" x="132.08" y="25.4"/>
@@ -19194,13 +19082,8 @@ them this way though to conserve space.</text>
 <instance part="P+3" gate="G$1" x="180.34" y="383.54"/>
 <instance part="P+4" gate="G$1" x="215.9" y="304.8"/>
 <instance part="TP1" gate="G$1" x="119.38" y="33.02"/>
-<instance part="TP2" gate="G$1" x="50.8" y="322.58"/>
-<instance part="TP3" gate="G$1" x="48.26" y="320.04"/>
 <instance part="TP4" gate="G$1" x="50.8" y="340.36"/>
 <instance part="TP5" gate="G$1" x="48.26" y="337.82"/>
-<instance part="TP7" gate="G$1" x="45.72" y="304.8"/>
-<instance part="TP8" gate="G$1" x="43.18" y="302.26"/>
-<instance part="TP9" gate="G$1" x="40.64" y="299.72"/>
 <instance part="TP10" gate="G$1" x="55.88" y="203.2"/>
 <instance part="TP11" gate="G$1" x="53.34" y="200.66"/>
 <instance part="TP12" gate="G$1" x="50.8" y="198.12"/>
@@ -19222,7 +19105,6 @@ them this way though to conserve space.</text>
 <attribute name="VALUE" x="112.776" y="17.399" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND36" gate="1" x="111.76" y="5.08"/>
-<instance part="TP6" gate="G$1" x="492.76" y="398.78" rot="R270"/>
 <instance part="C23" gate="CE" x="449.58" y="317.5" rot="R270"/>
 <instance part="C24" gate="CE" x="388.62" y="330.2" rot="R270"/>
 <instance part="C25" gate="CE" x="383.54" y="304.8" rot="R90"/>
@@ -19612,7 +19494,6 @@ them this way though to conserve space.</text>
 <pinref part="C21" gate="CE" pin="2"/>
 <pinref part="C22" gate="CE" pin="2"/>
 <junction x="490.22" y="398.78"/>
-<pinref part="TP6" gate="G$1" pin="PP"/>
 <wire x1="490.22" y1="398.78" x2="490.22" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="VCNT"/>
 <wire x1="439.42" y1="378.46" x2="472.44" y2="378.46" width="0.1524" layer="91"/>
@@ -19661,39 +19542,21 @@ them this way though to conserve space.</text>
 <net name="SDL" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="220.98" x2="53.34" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="220.98" x2="228.6" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="220.98" x2="228.6" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="220.98" x2="228.6" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(SCL/INT0)PD0"/>
 <wire x1="228.6" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
 <label x="38.1" y="220.98" size="1.778" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="320.04" x2="50.8" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="320.04" x2="53.34" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="320.04" x2="53.34" y2="220.98" width="0.1524" layer="91"/>
-<junction x="53.34" y="220.98"/>
-<label x="33.02" y="320.04" size="1.778" layer="95"/>
-<pinref part="TP2" gate="G$1" pin="PP"/>
-<junction x="50.8" y="320.04"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="218.44" x2="50.8" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="218.44" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="218.44" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="218.44" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(SDA/INT1)PD1"/>
 <wire x1="226.06" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="38.1" y="218.44" size="1.778" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="317.5" x2="48.26" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="317.5" x2="50.8" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="317.5" x2="50.8" y2="218.44" width="0.1524" layer="91"/>
-<junction x="50.8" y="218.44"/>
-<label x="33.02" y="317.5" size="1.778" layer="95"/>
-<pinref part="TP3" gate="G$1" pin="PP"/>
-<junction x="48.26" y="317.5"/>
 </segment>
 </net>
 <net name="PTA3" class="0">
@@ -20145,46 +20008,28 @@ them this way though to conserve space.</text>
 <net name="PE4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(OC3B/INT4)PE4"/>
-<pinref part="JP7" gate="A" pin="1"/>
-<wire x1="27.94" y1="302.26" x2="45.72" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="302.26" x2="96.52" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="302.26" x2="96.52" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="228.6" x2="254" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="254" y1="228.6" x2="254" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="254" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
-<label x="33.02" y="302.26" size="1.778" layer="95"/>
-<pinref part="TP7" gate="G$1" pin="PP"/>
-<junction x="45.72" y="302.26"/>
 </segment>
 </net>
 <net name="PE5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(OC3C/INT5)PE5"/>
-<pinref part="JP7" gate="A" pin="2"/>
-<wire x1="27.94" y1="299.72" x2="43.18" y2="299.72" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="299.72" x2="93.98" y2="299.72" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="299.72" x2="93.98" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="226.06" x2="251.46" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="226.06" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
-<label x="33.02" y="299.72" size="1.778" layer="95"/>
-<pinref part="TP8" gate="G$1" pin="PP"/>
-<junction x="43.18" y="299.72"/>
 </segment>
 </net>
 <net name="PE6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(T3/INT6)PE6"/>
-<pinref part="JP7" gate="A" pin="3"/>
-<wire x1="27.94" y1="297.18" x2="40.64" y2="297.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="297.18" x2="91.44" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="297.18" x2="91.44" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="223.52" x2="248.92" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="223.52" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<label x="33.02" y="297.18" size="1.778" layer="95"/>
-<pinref part="TP9" gate="G$1" pin="PP"/>
-<junction x="40.64" y="297.18"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
