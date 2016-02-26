@@ -18839,7 +18839,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND10" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND11" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND12" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
 <part name="U$2" library="psas_c3_team05" deviceset="SMAJ716-ND" device=""/>
 <part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -18937,7 +18936,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="U$10" library="psas_c3_team05" deviceset="V_RF" device=""/>
 <part name="U$11" library="psas_c3_team05" deviceset="V_RF" device=""/>
 <part name="U$12" library="psas_c3_team05" deviceset="V_RF" device=""/>
-<part name="U$13" library="psas_c3_team05" deviceset="V_RF" device=""/>
 <part name="3.3V1" library="psas_c3_team05" deviceset="V+" device=""/>
 </parts>
 <sheets>
@@ -18963,10 +18961,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="373.38" y1="393.7" x2="373.38" y2="365.76" width="0.1524" layer="97" style="longdash"/>
 <wire x1="373.38" y1="365.76" x2="269.24" y2="365.76" width="0.1524" layer="97" style="longdash"/>
 <wire x1="269.24" y1="365.76" x2="269.24" y2="406.4" width="0.1524" layer="97" style="longdash"/>
-<wire x1="271.78" y1="342.9" x2="365.76" y2="342.9" width="0.1524" layer="97" style="longdash"/>
+<wire x1="269.24" y1="342.9" x2="365.76" y2="342.9" width="0.1524" layer="97" style="longdash"/>
 <wire x1="365.76" y1="342.9" x2="365.76" y2="299.72" width="0.1524" layer="97" style="longdash"/>
-<wire x1="365.76" y1="299.72" x2="271.78" y2="299.72" width="0.1524" layer="97" style="longdash"/>
-<wire x1="271.78" y1="299.72" x2="271.78" y2="342.9" width="0.1524" layer="97" style="longdash"/>
+<wire x1="365.76" y1="299.72" x2="269.24" y2="299.72" width="0.1524" layer="97" style="longdash"/>
+<wire x1="269.24" y1="299.72" x2="269.24" y2="342.9" width="0.1524" layer="97" style="longdash"/>
 <wire x1="393.7" y1="424.18" x2="497.84" y2="424.18" width="0.1524" layer="97" style="longdash"/>
 <wire x1="497.84" y1="424.18" x2="497.84" y2="350.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="497.84" y1="350.52" x2="393.7" y2="350.52" width="0.1524" layer="97" style="longdash"/>
@@ -19012,6 +19010,7 @@ PE0 is connected to PTA2</text>
 their respective transmission lines to prevent
 intereference from other signals. I have left
 them this way though to conserve space.</text>
+<text x="401.32" y="342.9" size="1.778" layer="97">Need different LDO supply</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19031,9 +19030,9 @@ them this way though to conserve space.</text>
 <instance part="GND3" gate="1" x="68.58" y="53.34"/>
 <instance part="GND4" gate="1" x="139.7" y="259.08"/>
 <instance part="L1" gate="L" x="261.62" y="391.16"/>
-<instance part="C1" gate="CE" x="236.22" y="406.4"/>
+<instance part="C1" gate="CE" x="248.92" y="406.4"/>
 <instance part="C2" gate="CE" x="274.32" y="378.46"/>
-<instance part="GND5" gate="1" x="246.38" y="408.94"/>
+<instance part="GND5" gate="1" x="259.08" y="406.4"/>
 <instance part="L2" gate="L" x="261.62" y="360.68"/>
 <instance part="C3" gate="CE" x="248.92" y="350.52"/>
 <instance part="C4" gate="CE" x="274.32" y="314.96"/>
@@ -19056,7 +19055,6 @@ them this way though to conserve space.</text>
 <instance part="GND10" gate="1" x="350.52" y="304.8"/>
 <instance part="GND11" gate="1" x="317.5" y="368.3"/>
 <instance part="GND12" gate="1" x="347.98" y="368.3"/>
-<instance part="C13" gate="CE" x="363.22" y="322.58" rot="R270"/>
 <instance part="C14" gate="CE" x="363.22" y="386.08" rot="R270"/>
 <instance part="U$2" gate="G$1" x="543.56" y="307.34" rot="MR0"/>
 <instance part="GND13" gate="1" x="543.56" y="294.64"/>
@@ -19192,7 +19190,6 @@ them this way though to conserve space.</text>
 <instance part="U$10" gate="G$1" x="467.36" y="419.1"/>
 <instance part="U$11" gate="G$1" x="490.22" y="406.4"/>
 <instance part="U$12" gate="G$1" x="490.22" y="378.46"/>
-<instance part="U$13" gate="G$1" x="401.32" y="345.44"/>
 <instance part="3.3V1" gate="1" x="152.4" y="33.02" rot="MR0"/>
 </instances>
 <busses>
@@ -19295,10 +19292,10 @@ them this way though to conserve space.</text>
 </segment>
 <segment>
 <pinref part="C1" gate="CE" pin="1"/>
-<wire x1="236.22" y1="408.94" x2="236.22" y2="414.02" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="414.02" x2="246.38" y2="414.02" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="408.94" x2="248.92" y2="414.02" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="414.02" x2="259.08" y2="414.02" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="246.38" y1="414.02" x2="246.38" y2="411.48" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="414.02" x2="259.08" y2="408.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="CE" pin="1"/>
@@ -19412,8 +19409,6 @@ them this way though to conserve space.</text>
 <wire x1="429.26" y1="314.96" x2="426.72" y2="314.96" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <junction x="401.32" y="304.8"/>
-<pinref part="C25" gate="CE" pin="2"/>
-<wire x1="388.62" y1="304.8" x2="401.32" y2="304.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="383.54" y1="342.9" x2="381" y2="342.9" width="0.1524" layer="91"/>
@@ -19635,10 +19630,6 @@ them this way though to conserve space.</text>
 <pinref part="U$12" gate="G$1" pin="V+"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="342.9" x2="393.7" y2="342.9" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="V+"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="IN"/>
 <wire x1="187.96" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
@@ -19676,10 +19667,10 @@ them this way though to conserve space.</text>
 <net name="PTA3" class="0">
 <segment>
 <pinref part="J1" gate="J" pin="TMS"/>
-<wire x1="194.31" y1="302.26" x2="160.02" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="302.26" x2="160.02" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="194.31" y1="302.26" x2="172.72" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="302.26" x2="172.72" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PTA3"/>
-<wire x1="160.02" y1="299.72" x2="154.94" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="299.72" x2="154.94" y2="299.72" width="0.1524" layer="91"/>
 <label x="180.34" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -19837,9 +19828,11 @@ them this way though to conserve space.</text>
 <pinref part="C12" gate="CE" pin="2"/>
 <wire x1="337.82" y1="322.58" x2="350.52" y2="322.58" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="322.58" x2="350.52" y2="317.5" width="0.1524" layer="91"/>
-<pinref part="C13" gate="CE" pin="2"/>
-<wire x1="350.52" y1="322.58" x2="358.14" y2="322.58" width="0.1524" layer="91"/>
 <junction x="350.52" y="322.58"/>
+<wire x1="373.38" y1="304.8" x2="373.38" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="C25" gate="CE" pin="1"/>
+<wire x1="381" y1="304.8" x2="373.38" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="322.58" x2="373.38" y2="322.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -19852,13 +19845,11 @@ them this way though to conserve space.</text>
 <net name="N$22" class="0">
 <segment>
 <wire x1="439.42" y1="386.08" x2="454.66" y2="386.08" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="386.08" x2="454.66" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="386.08" x2="454.66" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="RFOUT"/>
-<wire x1="500.38" y1="284.48" x2="459.74" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="284.48" x2="454.66" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="RF3"/>
 <wire x1="500.38" y1="284.48" x2="500.38" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="330.2" x2="459.74" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="330.2" x2="459.74" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -19924,17 +19915,16 @@ them this way though to conserve space.</text>
 <pinref part="C3" gate="CE" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="VR_PA"/>
 <pinref part="C1" gate="CE" pin="2"/>
-<wire x1="154.94" y1="365.76" x2="236.22" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="365.76" x2="236.22" y2="391.16" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="391.16" x2="236.22" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="365.76" x2="248.92" y2="365.76" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="365.76" x2="248.92" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="391.16" x2="248.92" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="1"/>
-<wire x1="236.22" y1="391.16" x2="254" y2="391.16" width="0.1524" layer="91"/>
-<junction x="236.22" y="391.16"/>
+<wire x1="248.92" y1="391.16" x2="254" y2="391.16" width="0.1524" layer="91"/>
+<junction x="248.92" y="391.16"/>
 <pinref part="L2" gate="L" pin="1"/>
 <wire x1="248.92" y1="365.76" x2="248.92" y2="360.68" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="360.68" x2="254" y2="360.68" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="365.76" x2="248.92" y2="365.76" width="0.1524" layer="91"/>
-<junction x="236.22" y="365.76"/>
+<junction x="248.92" y="365.76"/>
 <wire x1="248.92" y1="353.06" x2="248.92" y2="360.68" width="0.1524" layer="91"/>
 <junction x="248.92" y="360.68"/>
 </segment>
@@ -20008,13 +19998,13 @@ them this way though to conserve space.</text>
 <net name="PA3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(AD3)PA3"/>
-<pinref part="JP4" gate="A" pin="1"/>
-<wire x1="30.48" y1="200.66" x2="55.88" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="200.66" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="154.94" x2="198.12" y2="154.94" width="0.1524" layer="91"/>
-<label x="38.1" y="200.66" size="1.778" layer="95"/>
+<pinref part="JP4" gate="A" pin="1"/>
+<wire x1="30.48" y1="200.66" x2="55.88" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="TP10" gate="G$1" pin="PP"/>
+<label x="38.1" y="200.66" size="1.778" layer="95"/>
+<wire x1="55.88" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <junction x="55.88" y="200.66"/>
 </segment>
 </net>
@@ -20112,33 +20102,6 @@ them this way though to conserve space.</text>
 <pinref part="TP5" gate="G$1" pin="PP"/>
 <wire x1="48.26" y1="335.28" x2="114.3" y2="335.28" width="0.1524" layer="91"/>
 <junction x="48.26" y="335.28"/>
-</segment>
-</net>
-<net name="PE4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="(OC3B/INT4)PE4"/>
-<wire x1="96.52" y1="302.26" x2="96.52" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="228.6" x2="254" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="254" y1="228.6" x2="254" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="254" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PE5" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="(OC3C/INT5)PE5"/>
-<wire x1="93.98" y1="299.72" x2="93.98" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="226.06" x2="251.46" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="226.06" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PE6" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="(T3/INT6)PE6"/>
-<wire x1="91.44" y1="297.18" x2="91.44" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="223.52" x2="248.92" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="223.52" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -20250,15 +20213,6 @@ them this way though to conserve space.</text>
 <wire x1="104.14" y1="15.24" x2="111.76" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="373.38" y1="304.8" x2="373.38" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="C13" gate="CE" pin="1"/>
-<wire x1="373.38" y1="322.58" x2="365.76" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="C25" gate="CE" pin="1"/>
-<wire x1="381" y1="304.8" x2="373.38" y2="304.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="452.12" y1="317.5" x2="467.36" y2="317.5" width="0.1524" layer="91"/>
@@ -20275,6 +20229,10 @@ them this way though to conserve space.</text>
 <wire x1="393.7" y1="314.96" x2="393.7" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="RFOUT"/>
 <wire x1="403.86" y1="312.42" x2="393.7" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="C25" gate="CE" pin="2"/>
+<wire x1="388.62" y1="304.8" x2="393.7" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="304.8" x2="393.7" y2="312.42" width="0.1524" layer="91"/>
+<junction x="393.7" y="312.42"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -20291,6 +20249,11 @@ them this way though to conserve space.</text>
 <junction x="393.7" y="342.9"/>
 <pinref part="C24" gate="CE" pin="1"/>
 <pinref part="C43" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="401.32" y1="342.9" x2="393.7" y2="342.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
