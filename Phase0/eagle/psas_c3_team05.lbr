@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7981,6 +7981,21 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <smd name="2" x="1.25" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
 <smd name="1" x="0.3" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
 </package>
+<package name="LE25FU406B">
+<wire x1="0" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="5" y1="0" x2="5" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="5" y1="-4.4" x2="0" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.4" x2="0" y2="0" width="0.127" layer="21"/>
+<circle x="1" y="-3.5" radius="0.640309375" width="0.127" layer="21"/>
+<smd name="8" x="0.6" y="0.465" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="7" x="1.87" y="0.465" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="3.14" y="0.465" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="4.41" y="0.465" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="4.41" y="-4.864" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="3.14" y="-4.864" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="1.87" y="-4.864" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="1" x="0.6" y="-4.864" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SMAJ716-ND">
@@ -8638,6 +8653,21 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <pin name="EN" x="17.78" y="-10.16" length="short" rot="R180"/>
 <pin name="PG" x="17.78" y="-15.24" length="short" rot="R180"/>
 <text x="2.54" y="-2.54" size="1.778" layer="94">LD39200</text>
+</symbol>
+<symbol name="LE25FU406B">
+<wire x1="0" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="!CS" x="-2.54" y="-2.54" length="short"/>
+<pin name="SO" x="-2.54" y="-7.62" length="short"/>
+<pin name="!WP" x="-2.54" y="-12.7" length="short"/>
+<pin name="VSS" x="-2.54" y="-17.78" length="short"/>
+<pin name="VDD" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="!HOLD" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="SCK" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="SI" x="20.32" y="-17.78" length="short" rot="R180"/>
+<text x="2.54" y="0" size="1.778" layer="94">LE25FU406B</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12651,6 +12681,28 @@ LINEAR POWER AMPLIFIER</description>
 <connect gate="G$1" pin="IN" pad="6"/>
 <connect gate="G$1" pin="OUT" pad="1"/>
 <connect gate="G$1" pin="PG" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LE25FU406B">
+<gates>
+<gate name="G$1" symbol="LE25FU406B" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="LE25FU406B">
+<connects>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!HOLD" pad="7"/>
+<connect gate="G$1" pin="!WP" pad="3"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SI" pad="5"/>
+<connect gate="G$1" pin="SO" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
