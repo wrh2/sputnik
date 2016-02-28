@@ -54,6 +54,8 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -88,6 +90,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="bLogo" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -123,6 +126,10 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
@@ -6753,6 +6760,80 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="cap-elna-ds">
+<packages>
+<package name="CAP-ELNA-DS-SERIES">
+<smd name="+" x="0" y="6.5" dx="5" dy="2" layer="1"/>
+<smd name="-" x="0" y="-5" dx="4" dy="1.7" layer="1"/>
+<circle x="0" y="0" radius="3.4" width="0.2" layer="21"/>
+<wire x1="2" y1="2.8" x2="2" y2="5.2" width="0.2" layer="21"/>
+<wire x1="-2" y1="2.8" x2="-2" y2="5.2" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-3.1" x2="1.5" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="2.5" y1="4.5" x2="3.1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="2.8" y1="4.8" x2="2.8" y2="4.2" width="0.2" layer="21"/>
+<wire x1="2.6" y1="-3.4" x2="3.2" y2="-3.4" width="0.2" layer="21"/>
+<text x="4" y="4" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="4" y="3" size="0.635" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SUPA-CAP">
+<pin name="+" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="1.016" x2="-3.048" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="1.016" x2="-2.032" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="1.016" x2="-1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.016" x2="0" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.016" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.016" x2="3.048" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="1.016" x2="3.556" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.016" x2="-3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-1.016" x2="-2.032" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-1.016" x2="-1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-1.016" x2="3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-1.016" x2="3.556" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="2.54" x2="3.048" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.048" x2="2.54" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.54" x2="3.048" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="0.508" x2="-3.048" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.508" x2="-2.032" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.016" x2="-3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.016" x2="-2.032" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.016" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-1.016" x2="3.556" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-1.016" x2="3.556" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.794" width="0.1524" layer="94"/>
+<text x="5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAP-ELNA-DS" prefix="C">
+<gates>
+<gate name="G$1" symbol="SUPA-CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAP-ELNA-DS-SERIES">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6822,6 +6903,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP25" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP26" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP27" library="testpad" deviceset="TPS" device="PAD1-13"/>
+<part name="C1" library="cap-elna-ds" deviceset="CAP-ELNA-DS" device=""/>
+<part name="GND6" library="psas_c3_team05" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6859,13 +6942,18 @@ PE0 is connected to PTA2</text>
 <text x="396.24" y="157.48" size="1.778" layer="97">Low-gain Radio (KW0x)</text>
 <text x="444.5" y="53.34" size="1.778" layer="97">To Do List:
 -SysCon LDO
--Super Cap
+-Super Cap (footprint &amp; symbol, Jake, 2/27)
 -Diodes
 -GPIO[0:24] (1st Rev, Jake, 2/27)</text>
 <text x="431.8" y="287.02" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="248.92" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="213.36" size="1.778" layer="97">GPIO</text>
 <text x="398.78" y="193.04" size="1.778" layer="97">Still need nuke pin here</text>
+<wire x1="167.64" y1="317.5" x2="213.36" y2="317.5" width="0.1524" layer="97" style="longdash"/>
+<wire x1="213.36" y1="317.5" x2="213.36" y2="274.32" width="0.1524" layer="97" style="longdash"/>
+<wire x1="213.36" y1="274.32" x2="167.64" y2="274.32" width="0.1524" layer="97" style="longdash"/>
+<wire x1="167.64" y1="274.32" x2="167.64" y2="317.5" width="0.1524" layer="97" style="longdash"/>
+<text x="170.18" y="314.96" size="1.778" layer="97">LDO goes here</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -6897,7 +6985,7 @@ PE0 is connected to PTA2</text>
 <instance part="TP12" gate="G$1" x="396.24" y="292.1"/>
 <instance part="TP13" gate="G$1" x="396.24" y="289.56"/>
 <instance part="TP14" gate="G$1" x="396.24" y="287.02"/>
-<instance part="P+5" gate="G$1" x="233.68" y="276.86"/>
+<instance part="P+5" gate="G$1" x="111.76" y="292.1"/>
 <instance part="C40" gate="CE" x="256.54" y="124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="265.176" y="129.159" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="260.604" y="122.301" size="1.778" layer="96"/>
@@ -6940,6 +7028,8 @@ PE0 is connected to PTA2</text>
 <instance part="TP25" gate="G$1" x="396.24" y="213.36"/>
 <instance part="TP26" gate="G$1" x="396.24" y="210.82"/>
 <instance part="TP27" gate="G$1" x="396.24" y="208.28"/>
+<instance part="C1" gate="G$1" x="149.86" y="279.4"/>
+<instance part="GND6" gate="1" x="149.86" y="269.24"/>
 </instances>
 <busses>
 </busses>
@@ -7035,6 +7125,11 @@ PE0 is connected to PTA2</text>
 <wire x1="414.02" y1="274.32" x2="426.72" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="274.32" x2="426.72" y2="271.78" width="0.1524" layer="91"/>
 <junction x="414.02" y="274.32"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="149.86" y1="274.32" x2="149.86" y2="271.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -7275,18 +7370,13 @@ PE0 is connected to PTA2</text>
 <wire x1="256.54" y1="129.54" x2="256.54" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="7"/>
-<pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="233.68" y1="276.86" x2="233.68" y2="254" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="G$1" pin="3.3V"/>
+<wire x1="111.76" y1="292.1" x2="111.76" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="289.56" x2="149.86" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="289.56" x2="233.68" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="254" x2="233.68" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="243.84" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="190.5" x2="233.68" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="180.34" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="190.5" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
-<junction x="233.68" y="190.5"/>
 <pinref part="C36" gate="CE" pin="2"/>
 <wire x1="233.68" y1="254" x2="243.84" y2="254" width="0.1524" layer="91"/>
-<junction x="233.68" y="254"/>
 <pinref part="C37" gate="CE" pin="2"/>
 <wire x1="243.84" y1="254" x2="256.54" y2="254" width="0.1524" layer="91"/>
 <junction x="243.84" y="254"/>
@@ -7300,7 +7390,6 @@ PE0 is connected to PTA2</text>
 <junction x="279.4" y="254"/>
 <pinref part="C38" gate="CE" pin="2"/>
 <wire x1="233.68" y1="243.84" x2="243.84" y2="243.84" width="0.1524" layer="91"/>
-<junction x="233.68" y="243.84"/>
 <pinref part="C39" gate="CE" pin="2"/>
 <wire x1="243.84" y1="243.84" x2="256.54" y2="243.84" width="0.1524" layer="91"/>
 <junction x="243.84" y="243.84"/>
@@ -7312,7 +7401,19 @@ PE0 is connected to PTA2</text>
 <wire x1="281.94" y1="241.3" x2="279.4" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="241.3" x2="279.4" y2="243.84" width="0.1524" layer="91"/>
 <junction x="279.4" y="243.84"/>
-<pinref part="P+5" gate="G$1" pin="3.3V"/>
+<wire x1="233.68" y1="289.56" x2="233.68" y2="254" width="0.1524" layer="91"/>
+<junction x="233.68" y="254"/>
+<pinref part="JP3" gate="G$1" pin="7"/>
+<wire x1="233.68" y1="190.5" x2="233.68" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="190.5" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="223.52" y1="180.34" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="243.84" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
+<junction x="233.68" y="243.84"/>
+<junction x="233.68" y="190.5"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="149.86" y1="284.48" x2="149.86" y2="289.56" width="0.1524" layer="91"/>
+<junction x="149.86" y="289.56"/>
 </segment>
 </net>
 <net name="N$3" class="0">
