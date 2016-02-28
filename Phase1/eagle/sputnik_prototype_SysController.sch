@@ -6943,7 +6943,8 @@ PE0 is connected to PTA2</text>
 <text x="287.02" y="137.16" size="1.778" layer="97">To Do List:
 -SysCon LDO
 -Diodes
--GPIO[0:24], Missing nuke option (1st Rev, Jake, 2/27)</text>
+-GPIO[0:24], Missing nuke option (1st Rev, Jake, 2/27)
+-Opto-Isolator for UART lines</text>
 <text x="431.8" y="287.02" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="248.92" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="213.36" size="1.778" layer="97">GPIO</text>
