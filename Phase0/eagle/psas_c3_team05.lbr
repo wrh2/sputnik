@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7996,6 +7996,18 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <smd name="2" x="1.82" y="-4.6" dx="0.7" dy="0.4" layer="1" rot="R90"/>
 <smd name="1" x="0.55" y="-4.6" dx="0.7" dy="0.4" layer="1" rot="R90"/>
 </package>
+<package name="AAT3215">
+<wire x1="0" y1="0" x2="2.85" y2="0" width="0.127" layer="21"/>
+<wire x1="2.85" y1="0" x2="2.85" y2="-1.575" width="0.127" layer="21"/>
+<wire x1="2.85" y1="-1.575" x2="0" y2="-1.575" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.575" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="3" x="0.475" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="1.425" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="1" x="2.375" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="2.375" y="-1.95" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.475" y="-1.95" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<circle x="2.39" y="-0.4" radius="0.1524" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SMAJ716-ND">
@@ -8668,6 +8680,18 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <pin name="SCK" x="20.32" y="-12.7" length="short" rot="R180"/>
 <pin name="SI" x="20.32" y="-17.78" length="short" rot="R180"/>
 <text x="2.54" y="0" size="1.778" layer="94">LE25FU406B</text>
+</symbol>
+<symbol name="AAT3215">
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-2.54" y="-5.08" length="short"/>
+<pin name="EN" x="-2.54" y="-10.16" length="short"/>
+<pin name="GND" x="10.16" y="-15.24" length="short" rot="R90"/>
+<pin name="BYP" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="VOUT" x="22.86" y="-5.08" length="short" rot="R180"/>
+<text x="5.08" y="-2.54" size="1.778" layer="94">AAT3215</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12703,6 +12727,25 @@ LINEAR POWER AMPLIFIER</description>
 <connect gate="G$1" pin="SO" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AAT3215">
+<gates>
+<gate name="G$1" symbol="AAT3215" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AAT3215">
+<connects>
+<connect gate="G$1" pin="BYP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

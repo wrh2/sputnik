@@ -6940,11 +6940,10 @@ PE0 is connected to PTA2</text>
 <wire x1="421.64" y1="124.46" x2="393.7" y2="124.46" width="0.1524" layer="97" style="longdash"/>
 <wire x1="393.7" y1="124.46" x2="393.7" y2="160.02" width="0.1524" layer="97" style="longdash"/>
 <text x="396.24" y="157.48" size="1.778" layer="97">Low-gain Radio (KW0x)</text>
-<text x="444.5" y="53.34" size="1.778" layer="97">To Do List:
+<text x="287.02" y="137.16" size="1.778" layer="97">To Do List:
 -SysCon LDO
--Super Cap (footprint &amp; symbol, Jake, 2/27)
 -Diodes
--GPIO[0:24] (1st Rev, Jake, 2/27)</text>
+-GPIO[0:24], Missing nuke option (1st Rev, Jake, 2/27)</text>
 <text x="431.8" y="287.02" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="248.92" size="1.778" layer="97">GPIO</text>
 <text x="431.8" y="213.36" size="1.778" layer="97">GPIO</text>
