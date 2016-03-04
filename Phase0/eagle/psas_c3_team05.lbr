@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -8788,12 +8788,12 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0" size="1.778" layer="94">ACPL-064L/K64L</text>
 <pin name="VI1" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="GND1" x="-2.54" y="-7.62" length="short"/>
-<pin name="GND2" x="-2.54" y="-12.7" length="short"/>
-<pin name="VI2" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="GND1" x="-2.54" y="-12.7" length="short"/>
+<pin name="GND2" x="-2.54" y="-17.78" length="short"/>
+<pin name="VI2" x="17.78" y="-12.7" length="short" direction="in" rot="R180"/>
 <pin name="VDD" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="VO1" x="17.78" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="VO2" x="17.78" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="VO2" x="-2.54" y="-7.62" length="short" direction="out"/>
 <pin name="GND3" x="17.78" y="-17.78" length="short" rot="R180"/>
 </symbol>
 </symbols>
