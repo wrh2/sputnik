@@ -9209,7 +9209,8 @@ PE0 is connected to PTA2</text>
 -Diodes
 -GPIO[0:24], Missing nuke option (1st Rev, Jake, 2/27)
 -Fix crystal
--Switches</text>
+-Switches
+-Fix OI grounds</text>
 <text x="464.82" y="287.02" size="1.778" layer="97">GPIO</text>
 <text x="464.82" y="248.92" size="1.778" layer="97">GPIO</text>
 <text x="464.82" y="213.36" size="1.778" layer="97">GPIO</text>
