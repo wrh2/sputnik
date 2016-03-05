@@ -1,0 +1,397 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\date{}
+
+\begin{document}
+
+\section{Sputnik Capstone Test Plan}\label{sputnik-capstone-test-plan}
+
+written by Shan Quinney, William Harrington
+
+\textbf{Table of Contents} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#revision-history}{Revision
+History} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#introduction}{Introduction}
+*
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#purpose}{Purpose}
+*
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#testing-procedure}{Testing
+Procedure} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#recording-of-results-witnessing-and-authorities}{Recording
+of Results, witnessing, and authorities} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#reference-documents}{Reference
+Documents} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#design-documentation}{Design
+Documentation} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#overview}{Overview}
+*
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#operational-description}{Operational
+Description} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#preparation}{Preparation}
+*
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#test-equipment}{Test
+Equipment} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#test-setup-and-calibration}{Test
+setup and calibration} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#system-tests}{System
+Tests} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#10km-radio-communication-test}{10km
+Radio Communication Test} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#system-controller-test}{System
+Controller Test} *
+\href{https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan\#command-test}{Command
+Test}
+
+\subsubsection{Revision History}\label{revision-history}
+
+03/03/16 - Created document (Shan)
+
+03/04/16 - Converted to markdown, proofreading changes (Will)
+
+\subsubsection{Introduction}\label{introduction}
+
+\paragraph{Purpose}\label{purpose}
+
+The purpose of this document is to outline the essential testing that
+will be conducted to demonstrate the effectiveness of the Sputnik
+Capstone project. This test plan is not intended to be inclusive and
+additional testing procedures will be added if deemed necessary by any
+of the parties involved in the project.
+
+\paragraph{Testing Procedure}\label{testing-procedure}
+
+All of the testing described in this document will be carried out by one
+or more than one member of the Sputnik capstone team. An effort will be
+made to have the entire group present for as many of the tests as
+possible.
+
+\paragraph{Recordings of Results, witnessing, and
+Authorities}\label{recordings-of-results-witnessing-and-authorities}
+
+The results of all testing conducted in this test plan will be displayed
+on the project wiki. The tests will be conducted on a pass/fail basis
+and any tests that do not pass will be noted in the documentation with
+an explanation as to why they did not pass. No authorities or witnesses
+outside of the group will be required to be present during testing.
+
+\subsubsection{Reference Documents}\label{reference-documents}
+
+\paragraph{Design Documentation}\label{design-documentation}
+
+\begin{figure}[htbp]
+\centering
+%\includegraphics{http://i.imgur.com/LNKEclE.png}
+\caption{Phase 1 Low Level Diagram}
+\end{figure}
+
+The Sputnik Capstone project is composed of two separate modules: The
+radio module and the control module. The radio module is home to the
+microcontroller with integrated radio transceiver (kwox), while the
+control module is designed to eventually house a radiation hardened
+watchdog controller that will help reboot the system after debilitating
+radiation events. For this project, the radiation-hardened components of
+the control module will be replaced with off-the shelf components to
+help reduce cost.
+
+\subsubsection{Overview}\label{overview}
+
+\paragraph{Operational Description}\label{operational-description}
+
+The Portland State Aerospace Society is sponsoring this capstone based
+on the need for a command, control, and communications system for their
+CubeSat project. The focus of this capstone will be rapidly prototyping
+the radio module and the control module. Sputnik will eventually be
+responsible for long distance communications to and from a 400km low
+earth orbit, as well as, controlling and communicating with a payload
+that is housed within the CubeSat. On top of fulfilling these duties,
+once space bound, it will need to be able to deal with a temperature
+range of -40C to 50C and radiation events that could cause components to
+latch up.
+
+\subsubsection{Pre-test preparation}\label{pre-test-preparation}
+
+\paragraph{Test equipment}\label{test-equipment}
+
+The equipment needed for the tests is as follows: * Power Supply
+sufficient to maintain 1A of current at 3V for approximately 15 minutes
+* multimeter (voltmeter) * Oscilloscope * USB to micro-USB cable * Logic
+analyzer
+
+\paragraph{Test setup and calibration}\label{test-setup-and-calibration}
+
+The testing setup will be discussed for each case along with any
+necessary calibration needed prior to testing.
+
+\subsubsection{System tests}\label{system-tests}
+
+\paragraph{10km Radio Communication
+Test}\label{km-radio-communication-test}
+
+The radio is fundamental to the functionality of the Sputnik project. It
+provides the communication channel that will link the satellite to the
+ground station. Eventually, the radio will need to receive and transmit
+data over a distance of approximately 400km; however, for this project,
+a transmission distance of 10km is required. The purpose of this test is
+to confirm that the radio is capable of 10km transmission and reception.
+This test will be performed from one radio board to another and the
+testers will verify the distance covered during the test by collection
+GPS location data. The test locations will be predetermined based on
+both convenience and also where the least restricted signal propagation
+path will occur.
+
+\begin{verbatim}
+                      |                              |
+\end{verbatim}
+
+------------------------- \textbar{} ----------------------------
+\textbar{} Test Case Name \textbar{} 10km Radio Communication \textbar{}
+Test ID\# \textbar{} 10k\_1.00 \textbar{} Test Writer \textbar{} Shan
+Quinney \textbar{} Description \textbar{} The purpose of this test is to
+ensure that the radio is capable of transmitting and receiving data at
+this distance. \textbar{} Tester Information \textbar{} \textbar{} Name
+of Tester \textbar{} \textbar{} Time/Date \textbar{} \textbar{} Hardware
+Version \textbar{} Sputnik radio board version 1.00 \textbar{} Setup
+\textbar{} Determine location A and location B, where there is a minimal
+distance of 10km between points A and B. Have at least one team member
+located at location A and at least one other team member located at
+location B. Each location will have a Sputnik radio board with
+sufficient power supply. Each location will also have a method to verify
+GPS and time (cell phone). \textbar{}
+
+\begin{longtable}[c]{@{}lllll@{}}
+\toprule
+\begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
+Step
+\strut\end{minipage} &
+\begin{minipage}[b]{0.08\columnwidth}\raggedright\strut
+Action
+\strut\end{minipage} &
+\begin{minipage}[b]{0.19\columnwidth}\raggedright\strut
+Expected Result
+\strut\end{minipage} &
+\begin{minipage}[b]{0.12\columnwidth}\raggedright\strut
+Pass/Fail
+\strut\end{minipage} &
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Comments
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+1
+\strut\end{minipage} &
+\begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Radio at location A is made to transmit data.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.19\columnwidth}\raggedright\strut
+Team member at location B confirms receiving data transmitted from
+location A.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+2
+\strut\end{minipage} &
+\begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Radio at location B sends confirmation signal.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.19\columnwidth}\raggedright\strut
+Team member at location A confirms receiving data from radio at location
+B.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Overall Test Result:}
+
+\paragraph{System controller Test}\label{system-controller-test}
+
+The system controller is the guardian of the system. It is present to
+ensure that the system is functioning correctly and that if any
+unintended event causes component latch-up or system errors, the system
+can be cycled or rebooted to return stability. This control system is
+the other half of the project. Eventually, this system will consist of a
+radiation hardened microcontroller (ATMegaS128) with supporting
+radiation hardened LDO. For the purpose of prototyping, the controller
+is a standard, off-the-shelf ATMega128 chip.
+
+To test the control system, a method to simulate a latch-up event will
+be used to trigger the watchdog into action. Outlined is the kwox
+lock-up test. In this test, the crystal on the kwox will be shorted to
+cause an error in the radio system. The ATMega should sense that the
+radio is no longer functioning properly and trigger the reset line on
+the kwox to initiate a reboot.
+
+\begin{verbatim}
+                      |                              |
+\end{verbatim}
+
+------------------------- \textbar{} ----------------------------
+\textbar{} Test Case Name \textbar{} System Controller Test \textbar{}
+Test ID\# \textbar{} ATM\_1.00 \textbar{} Test Writer \textbar{} Shan
+Quinney \textbar{} Description \textbar{} The purpose of this test is to
+demonstrate the effectiveness of the watchdog to restart key system
+functionality after radiation events. \textbar{} Tester Information
+\textbar{} \textbar{} Name of Tester \textbar{} \textbar{} Time/Date
+\textbar{} \textbar{} Hardware Version \textbar{} Board Rev.1, Filter
+Rev.1, Wire antenna \textbar{} Setup \textbar{} \textbar{}
+
+\begin{longtable}[c]{@{}lllll@{}}
+\toprule
+\begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
+Step
+\strut\end{minipage} &
+\begin{minipage}[b]{0.08\columnwidth}\raggedright\strut
+Action
+\strut\end{minipage} &
+\begin{minipage}[b]{0.19\columnwidth}\raggedright\strut
+Expected Result
+\strut\end{minipage} &
+\begin{minipage}[b]{0.12\columnwidth}\raggedright\strut
+Pass/Fail
+\strut\end{minipage} &
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Comments
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+1
+\strut\end{minipage} &
+\begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Use a metal tool to cause a short across the crystal
+\strut\end{minipage} &
+\begin{minipage}[t]{0.19\columnwidth}\raggedright\strut
+The kwox will loose the signal from the crystal.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+2
+\strut\end{minipage} &
+\begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Probe the UART line between the controller and the kwox to determine
+that the life line signal is lost
+\strut\end{minipage} &
+\begin{minipage}[t]{0.19\columnwidth}\raggedright\strut
+The UART line will be free of any signal between the kwox and the
+controller.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+3
+\strut\end{minipage} &
+\begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Monitor the controller to ensure that the reset line on the kwox has
+been activated
+\strut\end{minipage} &
+\begin{minipage}[t]{0.19\columnwidth}\raggedright\strut
+The reset line on the kwox will be activated in an effort to reboot the
+device.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Overall Test Result:}
+
+\paragraph{Command test}\label{command-test}
+
+Send command to module, blink an LED or toggle GPIO pin
+
+\begin{verbatim}
+                      |                              |
+\end{verbatim}
+
+------------------------- \textbar{} ----------------------------
+\textbar{} Test Case Name \textbar{} Command Test \textbar{} Test ID\#
+\textbar{} CMD\_1.00 \textbar{} Test Writer \textbar{} Will Harrington
+\textbar{} Description \textbar{} The purpose of this test is to
+demonstrate the effectiveness of the system controller to execute
+commands \textbar{} Tester Information \textbar{} \textbar{} Name of
+Tester \textbar{} \textbar{} Time/Date \textbar{} \textbar{} Hardware
+Version \textbar{} \textbar{} Setup \textbar{} \textbar{}
+
+\begin{longtable}[c]{@{}lllll@{}}
+\toprule
+Step & Action & Expected Result & Pass/Fail & Comments\tabularnewline
+\midrule
+\endhead
+1 & Send command & Successful send & &\tabularnewline
+2 & Observe LED on prototype & LED lights up & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Overall Test Result:}
+
+\end{document}
