@@ -22,7 +22,6 @@ ECE412 Capstone} %if necessary, replace with your course title
 				\item Have a radiation tolerant watchdog system
 				\item Be able to operate in an Industrial Operating Temperature Range (-40°C to 80°C)
 				\item Acceleration: must handle 15g in the "Z" axis
-				\item Vibration TBD
 			\end{itemize}
 			\item Communication block ("radio")
 			\begin{itemize}
@@ -34,21 +33,6 @@ ECE412 Capstone} %if necessary, replace with your course title
 				\item Meet 400km ISS orbit link budget by a margin of 6 dB
 				\item Have bidirectional communication interface to Payload and System Controller
 				\item Local storage for communication in/out queues
-			\end{itemize}
-			\item Energy storage
-			\begin{itemize}
-				\item Use an energy storage system to power the energy when not in sunlight
-				\item Monitor the state of charge of the battery
-				\begin{itemize}
-					\item Voltage
-					\item Current
-					\item Charge (Coulombs)
-				\end{itemize}
-				\item Charge the energy storage using input from energy harvesting system
-			\end{itemize}
-			\item Energy harvesting
-			\begin{itemize}
-				\item Handle 6 photovoltaic panel inputs
 			\end{itemize}
 			\item Energy Switching/Control
 			\begin{itemize}
@@ -96,10 +80,8 @@ ECE412 Capstone} %if necessary, replace with your course title
 		\begin{itemize}
 			\item Hardware
 			\begin{itemize}
-				\item 2 working Sputnik boards
-				\item 1 running Sputnik demo (not flight) code
-				\item 1 running UART to Sputnik radio adapter for test/debug
-				\item 1 working test setup
+				\item 2 fully working Sputnik boards in the CubeSat 0 form factor (determined by PSAS)
+				\item UART to Sputnik radio adapter for test/debug
 			\end{itemize}
 			\item Firmware
 			\begin{itemize}
@@ -109,7 +91,7 @@ ECE412 Capstone} %if necessary, replace with your course title
 					\item Timers and Interrupts
 					\item SPI
 					\item UART
-					\item Radio
+					\item Radio (600 kbps bi-directional communication using GFSK)
 				\end{itemize}
 				\item System Controller
 				\begin{itemize}
@@ -119,9 +101,8 @@ ECE412 Capstone} %if necessary, replace with your course title
 			\end{itemize}
 			\item System Level
 			\begin{itemize}
-				\item Radio works, demonstrated over 10 km
+				\item Radio works: 600 kbps bi-directional communication, using GFSK demonstrated over 10 km
 				\item System controller can turn other blocks on and off
-				\item Power system charges batteries from external input
 			\end{itemize}
 		\end{itemize}
 \end{description}
