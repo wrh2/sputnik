@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9116,6 +9116,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="D2" library="SMD-DIODE-SCHOTTKY-40V-5A_DO-214AB_ SSC53L" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device=""/>
 <part name="SUPPLY9" library="psas_c3_team05" deviceset="V+" device=""/>
 <part name="X1" library="crystal-abracon-abm3-smd" deviceset="CRYSTAL-ABRACON-ABM3-SMD" device=""/>
+<part name="JP4" library="psas_c3_team05" deviceset="PINHD-1X2" device=""/>
+<part name="JP9" library="psas_c3_team05" deviceset="PINHD-1X2" device=""/>
+<part name="GND12" library="psas_c3_team05" deviceset="GND" device=""/>
+<part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9175,13 +9179,13 @@ PE0 is connected to PTA2</text>
 <wire x1="360.68" y1="205.74" x2="424.18" y2="205.74" width="0.1524" layer="97" style="longdash"/>
 <text x="370.84" y="101.6" size="1.778" layer="97">Optocouplers</text>
 <text x="137.16" y="297.18" size="1.778" layer="97">TODO: Replace this. We need a part that has a rad-hard analogue</text>
-<wire x1="76.2" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="97" style="longdash"/>
-<wire x1="137.16" y1="198.12" x2="137.16" y2="157.48" width="0.1524" layer="97" style="longdash"/>
-<wire x1="137.16" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="97" style="longdash"/>
-<wire x1="76.2" y1="157.48" x2="76.2" y2="198.12" width="0.1524" layer="97" style="longdash"/>
-<text x="78.74" y="195.58" size="1.778" layer="97">Power Management Diode Interface</text>
-<text x="78.74" y="187.96" size="1.778" layer="97">Battery</text>
-<text x="76.2" y="165.1" size="1.778" layer="97">Photovoltaic Cells</text>
+<wire x1="104.14" y1="198.12" x2="165.1" y2="198.12" width="0.1524" layer="97" style="longdash"/>
+<wire x1="165.1" y1="198.12" x2="165.1" y2="157.48" width="0.1524" layer="97" style="longdash"/>
+<wire x1="165.1" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="97" style="longdash"/>
+<wire x1="104.14" y1="157.48" x2="104.14" y2="198.12" width="0.1524" layer="97" style="longdash"/>
+<text x="106.68" y="195.58" size="1.778" layer="97">Power Management Diode Interface</text>
+<text x="81.28" y="187.96" size="1.778" layer="97">Battery</text>
+<text x="68.58" y="167.64" size="1.778" layer="97">Photovoltaic Cells</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9287,10 +9291,14 @@ PE0 is connected to PTA2</text>
 <instance part="C4" gate="CE" x="198.12" y="269.24"/>
 <instance part="C40" gate="CE" x="180.34" y="269.24"/>
 <instance part="C41" gate="CE" x="134.62" y="269.24"/>
-<instance part="D1" gate="G$1" x="97.79" y="187.96"/>
-<instance part="D2" gate="G$1" x="97.79" y="167.64"/>
-<instance part="SUPPLY9" gate="1" x="144.78" y="187.96"/>
+<instance part="D1" gate="G$1" x="125.73" y="187.96"/>
+<instance part="D2" gate="G$1" x="125.73" y="167.64"/>
+<instance part="SUPPLY9" gate="1" x="172.72" y="187.96"/>
 <instance part="X1" gate="G$1" x="276.86" y="261.62" rot="R270"/>
+<instance part="JP4" gate="G$1" x="91.44" y="185.42" rot="MR0"/>
+<instance part="JP9" gate="G$1" x="91.44" y="165.1" rot="MR0"/>
+<instance part="GND12" gate="1" x="96.52" y="157.48"/>
+<instance part="GND13" gate="1" x="96.52" y="177.8"/>
 </instances>
 <busses>
 </busses>
@@ -9451,6 +9459,18 @@ PE0 is connected to PTA2</text>
 <wire x1="180.34" y1="264.16" x2="180.34" y2="261.62" width="0.1524" layer="91"/>
 <junction x="180.34" y="261.62"/>
 </segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="165.1" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="185.42" x2="96.52" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="185.42" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -9524,13 +9544,13 @@ PE0 is connected to PTA2</text>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="-"/>
-<wire x1="101.6" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="187.96" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="187.96" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="187.96" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="-"/>
-<wire x1="106.68" y1="177.8" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="167.64" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="177.8" x2="144.78" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="177.8" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="177.8" x2="172.72" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="1" pin="V+"/>
 </segment>
 </net>
@@ -10002,13 +10022,12 @@ PE0 is connected to PTA2</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="C7" gate="CE" pin="2"/>
 <pinref part="U1" gate="G$1" pin="XTAL2"/>
-<wire x1="274.32" y1="266.7" x2="276.86" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="266.7" x2="281.94" y2="266.7" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="266.7" x2="281.94" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="P$1"/>
-<junction x="276.86" y="266.7"/>
+<pinref part="C7" gate="CE" pin="2"/>
+<wire x1="274.32" y1="266.7" x2="276.86" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="266.7" x2="276.86" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -10205,13 +10224,15 @@ PE0 is connected to PTA2</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="+"/>
-<wire x1="93.98" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="187.96" x2="93.98" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="+"/>
-<wire x1="93.98" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
