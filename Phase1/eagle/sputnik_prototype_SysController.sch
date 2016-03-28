@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9020,6 +9020,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND17" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="CF2" library="oresat-eagle" deviceset="ORESAT-CONNECTOR-40PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9178,6 +9179,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND17" gate="1" x="257.81" y="259.08"/>
 <instance part="+3V4" gate="G$1" x="375.92" y="109.22"/>
 <instance part="+3V5" gate="G$1" x="375.92" y="172.72"/>
+<instance part="CF2" gate="G$1" x="495.3" y="252.73" smashed="yes" rot="MR0">
+<attribute name="NAME" x="501.65" y="305.435" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="505.46" y="236.22" size="1.778" layer="96" rot="MR90"/>
+</instance>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">

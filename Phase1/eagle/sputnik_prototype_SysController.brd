@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="yes"/>
@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -1708,6 +1708,70 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 <wire x1="7.5" y1="98" x2="1.5" y2="98" width="0.1" layer="20"/>
 <wire x1="1.5" y1="98" x2="1.5" y2="91.5" width="0.1" layer="20"/>
 <wire x1="1.5" y1="91.5" x2="0" y2="90" width="0.1" layer="20" curve="-90"/>
+<polygon width="0.2" layer="39">
+<vertex x="0" y="0"/>
+<vertex x="13" y="0"/>
+<vertex x="13" y="2"/>
+<vertex x="8" y="2"/>
+<vertex x="8" y="8.5"/>
+<vertex x="7.5" y="8.5" curve="-90"/>
+<vertex x="2.5" y="13.5"/>
+<vertex x="2.5" y="86.5" curve="-90"/>
+<vertex x="7.5" y="91.5"/>
+<vertex x="8" y="91.5"/>
+<vertex x="8" y="98"/>
+<vertex x="13" y="98"/>
+<vertex x="13" y="100"/>
+<vertex x="0" y="100"/>
+</polygon>
+<polygon width="0.2" layer="40">
+<vertex x="0" y="0"/>
+<vertex x="13" y="0"/>
+<vertex x="13" y="2"/>
+<vertex x="8" y="2"/>
+<vertex x="8" y="8.5"/>
+<vertex x="7.5" y="8.5" curve="-90"/>
+<vertex x="2.5" y="13.5"/>
+<vertex x="2.5" y="86.5" curve="-90"/>
+<vertex x="7.5" y="91.5"/>
+<vertex x="8" y="91.5"/>
+<vertex x="8" y="98"/>
+<vertex x="13" y="98"/>
+<vertex x="13" y="100"/>
+<vertex x="0" y="100"/>
+</polygon>
+<polygon width="0.2" layer="40">
+<vertex x="99" y="0"/>
+<vertex x="86" y="0"/>
+<vertex x="86" y="2"/>
+<vertex x="91" y="2"/>
+<vertex x="91" y="8.5"/>
+<vertex x="91.5" y="8.5" curve="90"/>
+<vertex x="96.5" y="13.5"/>
+<vertex x="96.5" y="86.5" curve="90"/>
+<vertex x="91.5" y="91.5"/>
+<vertex x="91" y="91.5"/>
+<vertex x="91" y="98"/>
+<vertex x="86" y="98"/>
+<vertex x="86" y="100"/>
+<vertex x="99" y="100"/>
+</polygon>
+<polygon width="0.2" layer="39">
+<vertex x="99" y="0"/>
+<vertex x="86" y="0"/>
+<vertex x="86" y="2"/>
+<vertex x="91" y="2"/>
+<vertex x="91" y="8.5"/>
+<vertex x="91.5" y="8.5" curve="90"/>
+<vertex x="96.5" y="13.5"/>
+<vertex x="96.5" y="86.5" curve="90"/>
+<vertex x="91.5" y="91.5"/>
+<vertex x="91" y="91.5"/>
+<vertex x="91" y="98"/>
+<vertex x="86" y="98"/>
+<vertex x="86" y="100"/>
+<vertex x="99" y="100"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -2005,11 +2069,12 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="X1" library="crystal-abracon-abm3-smd" package="CRYSTAL-ABRACON-ABM3-SMD" value="CRYSTAL-ABRACON-ABM3-SMD" x="51.67" y="40.83"/>
 <element name="CF1" library="oresat-eagle" package="HARWIN-ARCHER-M50-3202045" value="ORESAT-CONNECTOR-40PIN" x="30.065" y="95.46" locked="yes" rot="R180"/>
-<element name="U$5" library="oresat-eagle" package="ORESAT-CARD-V0.3" value="" x="0" y="0" locked="yes"/>
 <element name="R12" library="rcl_custom" package=".0603-B-NOSILK" value="10k" x="-69.8" y="-3.8"/>
 <element name="TP1" library="testpad" package="P1-13" value="TPSPAD1-13" x="-69.7" y="-8.9">
 <attribute name="TP_SIGNAL_NAME" value="" x="-69.7" y="-8.9" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U$5" library="oresat-eagle" package="ORESAT-CARD-V0.3" value="" x="0" y="0" locked="yes"/>
+<element name="CF2" library="oresat-eagle" package="HARWIN-ARCHER-M50-3202045" value="ORESAT-CONNECTOR-40PIN" x="65.065" y="95.46" locked="yes"/>
 </elements>
 <signals>
 <signal name="GND">
