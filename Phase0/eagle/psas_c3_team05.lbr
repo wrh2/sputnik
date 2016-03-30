@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7913,73 +7913,73 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SKY65116">
-<wire x1="0" y1="0" x2="8.385" y2="0" width="0.127" layer="21"/>
-<wire x1="8.385" y1="0" x2="8.385" y2="-8.385" width="0.127" layer="21"/>
-<wire x1="8.385" y1="-8.385" x2="0" y2="-8.385" width="0.127" layer="21"/>
-<wire x1="0" y1="-8.385" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0.507" y1="-0.0299" x2="0.0333" y2="-0.5075" width="0.127" layer="21"/>
-<smd name="1" x="0.4827" y="-2.3565" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="2" x="0.4827" y="-4.1925" dx="0.893" dy="0.81" layer="1"/>
-<smd name="3" x="0.4827" y="-6.0285" dx="0.893" dy="0.81" layer="1"/>
-<smd name="4" x="2.3565" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="5" x="4.1925" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="6" x="6.0285" y="-7.9004" dx="0.893" dy="0.81" layer="1" rot="R90"/>
-<smd name="7" x="7.8986" y="-6.0285" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="8" x="7.8986" y="-4.1925" dx="0.893" dy="0.81" layer="1" rot="R180"/>
-<smd name="9" x="7.8986" y="-2.3565" dx="0.893" dy="0.81" layer="1"/>
-<smd name="10" x="6.0285" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
-<smd name="11" x="4.1925" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
-<smd name="12" x="2.3565" y="-0.4852" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<wire x1="-4.318" y1="4.064" x2="4.067" y2="4.064" width="0.127" layer="21"/>
+<wire x1="4.067" y1="4.064" x2="4.067" y2="-4.321" width="0.127" layer="21"/>
+<wire x1="4.067" y1="-4.321" x2="-4.318" y2="-4.321" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-4.321" x2="-4.318" y2="4.064" width="0.127" layer="21"/>
+<wire x1="-3.811" y1="4.0341" x2="-4.2847" y2="3.5565" width="0.127" layer="21"/>
+<smd name="1" x="-3.8353" y="1.7075" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="2" x="-3.8353" y="-0.1285" dx="0.893" dy="0.81" layer="1"/>
+<smd name="3" x="-3.8353" y="-1.9645" dx="0.893" dy="0.81" layer="1"/>
+<smd name="4" x="-1.9615" y="-3.8364" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="5" x="-0.1255" y="-3.8364" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="6" x="1.7105" y="-3.8364" dx="0.893" dy="0.81" layer="1" rot="R90"/>
+<smd name="7" x="3.5806" y="-1.9645" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="8" x="3.5806" y="-0.1285" dx="0.893" dy="0.81" layer="1" rot="R180"/>
+<smd name="9" x="3.5806" y="1.7075" dx="0.893" dy="0.81" layer="1"/>
+<smd name="10" x="1.7105" y="3.5788" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="11" x="-0.1255" y="3.5788" dx="0.893" dy="0.81" layer="1" rot="R270"/>
+<smd name="12" x="-1.9615" y="3.5788" dx="0.893" dy="0.81" layer="1" rot="R270"/>
 <polygon width="0.127" layer="1">
-<vertex x="2.2" y="-5.8" curve="-180"/>
-<vertex x="6.2" y="-2.6" curve="-180"/>
+<vertex x="-2.118" y="-1.736" curve="-180"/>
+<vertex x="1.882" y="1.464" curve="-180"/>
 </polygon>
 </package>
 <package name="SKY13405-490LF">
-<wire x1="0" y1="0" x2="2" y2="0" width="0.127" layer="21"/>
-<wire x1="2" y1="0" x2="2" y2="-2" width="0.127" layer="21"/>
-<wire x1="2" y1="-2" x2="0" y2="-2" width="0.127" layer="21"/>
-<wire x1="0" y1="-2" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="11" x="1" y="-0.02" dx="0.2" dy="0.3" layer="1"/>
-<smd name="5" x="1" y="-1.98" dx="0.2" dy="0.3" layer="1"/>
-<smd name="2" x="0.02" y="-1" dx="0.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="1.98" y="-1" dx="0.2" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="1.98" y="-1.455" dx="0.31" dy="0.3" layer="1" rot="R270"/>
-<smd name="9" x="1.98" y="-0.545" dx="0.31" dy="0.3" layer="1" rot="R270"/>
-<smd name="1" x="0.02" y="-0.545" dx="0.31" dy="0.3" layer="1" rot="R270"/>
-<smd name="3" x="0.02" y="-1.455" dx="0.31" dy="0.3" layer="1" rot="R270"/>
-<smd name="4" x="0.545" y="-1.98" dx="0.31" dy="0.3" layer="1"/>
-<smd name="6" x="1.455" y="-1.98" dx="0.31" dy="0.3" layer="1"/>
-<smd name="10" x="1.455" y="-0.02" dx="0.31" dy="0.3" layer="1"/>
-<smd name="12" x="0.545" y="-0.02" dx="0.31" dy="0.3" layer="1"/>
+<wire x1="-1.016" y1="1.016" x2="0.984" y2="1.016" width="0.127" layer="21"/>
+<wire x1="0.984" y1="1.016" x2="0.984" y2="-0.984" width="0.127" layer="21"/>
+<wire x1="0.984" y1="-0.984" x2="-1.016" y2="-0.984" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-0.984" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
+<smd name="11" x="-0.016" y="0.996" dx="0.2" dy="0.3" layer="1"/>
+<smd name="5" x="-0.016" y="-0.964" dx="0.2" dy="0.3" layer="1"/>
+<smd name="2" x="-0.996" y="0.016" dx="0.2" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="0.964" y="0.016" dx="0.2" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0.964" y="-0.439" dx="0.31" dy="0.3" layer="1" rot="R270"/>
+<smd name="9" x="0.964" y="0.471" dx="0.31" dy="0.3" layer="1" rot="R270"/>
+<smd name="1" x="-0.996" y="0.471" dx="0.31" dy="0.3" layer="1" rot="R270"/>
+<smd name="3" x="-0.996" y="-0.439" dx="0.31" dy="0.3" layer="1" rot="R270"/>
+<smd name="4" x="-0.471" y="-0.964" dx="0.31" dy="0.3" layer="1"/>
+<smd name="6" x="0.439" y="-0.964" dx="0.31" dy="0.3" layer="1"/>
+<smd name="10" x="0.439" y="0.996" dx="0.31" dy="0.3" layer="1"/>
+<smd name="12" x="-0.471" y="0.996" dx="0.31" dy="0.3" layer="1"/>
 <polygon width="0.127" layer="1">
-<vertex x="0.72360625" y="-0.5"/>
-<vertex x="1.27639375" y="-0.5" curve="-90"/>
-<vertex x="1.5" y="-0.72360625"/>
-<vertex x="1.5" y="-1.27639375" curve="-90"/>
-<vertex x="1.27639375" y="-1.5"/>
-<vertex x="0.72360625" y="-1.5" curve="-90"/>
-<vertex x="0.5" y="-1.27639375"/>
-<vertex x="0.5" y="-0.72360625"/>
+<vertex x="-0.29239375" y="0.516"/>
+<vertex x="0.26039375" y="0.516" curve="-90"/>
+<vertex x="0.484" y="0.29239375"/>
+<vertex x="0.484" y="-0.26039375" curve="-90"/>
+<vertex x="0.26039375" y="-0.484"/>
+<vertex x="-0.29239375" y="-0.484" curve="-90"/>
+<vertex x="-0.516" y="-0.26039375"/>
+<vertex x="-0.516" y="0.29239375"/>
 </polygon>
 </package>
 <package name="LD39200">
-<wire x1="0" y1="0" x2="2.5" y2="0" width="0.127" layer="21"/>
-<wire x1="2.5" y1="0" x2="2.5" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-3.1" x2="0" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="0" y1="-3.1" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.524" x2="1.23" y2="1.524" width="0.127" layer="21"/>
+<wire x1="1.23" y1="1.524" x2="1.23" y2="-1.576" width="0.127" layer="21"/>
+<wire x1="1.23" y1="-1.576" x2="-1.27" y2="-1.576" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.576" x2="-1.27" y2="1.524" width="0.127" layer="21"/>
 <polygon width="0.127" layer="1">
-<vertex x="0" y="-0.675"/>
-<vertex x="2.5" y="-0.675"/>
-<vertex x="2.5" y="-2.425"/>
-<vertex x="0" y="-2.425"/>
+<vertex x="-1.27" y="0.849"/>
+<vertex x="1.23" y="0.849"/>
+<vertex x="1.23" y="-0.901"/>
+<vertex x="-1.27" y="-0.901"/>
 </polygon>
-<smd name="5" x="1.25" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="6" x="0.3" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="4" x="2.2" y="-0.185" dx="0.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="3" x="2.2" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="2" x="1.25" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="1" x="0.3" y="-2.912" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="-0.02" y="1.339" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="-0.97" y="1.339" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="0.93" y="1.339" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="0.93" y="-1.388" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="-0.02" y="-1.388" dx="0.5" dy="0.45" layer="1" rot="R90"/>
+<smd name="1" x="-0.97" y="-1.388" dx="0.5" dy="0.45" layer="1" rot="R90"/>
 </package>
 <package name="LE25FU406B">
 <wire x1="0" y1="0" x2="4.9" y2="0" width="0.127" layer="21"/>
@@ -7997,16 +7997,16 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <smd name="1" x="0.55" y="-4.6" dx="0.7" dy="0.4" layer="1" rot="R90"/>
 </package>
 <package name="AAT3215">
-<wire x1="0" y1="0" x2="2.85" y2="0" width="0.127" layer="21"/>
-<wire x1="2.85" y1="0" x2="2.85" y2="-1.575" width="0.127" layer="21"/>
-<wire x1="2.85" y1="-1.575" x2="0" y2="-1.575" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.575" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="3" x="0.475" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
-<smd name="2" x="1.425" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
-<smd name="1" x="2.375" y="0.38" dx="0.625" dy="0.4" layer="1" rot="R90"/>
-<smd name="5" x="2.375" y="-1.95" dx="0.625" dy="0.4" layer="1" rot="R90"/>
-<smd name="4" x="0.475" y="-1.95" dx="0.625" dy="0.4" layer="1" rot="R90"/>
-<circle x="2.39" y="-0.4" radius="0.1524" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="0.762" x2="1.326" y2="0.762" width="0.127" layer="21"/>
+<wire x1="1.326" y1="0.762" x2="1.326" y2="-0.813" width="0.127" layer="21"/>
+<wire x1="1.326" y1="-0.813" x2="-1.524" y2="-0.813" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.813" x2="-1.524" y2="0.762" width="0.127" layer="21"/>
+<smd name="3" x="-1.049" y="1.142" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="-0.099" y="1.142" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="1" x="0.851" y="1.142" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="0.851" y="-1.188" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="-1.049" y="-1.188" dx="0.625" dy="0.4" layer="1" rot="R90"/>
+<circle x="0.866" y="0.362" radius="0.1524" width="0.127" layer="21"/>
 </package>
 <package name="TPS7H1201-HT">
 <wire x1="0" y1="0" x2="9.33" y2="0" width="0.127" layer="21"/>
@@ -8074,19 +8074,19 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <circle x="0.5" y="-3.9" radius="0.2" width="0.127" layer="21"/>
 </package>
 <package name="W25Q80DV">
-<wire x1="0" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
-<wire x1="5" y1="0" x2="5" y2="-4" width="0.127" layer="21"/>
-<wire x1="5" y1="-4" x2="0" y2="-4" width="0.127" layer="21"/>
-<wire x1="0" y1="-4" x2="0" y2="0" width="0.127" layer="21"/>
-<circle x="0.6" y="-3.4" radius="0.2" width="0.127" layer="21"/>
-<smd name="8" x="0.595" y="0.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="7" x="1.865" y="0.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="6" x="3.135" y="0.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="5" x="4.405" y="0.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="1" x="0.595" y="-4.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="2" x="1.865" y="-4.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="3" x="3.135" y="-4.6" dx="1" dy="0.51" layer="1" rot="R90"/>
-<smd name="4" x="4.405" y="-4.6" dx="1" dy="0.51" layer="1" rot="R90"/>
+<wire x1="-2.54" y1="2.032" x2="2.46" y2="2.032" width="0.127" layer="21"/>
+<wire x1="2.46" y1="2.032" x2="2.46" y2="-1.968" width="0.127" layer="21"/>
+<wire x1="2.46" y1="-1.968" x2="-2.54" y2="-1.968" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.968" x2="-2.54" y2="2.032" width="0.127" layer="21"/>
+<circle x="-1.94" y="-1.368" radius="0.2" width="0.127" layer="21"/>
+<smd name="8" x="-1.945" y="2.632" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="7" x="-0.675" y="2.632" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="6" x="0.595" y="2.632" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="5" x="1.865" y="2.632" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="1" x="-1.945" y="-2.568" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="2" x="-0.675" y="-2.568" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="3" x="0.595" y="-2.568" dx="1" dy="0.51" layer="1" rot="R90"/>
+<smd name="4" x="1.865" y="-2.568" dx="1" dy="0.51" layer="1" rot="R90"/>
 </package>
 <package name="DO-214AB">
 <wire x1="3.429" y1="-2.921" x2="-3.429" y2="-2.921" width="0.127" layer="21"/>
@@ -8745,23 +8745,23 @@ Source: www.silabs.com .. CP2101.pdf</description>
 </symbol>
 <symbol name="SKY65116">
 <description>SKY65116 Linear Power Amplifier</description>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND" x="-12.7" y="5.08" length="short"/>
-<pin name="RFIN" x="-12.7" y="2.54" length="short" direction="in"/>
-<pin name="VCC1" x="-12.7" y="-2.54" length="short" direction="pwr"/>
-<pin name="GND2" x="-12.7" y="-5.08" length="short"/>
-<pin name="GND3" x="-12.7" y="-7.62" length="short"/>
-<pin name="GND4" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="RFOUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
-<pin name="GND5" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="VREF" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="VCNT" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="VCC2" x="12.7" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="GND1" x="-12.7" y="0" length="short" swaplevel="1"/>
-<text x="-5.08" y="7.62" size="1.778" layer="94">SKY65116</text>
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-7.62" y="-17.78" length="short" rot="R90"/>
+<pin name="RFIN" x="-12.7" y="-5.08" length="short" direction="in"/>
+<pin name="VCC1" x="-5.08" y="12.7" length="short" direction="pwr" rot="R270"/>
+<pin name="GND2" x="-2.54" y="-17.78" length="short" rot="R90"/>
+<pin name="GND3" x="0" y="-17.78" length="short" rot="R90"/>
+<pin name="GND4" x="2.54" y="-17.78" length="short" rot="R90"/>
+<pin name="RFOUT" x="10.16" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="GND5" x="5.08" y="-17.78" length="short" rot="R90"/>
+<pin name="VREF" x="-12.7" y="-2.54" length="short" direction="pwr"/>
+<pin name="VCNT" x="-12.7" y="0" length="short" direction="pwr"/>
+<pin name="VCC2" x="2.54" y="12.7" length="short" direction="pwr" rot="R270"/>
+<pin name="GND1" x="-5.08" y="-17.78" length="short" swaplevel="1" rot="R90"/>
+<text x="-7.62" y="7.62" size="1.778" layer="94">SKY65116</text>
 </symbol>
 <symbol name="SKY13448-001">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -8798,17 +8798,17 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <text x="-10.16" y="2.54" size="1.778" layer="94">SKY13405-490LF</text>
 </symbol>
 <symbol name="LD39200">
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="OUT" x="-2.54" y="-5.08" length="short" direction="out"/>
-<pin name="ADJ" x="-2.54" y="-10.16" length="short"/>
-<pin name="GND" x="-2.54" y="-15.24" length="short"/>
-<pin name="IN" x="17.78" y="-5.08" length="short" direction="in" rot="R180"/>
-<pin name="EN" x="17.78" y="-10.16" length="short" rot="R180"/>
-<pin name="PG" x="17.78" y="-15.24" length="short" rot="R180"/>
-<text x="2.54" y="-2.54" size="1.778" layer="94">LD39200</text>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="OUT" x="10.16" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="ADJ" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-12.7" length="short" rot="R90"/>
+<pin name="IN" x="-10.16" y="2.54" length="short" direction="in"/>
+<pin name="EN" x="-10.16" y="-2.54" length="short"/>
+<pin name="PG" x="2.54" y="-12.7" length="short" rot="R90"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">LD39200</text>
 </symbol>
 <symbol name="LE25FU406B">
 <wire x1="0" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
@@ -8826,16 +8826,16 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <text x="2.54" y="0" size="1.778" layer="94">LE25FU406B</text>
 </symbol>
 <symbol name="AAT3215">
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VIN" x="-2.54" y="-5.08" length="short"/>
-<pin name="EN" x="-2.54" y="-10.16" length="short"/>
-<pin name="GND" x="10.16" y="-15.24" length="short" rot="R90"/>
-<pin name="BYP" x="22.86" y="-10.16" length="short" rot="R180"/>
-<pin name="VOUT" x="22.86" y="-5.08" length="short" rot="R180"/>
-<text x="5.08" y="-2.54" size="1.778" layer="94">AAT3215</text>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="0" length="short"/>
+<pin name="EN" x="-12.7" y="-5.08" length="short"/>
+<pin name="GND" x="0" y="-10.16" length="short" rot="R90"/>
+<pin name="BYP" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="VOUT" x="12.7" y="0" length="short" rot="R180"/>
+<text x="-5.08" y="2.54" size="1.778" layer="94">AAT3215</text>
 </symbol>
 <symbol name="TPS7H1201-HT">
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
