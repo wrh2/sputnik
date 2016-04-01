@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8920,6 +8920,104 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="WQFN-20-3x4">
+<packages>
+<package name="QFN-20-L">
+<wire x1="-1.6764" y1="1.6764" x2="-2.1844" y2="1.6764" width="0.1524" layer="21"/>
+<wire x1="2.1844" y1="1.1684" x2="2.1844" y2="1.6764" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="-1.6764" x2="2.1844" y2="-1.6764" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="-1.1684" x2="-2.1844" y2="-1.6764" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="1.6764" x2="-2.1844" y2="1.1684" width="0.1524" layer="21"/>
+<wire x1="2.1844" y1="1.6764" x2="1.6764" y2="1.6764" width="0.1524" layer="21"/>
+<wire x1="2.1844" y1="-1.6764" x2="2.1844" y2="-1.1684" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="-1.6764" x2="-1.6764" y2="-1.6764" width="0.1524" layer="21"/>
+<wire x1="2" y1="1.5" x2="-2" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="2" y1="-1.5" x2="2" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="-2" y1="-1.5" x2="2" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="-1.5" width="0.1524" layer="51"/>
+<polygon width="0" layer="31">
+<vertex x="-1.1176" y="1.1176"/>
+<vertex x="-1.1176" y="-1.1176"/>
+<vertex x="1.1176" y="-1.1176"/>
+<vertex x="1.1176" y="1.1176"/>
+</polygon>
+<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<smd name="18" x="-1.91" y="0.25" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="17" x="-1.908" y="0.7555" dx="0.6" dy="0.2" layer="1"/>
+<smd name="9" x="1.9055" y="0.252" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="21" x="0" y="0" dx="2.6" dy="1.6" layer="1" cream="no"/>
+<smd name="20" x="-1.9045" y="-0.748" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="19" x="-1.9045" y="-0.248" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="7" x="1.9055" y="-0.748" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="8" x="1.9055" y="-0.248" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="10" x="1.9055" y="0.752" dx="0.2" dy="0.6" layer="1" rot="R270"/>
+<smd name="15" x="-0.752" y="1.4055" dx="0.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="13" x="0.248" y="1.4055" dx="0.2" dy="0.6" layer="1"/>
+<smd name="14" x="-0.252" y="1.4055" dx="0.2" dy="0.6" layer="1"/>
+<smd name="16" x="-1.252" y="1.4055" dx="0.2" dy="0.6" layer="1"/>
+<smd name="12" x="0.748" y="1.4055" dx="0.2" dy="0.6" layer="1"/>
+<smd name="11" x="1.248" y="1.4055" dx="0.2" dy="0.6" layer="1"/>
+<smd name="2" x="-0.752" y="-1.3945" dx="0.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="4" x="0.248" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
+<smd name="3" x="-0.252" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
+<smd name="1" x="-1.252" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
+<smd name="5" x="0.748" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
+<smd name="6" x="1.248" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
+<circle x="-1.27" y="-1.016" radius="0.254" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TPS25944LRVCR">
+<wire x1="-10.16" y1="8.89" x2="-10.16" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-8.89" x2="10.16" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-8.89" x2="10.16" y2="8.89" width="0.254" layer="94"/>
+<wire x1="10.16" y1="8.89" x2="-10.16" y2="8.89" width="0.254" layer="94"/>
+<pin name="IN" x="-15.24" y="6.35" length="middle"/>
+<pin name="EN/UVLO" x="-15.24" y="3.81" length="middle"/>
+<pin name="OVP" x="-15.24" y="1.27" length="middle"/>
+<pin name="DMODE" x="-15.24" y="-1.27" length="middle"/>
+<pin name="DV/DT" x="-15.24" y="-3.81" length="middle"/>
+<pin name="GND" x="-15.24" y="-6.35" length="middle" direction="pwr"/>
+<pin name="OUT" x="15.24" y="6.35" length="middle" rot="R180"/>
+<pin name="!FLT" x="15.24" y="3.81" length="middle" rot="R180"/>
+<pin name="PGOOD" x="15.24" y="1.27" length="middle" rot="R180"/>
+<pin name="PGHT" x="15.24" y="-1.27" length="middle" rot="R180"/>
+<pin name="IMON" x="15.24" y="-3.81" length="middle" rot="R180"/>
+<pin name="ILIM" x="15.24" y="-6.35" length="middle" rot="R180"/>
+<text x="-3.048" y="-10.922" size="1.524" layer="95">&gt;Fuse</text>
+<text x="-8.636" y="9.652" size="1.524" layer="94">TPS25944LRVCR</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPS25944LRVCR" prefix="SW">
+<gates>
+<gate name="G$1" symbol="TPS25944LRVCR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="WQFN-20-3X4" package="QFN-20-L">
+<connects>
+<connect gate="G$1" pin="!FLT" pad="20"/>
+<connect gate="G$1" pin="DMODE" pad="1"/>
+<connect gate="G$1" pin="DV/DT" pad="18"/>
+<connect gate="G$1" pin="EN/UVLO" pad="14"/>
+<connect gate="G$1" pin="GND" pad="16 21"/>
+<connect gate="G$1" pin="ILIM" pad="17"/>
+<connect gate="G$1" pin="IMON" pad="19"/>
+<connect gate="G$1" pin="IN" pad="9 10 11 12 13"/>
+<connect gate="G$1" pin="OUT" pad="4 5 6 7 8"/>
+<connect gate="G$1" pin="OVP" pad="15"/>
+<connect gate="G$1" pin="PGHT" pad="3"/>
+<connect gate="G$1" pin="PGOOD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9021,6 +9119,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="CF2" library="oresat-eagle" deviceset="ORESAT-CONNECTOR-40PIN" device=""/>
+<part name="SW1" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
 </parts>
 <sheets>
 <sheet>
@@ -9031,7 +9130,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="485.14" y1="200.66" x2="426.72" y2="200.66" width="0.1524" layer="97" style="longdash"/>
 <wire x1="426.72" y1="200.66" x2="426.72" y2="307.34" width="0.1524" layer="97" style="longdash"/>
 <text x="429.26" y="304.8" size="1.778" layer="97">Power interface</text>
-<text x="284.48" y="134.62" size="1.778" layer="97">To Do List:
+<text x="248.92" y="121.92" size="1.778" layer="97">To Do List:
 -GPIO[0:24], Missing nuke option (1st Rev, Jake, 2/27)
 -Switches
 -Fix OI grounds</text>
@@ -9064,6 +9163,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 7. SDR-GPS
 8. ADS-Sunsensors
 9.ADS-Starfinder/Sunsensor</text>
+<wire x1="93.98" y1="396.24" x2="160.02" y2="396.24" width="0.1524" layer="97" style="longdash"/>
+<wire x1="160.02" y1="396.24" x2="160.02" y2="355.6" width="0.1524" layer="97" style="longdash"/>
+<wire x1="160.02" y1="355.6" x2="93.98" y2="355.6" width="0.1524" layer="97" style="longdash"/>
+<wire x1="93.98" y1="355.6" x2="93.98" y2="396.24" width="0.1524" layer="97" style="longdash"/>
+<text x="99.06" y="391.16" size="1.778" layer="97">Switch</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9183,6 +9287,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="501.65" y="305.435" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="505.46" y="236.22" size="1.778" layer="96" rot="MR90"/>
 </instance>
+<instance part="SW1" gate="G$1" x="124.46" y="375.92"/>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">
