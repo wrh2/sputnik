@@ -2156,6 +2156,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C10" library="rcl_custom" package=".0402-B-NOSILK" value="Value" x="-80" y="-65"/>
 <element name="Q1" library="adafruit" package="SOT23" value="IRLML6344TRPBF" x="-78" y="-71"/>
+<element name="100K" library="rcl_custom" package=".0603-B-NOSILK" value="Value" x="-79" y="-77"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2641,6 +2642,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="SW1" pad="13"/>
 <contactref element="RUVLO" pad="1"/>
 <contactref element="C9" pad="1"/>
+<contactref element="100K" pad="1"/>
+<wire x1="-80.5" y1="-37" x2="-79.8" y2="-77" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.8" y1="-16" x2="-80.5" y2="-37" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.752" y1="-10.5945" x2="-69.8" y2="-16" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.252" y1="-10.5945" x2="-66.752" y2="-10.5945" width="0" layer="19" extent="1-1"/>
@@ -2688,9 +2691,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="TP28" pad="TP"/>
 <wire x1="-67.252" y1="-13.3945" x2="-79" y2="-47" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$29">
-<contactref element="SW1" pad="20"/>
-</signal>
 <signal name="N$31">
 <contactref element="C10" pad="1"/>
 <contactref element="SW1" pad="18"/>
@@ -2698,6 +2698,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="N$26">
 <contactref element="Q1" pad="1"/>
+</signal>
+<signal name="N$29">
+<contactref element="100K" pad="2"/>
+<contactref element="SW1" pad="20"/>
+<wire x1="-68.9045" y1="-12.748" x2="-78.2" y2="-77" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

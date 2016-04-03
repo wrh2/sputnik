@@ -9210,6 +9210,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP29" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="Value"/>
 <part name="Q1" library="adafruit" deviceset="IRLML6344TRPBF" device=""/>
+<part name="100K" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 </parts>
 <sheets>
 <sheet>
@@ -9251,7 +9252,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 7. SDR-GPS
 8. ADS-Sunsensors
 9.ADS-Starfinder/Sunsensor</text>
-<text x="231.14" y="327.66" size="1.778" layer="97">Todo:
+<text x="231.14" y="335.28" size="1.778" layer="97">Todo:
 Find a 16:1 multiplexer:
      MAX14661 
      74HC4067; 74HCT4067  
@@ -9275,7 +9276,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <wire x1="335.28" y1="281.94" x2="228.6" y2="281.94" width="0.1524" layer="97" style="longdash"/>
 <wire x1="228.6" y1="281.94" x2="228.6" y2="350.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="228.6" y1="350.52" x2="335.28" y2="350.52" width="0.1524" layer="97" style="longdash"/>
-<text x="238.76" y="320.04" size="1.778" layer="97">Set UVLO to 3.0V</text>
+<text x="233.68" y="320.04" size="1.778" layer="97">Set UVLO to 3.0V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9396,7 +9397,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <attribute name="VALUE" x="505.46" y="236.22" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="SW1" gate="G$1" x="281.94" y="309.88"/>
-<instance part="GND1" gate="1" x="264.16" y="287.02"/>
+<instance part="GND1" gate="1" x="266.7" y="287.02"/>
 <instance part="RUVLO" gate="R" x="251.46" y="312.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="252.9586" y="316.23" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="248.158" y="316.23" size="1.778" layer="96" rot="R270"/>
@@ -9422,6 +9423,10 @@ divided by (1.6 x ILIM x 52uA/A)
 <instance part="Q1" gate="G$1" x="241.3" y="297.18" smashed="yes">
 <attribute name="NAME" x="238.76" y="300.355" size="1.27" layer="95"/>
 <attribute name="VALUE" x="246.38" y="290.83" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="100K" gate="R" x="276.86" y="327.66" smashed="yes">
+<attribute name="NAME" x="273.05" y="329.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="273.05" y="324.358" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9580,19 +9585,16 @@ divided by (1.6 x ILIM x 52uA/A)
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="GND"/>
-<wire x1="266.7" y1="304.8" x2="264.16" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="DMODE"/>
-<wire x1="266.7" y1="309.88" x2="264.16" y2="309.88" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="309.88" x2="264.16" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="OVP"/>
-<wire x1="266.7" y1="312.42" x2="264.16" y2="312.42" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="309.88" x2="264.16" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="304.8" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="312.42" x2="266.7" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="309.88" x2="266.7" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="304.8" x2="266.7" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="261.62" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
-<junction x="264.16" y="304.8"/>
-<junction x="264.16" y="309.88"/>
-<junction x="264.16" y="289.56"/>
+<wire x1="261.62" y1="289.56" x2="266.7" y2="289.56" width="0.1524" layer="91"/>
+<junction x="266.7" y="304.8"/>
+<junction x="266.7" y="309.88"/>
+<junction x="266.7" y="289.56"/>
 <pinref part="C10" gate="CE" pin="2"/>
 <wire x1="261.62" y1="294.64" x2="261.62" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="292.1" x2="243.84" y2="289.56" width="0.1524" layer="91"/>
@@ -10365,17 +10367,15 @@ divided by (1.6 x ILIM x 52uA/A)
 <wire x1="251.46" y1="317.5" x2="231.14" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="C9" gate="CE" pin="1"/>
 <junction x="256.54" y="317.5"/>
+<wire x1="256.54" y1="317.5" x2="256.54" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="100K" gate="R" pin="1"/>
+<wire x1="256.54" y1="327.66" x2="271.78" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="OUT"/>
 <wire x1="297.18" y1="317.5" x2="332.74" y2="317.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="299.72" y1="314.96" x2="332.74" y2="314.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10432,18 +10432,23 @@ divided by (1.6 x ILIM x 52uA/A)
 <pinref part="TP28" gate="G$1" pin="PP"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="!FLT"/>
-<wire x1="297.18" y1="314.96" x2="304.8" y2="314.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="DV/DT"/>
 <wire x1="266.7" y1="307.34" x2="261.62" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="307.34" x2="261.62" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="C10" gate="CE" pin="1"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="100K" gate="R" pin="2"/>
+<wire x1="281.94" y1="327.66" x2="302.26" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="327.66" x2="302.26" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="!FLT"/>
+<wire x1="297.18" y1="314.96" x2="302.26" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="314.96" x2="332.74" y2="314.96" width="0.1524" layer="91"/>
+<junction x="302.26" y="314.96"/>
 </segment>
 </net>
 </nets>
