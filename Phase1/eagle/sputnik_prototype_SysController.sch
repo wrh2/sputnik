@@ -9020,24 +9020,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </library>
 <library name="adafruit">
 <packages>
-<package name="SOT23-W">
-<description>&lt;b&gt;SOT23&lt;/b&gt; - Wave soldering</description>
-<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="-0.3984" x2="-1.5724" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.3984" width="0.1524" layer="21"/>
-<wire x1="0.2954" y1="-0.6604" x2="-0.3094" y2="-0.6604" width="0.1524" layer="21"/>
-<smd name="3" x="0" y="1.3" dx="2.8" dy="1.4" layer="1"/>
-<smd name="2" x="1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
-<smd name="1" x="-1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
-<text x="2.032" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
-<text x="2.032" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
 <package name="SOT23">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -9053,34 +9035,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="TO220V">
-<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.127" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.127" layer="21"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="-3.175" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="-3.175" size="1.27" layer="51" ratio="10">2</text>
-<text x="1.905" y="-3.175" size="1.27" layer="51" ratio="10">3</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
 </packages>
 <symbols>
-<symbol name="MOSFET-N">
+<symbol name="MOSFET">
 <wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
@@ -9095,10 +9052,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
 <wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
 <wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
 <circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
 <circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
 <text x="5.08" y="0.635" size="1.27" layer="95">&gt;NAME</text>
@@ -9122,41 +9077,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;2N7002E - 60V 260mA SOT23 [Digikey: 2N7002ET1GOSTR-ND] - &lt;b&gt;REEL&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;BSH103 - 30V 850mA SOT23 [Digikey: 568-5013-1-ND]&lt;/li&gt;
-&lt;/ul&gt;</description>
+<deviceset name="IRLML6344TRPBF" prefix="Q">
 <gates>
-<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
+<gate name="G$1" symbol="MOSFET" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="WAVE" package="SOT23-W">
+<device name="" package="SOT23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="REFLOW" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="GDS_TO220V" package="TO220V">
-<connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9279,7 +9209,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP28" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="TP29" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="Value"/>
-<part name="Q1" library="adafruit" deviceset="MOSFET-N" device="REFLOW"/>
+<part name="Q1" library="adafruit" deviceset="IRLML6344TRPBF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9322,9 +9252,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 8. ADS-Sunsensors
 9.ADS-Starfinder/Sunsensor</text>
 <text x="231.14" y="327.66" size="1.778" layer="97">Todo:
-Find a new MOSFET: 
-     PMPB29XNE
-     IRLHS6242TR2PBF
 Find a 16:1 multiplexer:
      MAX14661 
      74HC4067; 74HCT4067  
@@ -9342,7 +9269,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <text x="327.66" y="317.5" size="1.778" layer="97">Vout</text>
 <text x="327.66" y="314.96" size="1.778" layer="97">!FLT</text>
 <text x="231.14" y="317.5" size="1.778" layer="97">V+</text>
-<text x="228.6" y="297.18" size="1.778" layer="97">Enable</text>
+<text x="231.14" y="294.64" size="1.778" layer="97">Enable</text>
 <text x="327.66" y="307.34" size="1.778" layer="97">IMON</text>
 <wire x1="335.28" y1="350.52" x2="335.28" y2="281.94" width="0.1524" layer="97" style="longdash"/>
 <wire x1="335.28" y1="281.94" x2="228.6" y2="281.94" width="0.1524" layer="97" style="longdash"/>
@@ -9469,7 +9396,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <attribute name="VALUE" x="505.46" y="236.22" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="SW1" gate="G$1" x="281.94" y="309.88"/>
-<instance part="GND1" gate="1" x="264.16" y="289.56"/>
+<instance part="GND1" gate="1" x="264.16" y="287.02"/>
 <instance part="RUVLO" gate="R" x="251.46" y="312.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="252.9586" y="316.23" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="248.158" y="316.23" size="1.778" layer="96" rot="R270"/>
@@ -9492,7 +9419,10 @@ divided by (1.6 x ILIM x 52uA/A)
 <attribute name="NAME" x="263.144" y="300.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="263.144" y="295.021" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="238.76" y="299.72"/>
+<instance part="Q1" gate="G$1" x="241.3" y="297.18" smashed="yes">
+<attribute name="NAME" x="238.76" y="300.355" size="1.27" layer="95"/>
+<attribute name="VALUE" x="246.38" y="290.83" size="1.27" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">
@@ -9657,20 +9587,21 @@ divided by (1.6 x ILIM x 52uA/A)
 <pinref part="SW1" gate="G$1" pin="OVP"/>
 <wire x1="266.7" y1="312.42" x2="264.16" y2="312.42" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="309.88" x2="264.16" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="304.8" x2="264.16" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="304.8" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="R6" gate="R" pin="2"/>
-<wire x1="251.46" y1="292.1" x2="261.62" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="292.1" x2="264.16" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="294.64" x2="241.3" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="292.1" x2="251.46" y2="292.1" width="0.1524" layer="91"/>
-<junction x="251.46" y="292.1"/>
+<wire x1="261.62" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
 <junction x="264.16" y="304.8"/>
 <junction x="264.16" y="309.88"/>
-<junction x="264.16" y="292.1"/>
+<junction x="264.16" y="289.56"/>
 <pinref part="C10" gate="CE" pin="2"/>
-<wire x1="261.62" y1="294.64" x2="261.62" y2="292.1" width="0.1524" layer="91"/>
-<junction x="261.62" y="292.1"/>
+<wire x1="261.62" y1="294.64" x2="261.62" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="292.1" x2="243.84" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="289.56" x2="251.46" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="289.56" x2="251.46" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="R6" gate="R" pin="2"/>
+<wire x1="251.46" y1="289.56" x2="251.46" y2="292.1" width="0.1524" layer="91"/>
+<junction x="251.46" y="289.56"/>
+<junction x="261.62" y="289.56"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
 <segment>
@@ -10456,15 +10387,16 @@ divided by (1.6 x ILIM x 52uA/A)
 <wire x1="251.46" y1="307.34" x2="251.46" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="1"/>
 <wire x1="251.46" y1="304.8" x2="251.46" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="304.8" x2="251.46" y2="304.8" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="304.8" x2="251.46" y2="304.8" width="0.1524" layer="91"/>
 <junction x="251.46" y="304.8"/>
+<wire x1="243.84" y1="302.26" x2="243.84" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="304.8" x2="251.46" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<wire x1="236.22" y1="297.18" x2="231.14" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="294.64" x2="231.14" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>

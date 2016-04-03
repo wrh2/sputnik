@@ -2155,7 +2155,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="TP_SIGNAL_NAME" value="" x="-79" y="-52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C10" library="rcl_custom" package=".0402-B-NOSILK" value="Value" x="-80" y="-65"/>
-<element name="Q1" library="adafruit" package="SOT23" value="" x="-78" y="-78"/>
+<element name="Q1" library="adafruit" package="SOT23" value="IRLML6344TRPBF" x="-78" y="-71"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2226,13 +2226,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="SW1" pad="16"/>
 <contactref element="SW1" pad="1"/>
 <contactref element="SW1" pad="15"/>
-<contactref element="R6" pad="2"/>
 <contactref element="RILIM" pad="2"/>
 <contactref element="RIMON" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C10" pad="2"/>
+<contactref element="R6" pad="2"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="-79.5" y1="-65" x2="-77.05" y2="-79.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.5" y1="-65" x2="-77.05" y2="-72.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-79.5" y1="-37" x2="-79.5" y2="-65" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.2" y1="-28" x2="-79.5" y2="-37" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.2" y1="-24" x2="-78.2" y2="-28" width="0" layer="19" extent="1-1"/>
@@ -2664,7 +2664,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="RUVLO" pad="2"/>
 <contactref element="R6" pad="1"/>
 <contactref element="Q1" pad="3"/>
-<wire x1="-69.8" y1="-20" x2="-78" y2="-76.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.8" y1="-20" x2="-78" y2="-69.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-68.2" y1="-16" x2="-69.8" y2="-20" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.252" y1="-10.5945" x2="-68.2" y2="-16" width="0" layer="19" extent="1-1"/>
 </signal>
