@@ -9148,9 +9148,9 @@ Source: www.silabs.com .. CP2101.pdf</description>
 <pin name="Y10" x="-12.7" y="0" length="middle" direction="in"/>
 <pin name="Y9" x="-12.7" y="2.54" length="middle" direction="in"/>
 <pin name="Y8" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="Z" x="12.7" y="-2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
 <pin name="VCC" x="12.7" y="25.4" length="middle" direction="in" rot="R180"/>
 <pin name="GND" x="12.7" y="-27.94" length="middle" direction="in" rot="R180"/>
+<pin name="Y16" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13471,7 +13471,7 @@ schematic at one point.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74HC0467" prefix="IC">
+<deviceset name="74HC4067" prefix="IC">
 <gates>
 <gate name="G$1" symbol="74250" x="0" y="0"/>
 </gates>
@@ -13493,6 +13493,7 @@ schematic at one point.</description>
 <connect gate="G$1" pin="Y13" pad="18"/>
 <connect gate="G$1" pin="Y14" pad="17"/>
 <connect gate="G$1" pin="Y15" pad="16"/>
+<connect gate="G$1" pin="Y16" pad="1"/>
 <connect gate="G$1" pin="Y2" pad="7"/>
 <connect gate="G$1" pin="Y3" pad="6"/>
 <connect gate="G$1" pin="Y4" pad="5"/>
@@ -13501,7 +13502,6 @@ schematic at one point.</description>
 <connect gate="G$1" pin="Y7" pad="2"/>
 <connect gate="G$1" pin="Y8" pad="23"/>
 <connect gate="G$1" pin="Y9" pad="22"/>
-<connect gate="G$1" pin="Z" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
