@@ -9096,6 +9096,144 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="QFN-24">
+<packages>
+<package name="QFN-24">
+<wire x1="2.032" y1="1.7526" x2="2.032" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="1.7526" y1="-2.032" x2="2.032" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.7526" x2="-2.032" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="1.7526" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="2.032" x2="1.7526" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="-1.7526" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-2.032" x2="-1.7526" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.7526" y1="2.032" x2="-2.032" y2="2.032" width="0.1524" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="0.0508" y="-2.5908"/>
+<vertex x="0.0508" y="-2.8448"/>
+<vertex x="0.4572" y="-2.8448"/>
+<vertex x="0.4572" y="-2.5908"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="0.5588" y="2.5908"/>
+<vertex x="0.5588" y="2.8448"/>
+<vertex x="0.9652" y="2.8448"/>
+<vertex x="0.9652" y="2.5908"/>
+</polygon>
+<text x="-3.556" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="2.032" x2="-0.762" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="2.032" x2="-2.032" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="-0.4064" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-0.1016" x2="2.032" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="0.762" x2="-0.762" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="0.762" x2="-2.032" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-0.1016" x2="2.032" y2="-0.4064" width="0.1524" layer="51"/>
+<text x="-3.556" y="1.27" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.9431" y="1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="2" x="-1.9431" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="3" x="-1.9431" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="4" x="-1.9431" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="5" x="-1.9431" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="6" x="-1.9431" y="-1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="7" x="-1.27" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="8" x="-0.762" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="9" x="-0.254" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="10" x="0.254" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="11" x="0.762" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="12" x="1.27" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="13" x="1.9431" y="-1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="14" x="1.9431" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="15" x="1.9431" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="16" x="1.9431" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="17" x="1.9431" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="18" x="1.9431" y="1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="19" x="1.27" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="20" x="0.762" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="21" x="0.254" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="22" x="-0.254" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="23" x="-0.762" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="24" x="-1.27" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="25" x="0" y="0" dx="2.6416" dy="2.6416" layer="1" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="74250">
+<wire x1="-7.62" y1="-30.48" x2="7.62" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-30.48" x2="7.62" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="27.94" x2="-7.62" y2="-30.48" width="0.4064" layer="94"/>
+<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Y7" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="Y6" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="Y5" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="Y4" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="Y3" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="Y2" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="Y1" x="-12.7" y="22.86" length="middle" direction="in"/>
+<pin name="Y0" x="-12.7" y="25.4" length="middle" direction="in"/>
+<pin name="!EN" x="-12.7" y="-27.94" length="middle" direction="in" function="dot"/>
+<pin name="S3" x="-12.7" y="-25.4" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-22.86" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="S0" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="Y15" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="Y14" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="Y13" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="Y12" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Y11" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="Y10" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="Y9" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Y8" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="Z" x="12.7" y="-2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="VCC" x="12.7" y="25.4" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="12.7" y="-27.94" length="middle" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="74HC0467" prefix="IC">
+<gates>
+<gate name="G$1" symbol="74250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-24">
+<connects>
+<connect gate="G$1" pin="!EN" pad="15"/>
+<connect gate="G$1" pin="GND" pad="12 25"/>
+<connect gate="G$1" pin="S0" pad="10"/>
+<connect gate="G$1" pin="S1" pad="11"/>
+<connect gate="G$1" pin="S2" pad="14"/>
+<connect gate="G$1" pin="S3" pad="13"/>
+<connect gate="G$1" pin="VCC" pad="24"/>
+<connect gate="G$1" pin="Y0" pad="9"/>
+<connect gate="G$1" pin="Y1" pad="8"/>
+<connect gate="G$1" pin="Y10" pad="21"/>
+<connect gate="G$1" pin="Y11" pad="20"/>
+<connect gate="G$1" pin="Y12" pad="19"/>
+<connect gate="G$1" pin="Y13" pad="18"/>
+<connect gate="G$1" pin="Y14" pad="17"/>
+<connect gate="G$1" pin="Y15" pad="16"/>
+<connect gate="G$1" pin="Y2" pad="7"/>
+<connect gate="G$1" pin="Y3" pad="6"/>
+<connect gate="G$1" pin="Y4" pad="5"/>
+<connect gate="G$1" pin="Y5" pad="4"/>
+<connect gate="G$1" pin="Y6" pad="3"/>
+<connect gate="G$1" pin="Y7" pad="2"/>
+<connect gate="G$1" pin="Y8" pad="23"/>
+<connect gate="G$1" pin="Y9" pad="22"/>
+<connect gate="G$1" pin="Z" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9211,6 +9349,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="Value"/>
 <part name="Q1" library="adafruit" deviceset="IRLML6344TRPBF" device=""/>
 <part name="100K" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
+<part name="IC1" library="QFN-24" deviceset="74HC0467" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9428,6 +9567,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <attribute name="NAME" x="273.05" y="329.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="273.05" y="324.358" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="G$1" x="358.14" y="340.36"/>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">

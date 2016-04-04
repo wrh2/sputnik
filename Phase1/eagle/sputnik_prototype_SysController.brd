@@ -1842,6 +1842,70 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 </package>
 </packages>
 </library>
+<library name="QFN-24">
+<packages>
+<package name="QFN-24">
+<wire x1="2.032" y1="1.7526" x2="2.032" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="1.7526" y1="-2.032" x2="2.032" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.7526" x2="-2.032" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="1.7526" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="2.032" x2="1.7526" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="-1.7526" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-2.032" x2="-1.7526" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.7526" y1="2.032" x2="-2.032" y2="2.032" width="0.1524" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="0.0508" y="-2.5908"/>
+<vertex x="0.0508" y="-2.8448"/>
+<vertex x="0.4572" y="-2.8448"/>
+<vertex x="0.4572" y="-2.5908"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="0.5588" y="2.5908"/>
+<vertex x="0.5588" y="2.8448"/>
+<vertex x="0.9652" y="2.8448"/>
+<vertex x="0.9652" y="2.5908"/>
+</polygon>
+<text x="-3.556" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="2.032" x2="-0.762" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="2.032" x2="-2.032" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="-0.4064" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-0.1016" x2="2.032" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="0.762" x2="-0.762" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="0.762" x2="-2.032" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-0.1016" x2="2.032" y2="-0.4064" width="0.1524" layer="51"/>
+<text x="-3.556" y="1.27" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.9431" y="1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="2" x="-1.9431" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="3" x="-1.9431" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="4" x="-1.9431" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="5" x="-1.9431" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="6" x="-1.9431" y="-1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="7" x="-1.27" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="8" x="-0.762" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="9" x="-0.254" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="10" x="0.254" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="11" x="0.762" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="12" x="1.27" y="-1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="13" x="1.9431" y="-1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="14" x="1.9431" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="15" x="1.9431" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="16" x="1.9431" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="17" x="1.9431" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="18" x="1.9431" y="1.27" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="19" x="1.27" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="20" x="0.762" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="21" x="0.254" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="22" x="-0.254" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="23" x="-0.762" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="24" x="-1.27" y="1.9431" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="25" x="0" y="0" dx="2.6416" dy="2.6416" layer="1" cream="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2157,6 +2221,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C10" library="rcl_custom" package=".0402-B-NOSILK" value="Value" x="-80" y="-65"/>
 <element name="Q1" library="adafruit" package="SOT23" value="IRLML6344TRPBF" x="-78" y="-71"/>
 <element name="100K" library="rcl_custom" package=".0603-B-NOSILK" value="Value" x="-79" y="-77"/>
+<element name="IC1" library="QFN-24" package="QFN-24" value="74HC0467" x="-77" y="-83"/>
 </elements>
 <signals>
 <signal name="GND">
