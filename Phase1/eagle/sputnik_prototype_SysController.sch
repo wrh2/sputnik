@@ -9188,13 +9188,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pin name="Y10" x="-12.7" y="0" length="middle" direction="in"/>
 <pin name="Y9" x="-12.7" y="2.54" length="middle" direction="in"/>
 <pin name="Y8" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="Z" x="12.7" y="-2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
 <pin name="VCC" x="12.7" y="25.4" length="middle" direction="in" rot="R180"/>
 <pin name="GND" x="12.7" y="-27.94" length="middle" direction="in" rot="R180"/>
+<pin name="Z" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="74HC0467" prefix="IC">
+<deviceset name="74HC4067" prefix="IC">
 <gates>
 <gate name="G$1" symbol="74250" x="0" y="0"/>
 </gates>
@@ -9349,7 +9349,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="Value"/>
 <part name="Q1" library="adafruit" deviceset="IRLML6344TRPBF" device=""/>
 <part name="100K" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="IC1" library="QFN-24" deviceset="74HC0467" device=""/>
+<part name="IC1" library="QFN-24" deviceset="74HC4067" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9567,7 +9567,7 @@ divided by (1.6 x ILIM x 52uA/A)
 <attribute name="NAME" x="273.05" y="329.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="273.05" y="324.358" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="G$1" x="358.14" y="340.36"/>
+<instance part="IC1" gate="G$1" x="368.3" y="345.44"/>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">
