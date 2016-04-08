@@ -179,16 +179,20 @@ void configure_transceiver_tx(void){
 	trans_write_register(transceiver.RegDataModul, &RegDataModulCfg, 1);
 
 	/* frequency deviation settings */
-	static uint8_t RegFDevCfg [2] = {0x00, 0x29};
+	//static uint8_t RegFDevCfg [2] = {0x00, 0x29};
+	static uint8_t RegFDevCfg [2] = {0x00, 0x52};
 	trans_write_register(transceiver.RegFdevMsb, RegFDevCfg, 2);
 
 	/* bitrate settings = 2.4 kbps */
-	static uint8_t RegBitrateCfg [2] = {0x34, 0x15};
+	//static uint8_t RegBitrateCfg [2] = {0x34, 0x15};
+
+	/* 1.2kbps bitrate setting */
+	static uint8_t RegBitrateCfg [2] = {0x68, 0x2B};
 	trans_write_register(transceiver.RegBitrateMsb, RegBitrateCfg, 2);
 
 	/* configure PA output power */
 	/* 0x9F = ~13dBm, 0x92 = ~0dBm, 0x80 = ~-18dBm */
-	uint8_t RegPAOutputCfg = 0x9F;
+	uint8_t RegPAOutputCfg = 0x90;
 	trans_write_register(transceiver.RegPaLevel, &RegPAOutputCfg, 1);
 
         /* 2 bytes in payload */
@@ -227,16 +231,24 @@ void configure_transceiver_rx(void){
 	trans_write_register(transceiver.RegDataModul, &RegDataModulCfg, 1);
 
 	/* frequency deviation settings */
-	static uint8_t RegFDevCfg [2] = {0x00, 0x29};
+	//static uint8_t RegFDevCfg [2] = {0x00, 0x29};
+	static uint8_t RegFDevCfg [2] = {0x00, 0x52};
 	trans_write_register(transceiver.RegFdevMsb, RegFDevCfg, 2);
 
 	/* bitrate settings = 2.4 kbps */
-	static uint8_t RegBitrateCfg [2] = {0x34, 0x15};
+	//static uint8_t RegBitrateCfg [2] = {0x34, 0x15};
+
+	/* 1.2kbps bitrate setting */
+	static uint8_t RegBitrateCfg [2] = {0x68, 0x2B};
 	trans_write_register(transceiver.RegBitrateMsb, RegBitrateCfg, 2);
 
         /* 2 bytes for payload length */
 	uint8_t RegPayloadLengthCfg = 0x2;
 	trans_write_register(transceiver.RegPayloadLength, &RegPayloadLengthCfg, 1);
+
+	/* high sensitivity mode, reduces noise floor for LNA */
+	uint8_t RegTestLnaCfg = 0x2d;
+	trans_write_register(transceiver.RegTestLna, &RegTestLnaCfg, 1);
 
 	/* Set transceiver to receive mode by writing to op mode register */
 	OpModeCfg = 0x10;
