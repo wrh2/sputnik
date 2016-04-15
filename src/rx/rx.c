@@ -3,9 +3,9 @@
 
 	Programmed by William Harrington, Michael Mathis, and Theo Hill
  */
-#include "drivers/uart.h"
-#include "drivers/transceiver.h"
-#include "drivers/spi.h"
+#include "uart.h"
+#include "transceiver.h"
+#include "spi.h"
 
 #if 1
 void initialize_spi(void){
@@ -129,17 +129,20 @@ int main(void) {
    	//asm volatile ("cpsie   i");
 
 	/* this function is in transceiver.c if you want more details */
-	configure_transceiver_tx();
+	configure_transceiver_rx();
 
-	uint8_t FIFObyte = 0x55;
-
+        uint8_t result = 0x0;
 	while(1) {
 		for(uint32_t i = 0; i < 1000000; ++i);
 
-		trans_write_register(transceiver.RegFifo, &FIFObyte, 1);
+		/* read fifo register in transceiver block */
+		trans_read_register(transceiver.RegFifo, &result, 1);
 
-	       	/* toggle LED connected to PTB2 */
-		GPIOB.PTOR = 0x00004;
+		/* check if byte is 0x55 */
+                if(result == 0x55){
+			/* toggle LED connected to PTB17 */
+			GPIOB.PTOR = 0x20000;
+                }
 	}
 	return 0;
 }
