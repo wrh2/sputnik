@@ -19,7 +19,7 @@ written by Shan Quinney, William Harrington
     * [Radio Communication Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#10km-radio-communication-test)
     * [System Controller Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#system-controller-test)
     * [Command Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#command-test)
-    * [Functionality Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#functionality-test)
+    * [Functionality Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#functionality-test)
 
 ### Revision History
 
