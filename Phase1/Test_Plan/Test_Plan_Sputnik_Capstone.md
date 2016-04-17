@@ -16,15 +16,18 @@ written by Shan Quinney, William Harrington
     * [Test Equipment](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#test-equipment)
     * [Test setup and calibration](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#test-setup-and-calibration)
 * [System Tests](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#system-tests)
-    * [10km Radio Communication Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#10km-radio-communication-test)
+    * [Radio Communication Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#10km-radio-communication-test)
     * [System Controller Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#system-controller-test)
     * [Command Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#command-test)
+    * [Functionality Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#functionality-test)
 
 ### Revision History
 
 03/03/16 - Created document (Shan)
 
 03/04/16 - Converted to markdown, proofreading changes (Will)
+
+04/17/16 - Changed Communications Test, added functionalty test (Jake)
 
 ### Introduction
 
@@ -73,22 +76,22 @@ The testing setup will be discussed for each case along with any necessary calib
 
 ### System tests
 
-#### 10km Radio Communication Test
+#### Radio Communication Test
 
-The radio is fundamental to the functionality of the Sputnik project. It provides the communication channel that will link the satellite to the ground station. Eventually, the radio will need to receive and transmit data over a distance of approximately 400km; however, for this project, a transmission distance of 10km is required.
-The purpose of this test is to confirm that the radio is capable of 10km transmission and reception. This test will be performed from one radio board to another and the testers will verify the distance covered during the test by collection GPS location data. The test locations will be predetermined based on both convenience and also where the least restricted signal propagation path will occur.
+The radio is fundamental to the functionality of the Sputnik project. It provides the communication channel that will link the satellite to the ground station. Eventually, the radio will need to receive and transmit data over a distance of approximately 400km; however, for this project, a transmission distance of 10km is required (See Functionality Test).
+The purpose of this test is to confirm that the radio is capable of transmission and reception, as well as switching between the Tx and Rx lines. This test will be performed from one radio board to another and the testers will verify the distance covered during the test by collection GPS location data. The test locations will be predetermined based on both convenience and also where the least restricted signal propagation path will occur.
 
                           |                              |
 ------------------------- | ---------------------------- |
-Test Case Name            | 10km Radio Communication     |
-Test ID#                  | 10k_1.00                     |
-Test Writer               | Shan Quinney                 | 
+Test Case Name            | Radio Communication          |
+Test ID#                  | RadCom_1.00                  |
+Test Writer               | Shan Quinney/James Heath     | 
 Description               | The purpose of this test is to ensure that the radio is capable of transmitting and receiving data at this distance. |
 Tester Information        |    |
 Name of Tester            |    |
 Time/Date                 |    |
 Hardware Version          |  Sputnik radio board version 1.00  |
-Setup                     | Determine location A and location B, where there is a minimal distance of 10km between points A and B. Have at least one team member located at location A and at least one other team member located at location B. Each location will have a Sputnik radio board with sufficient power supply. Each location will also have a method to verify GPS and time (cell phone).   |
+Setup                     | Determine location A and location B, where there is a minimal distance of at least 10m between points A and B. Have at least one team member located at location A and at least one other team member located at location B. Each location will have a Sputnik radio board with sufficient power supply. Each location will also have a method to verify GPS and time (cell phone).   |
 
 Step | Action | Expected Result | Pass/Fail | Comments |
 ---- | ------ | --------------- | --------- | -------- |
@@ -123,7 +126,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 **Overall Test Result:**
 
-#### Command test
+#### Command Test
 
 Send command to module, blink an LED or toggle GPIO pin
 
@@ -145,3 +148,26 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 2 | Observe LED on prototype | LED lights up  |  |  |
 
 **Overall Test Result:**
+
+#### Functionality Test
+
+Send command to radio via UART, transmit signal across 10km to another module's receiver. The receiver will send the command via UART to the system controller to blink an LED or toggle a GPIO pin.
+
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Functionality Test           |
+Test ID#                  | Func_1.00                    |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to demonstrate the fully functional board capabilities, by using all modules in a single test. |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Send data from UART to LGR | LED lights up  |  |  |
+2 | Transmit data across 10km gap | Other module receives data  |  |  |
+3 | Receive Data | GPIO toggle or LED lights up  |  |  |
+4 | Send data via UART to System Controller | SC board LED lights up or GPIO is toggled  |  |  |
