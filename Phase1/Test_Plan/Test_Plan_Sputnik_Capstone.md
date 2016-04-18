@@ -18,7 +18,7 @@ written by Shan Quinney, William Harrington
 * [Component Tests](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#component-tests)
      * [Crystal Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#crystal-test)
      * [Supply Range Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#supply-range-test)
-     * [Temperature Range Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#temperature-test)
+     * [Temperature Range Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#temperature-range-test)
      * [Force Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#force-test)
      * [Vacuum Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#vacuum-test)
 * [System Tests](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#system-tests)
@@ -108,7 +108,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 2 | Set voltage supply to 5V Transmit radio and/or toggle LED or GPIO | Other module receives and/or LED/GPIO is toggled  |  |  |
 
 
-#### Temperature Test
+#### Temperature Range Test
 
 Run the C3 procedures in a temperature controlled environment set to 85 C.
 Run the C3 procedures in a temperature controlled environment set to -40 C.
