@@ -82,9 +82,11 @@ The testing setup will be discussed for each case along with any necessary calib
 
 ### Component Tests
 
+Component Tests will test the different basic components on the board. These are usually small simple tests that ensure the board is working properly before attempting any tests for funtionality of the C3 modules. Some examples of these tests are power, crystal oscillations, and environmental testing. 
+
 #### Crystal Test
 
-Use oscilloscope to see if running at correct frequency as programmed.
+Use the oscilloscope to see if the crystal on board is receiving power and running at correct frequency as programmed.
 
                           |                              |
 ------------------------- | ---------------------------- |
@@ -104,7 +106,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Supply Range Test
 
-Run a range of voltages across the board and see if board still functions. This will be done by gradually changing the output voltage on the power supply from 3V-5V.
+Run a range of voltages across the board and see if board still functions. Since the board will be receiving a range of voltage from the power management system, it is imperative to see if the board will be able to operate within these ranges. This test will be done by gradually changing the output voltage on the power supply from 3V-5V and checking that the board still operates.
 
                           |                              |
 ------------------------- | ---------------------------- |
@@ -126,8 +128,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Temperature Range Test
 
-Run the C3 procedures in a temperature controlled environment set to 85 C.
-Run the C3 procedures in a temperature controlled environment set to -40 C.
+The requirements state that the board must be operable within the temperature ranges from -40C-85C. To show this, the board will be inserted into an environmental chamber and chilled/heated to the extremes of these ranges. Once at the extremes, again operations on the boards will be tested to see if it works within these ranges.
 
                           |                              |
 ------------------------- | ---------------------------- |
@@ -148,7 +149,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Force Test
 
-Tie a rope to the board and run C3 procedures while swinging the board in a circle until at least reaching 15Gs. Check to see if functions properly at this force over a period of time.
+Since the sputnik module will be launched into space, it will need to be able to withstand the force provided by extreme acceleration. To test this we will tie a rope to the board and run C3 procedures while swinging the board in a circle until at least reaching 15Gs. We will perform these operations once a consistent force has been applied for a small duration of time.
 
                           |                              |
 ------------------------- | ---------------------------- |
@@ -169,7 +170,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Vacuum Test
 
-Test C3 procedures while board is in a vacuum chamber.
+To ensure application in space, the sputnik board will need to be able to run within a vacuum. For this test, the board will be set in a vacuum chamber and again have its operations tested. 
 
                           |                              |
 ------------------------- | ---------------------------- |
@@ -265,7 +266,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Functionality Test
 
-Send command to radio via UART, transmit signal across 10km to another module's receiver. The receiver will send the command via UART to the system controller to blink an LED or toggle a GPIO pin.
+This is the final test for the board. It is an attempt to test complete functionality of the board over a long distance, indicating operability as desired by the requirements. The test consists of sending a command to the radio via UART and transmiting the signal across 10km to another module's receiver. The receiver will then send the command via UART to the system controller to blink an LED or toggle a GPIO pin.
 
                           |                              |
 ------------------------- | ---------------------------- |
