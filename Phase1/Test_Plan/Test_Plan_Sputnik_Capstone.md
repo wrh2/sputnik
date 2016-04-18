@@ -84,7 +84,23 @@ The testing setup will be discussed for each case along with any necessary calib
 
 #### Crystal Test
 
-Use oscilloscope to see if running at correct frequency as programmed
+Use oscilloscope to see if running at correct frequency as programmed.
+
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Crystal Test          |
+Test ID#                  | Crystal_1.00                    |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to check the frequency and operation of the crystal oscillator. |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Use Oscilloscope to check crystal frequency through the test point | Desire frequency is shown on oscilloscope  |  |  |
 
 #### Supply Range Test
 
@@ -115,7 +131,7 @@ Run the C3 procedures in a temperature controlled environment set to -40 C.
 
                           |                              |
 ------------------------- | ---------------------------- |
-Test Case Name            | Functionality Test           |
+Test Case Name            | Temperature Range Test       |
 Test ID#                  | Temp_1.00                    |
 Test Writer               | James Heath                  | 
 Description               | The purpose of this test is to demonstrate the functionality of the board at the requirement range limits. |
@@ -134,9 +150,43 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 Tie a rope to the board and run C3 procedures while swinging the board in a circle until at least reaching 15Gs. Check to see if functions properly at this force over a period of time.
 
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Force Test                   |
+Test ID#                  | Force_1.00                   |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to demonstrate the functionality of the boards at a relatively high level of force (~15Gs). |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Transmit packet after board has been swinging at 15Gs for 30 seconds | Transmission is received on other module  |  |  |
+
+
 #### Vacuum Test
 
 Test C3 procedures while board is in a vacuum chamber.
+
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Vacuum Test                  |
+Test ID#                  | Vacuum_1.00                  |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to demonstrate the functionality of the boards in a vacuum. |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Attempt radio transmission and reception while within vacuum chamber | Other module receives transmitted data |  |  |
+
 
 ### System Tests
 
