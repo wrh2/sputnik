@@ -3,22 +3,22 @@
 written by Shan Quinney, William Harrington
 
 **Table of Contents**
-* [Revision History](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#revision-history)
-    * [Introduction](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#introduction)
-    * [Purpose](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#purpose)
-    * [Testing Procedure](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#testing-procedure)
-    * [Recording of Results, witnessing, and authorities](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#recording-of-results-witnessing-and-authorities)
-* [Reference Documents](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#reference-documents)
-    * [Design Documentation](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#design-documentation)
-* [Overview](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#overview)
-    * [Operational Description](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#operational-description)
-* [Preparation](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#preparation)
-    * [Test Equipment](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#test-equipment)
-    * [Test setup and calibration](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#test-setup-and-calibration)
-* [System Tests](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#system-tests)
-    * [Radio Communication Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#10km-radio-communication-test)
-    * [System Controller Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#system-controller-test)
-    * [Command Test](https://github.com/wrh2/sputnik/wiki/Phase-1-Test-Plan#command-test)
+* [Revision History](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#revision-history)
+    * [Introduction](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#introduction)
+    * [Purpose](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#purpose)
+    * [Testing Procedure](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#testing-procedure)
+    * [Recording of Results, witnessing, and authorities](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#recording-of-results-witnessing-and-authorities)
+* [Reference Documents](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#reference-documents)
+    * [Design Documentation](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#design-documentation)
+* [Overview](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#overview)
+    * [Operational Description](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#operational-description)
+* [Preparation](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#preparation)
+    * [Test Equipment](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#test-equipment)
+    * [Test setup and calibration](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#test-setup-and-calibration)
+* [System Tests](hhttps://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#system-tests)
+    * [Radio Communication Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#radio-communication-test)
+    * [Control Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#control-test)
+    * [Command Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#command-test)
     * [Functionality Test](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#functionality-test)
 
 ### Revision History
@@ -27,7 +27,7 @@ written by Shan Quinney, William Harrington
 
 03/04/16 - Converted to markdown, proofreading changes (Will)
 
-04/17/16 - Changed Communications Test, added functionalty test (Jake)
+04/17/16 - Changed Communications Test, added functionalty test, added Command test, changed incorrect links in ToC (Jake)
 
 ### Introduction
 
@@ -74,7 +74,65 @@ The equipment needed for the tests is as follows:
 
 The testing setup will be discussed for each case along with any necessary calibration needed prior to testing.
 
-### System tests
+### Component Tests
+
+#### Crystal Test
+
+Use oscilloscope to see if running at correct frequency as programmed
+
+#### Supply Range Test
+
+Run a range of voltages across the board and see if board still functions. This will be done by gradually changing the output voltage on the power supply from 3V-5V.
+
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Supply Range Test           |
+Test ID#                  | Supply_1.00                    |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to demonstrate the functionality of the boards at the required supply range limits. |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Set voltage supply to 3V Transmit radio and/or toggle LED or GPIO | Other module receives and/or LED/GPIO is toggled  |  |  |
+2 | Set voltage supply to 5V Transmit radio and/or toggle LED or GPIO | Other module receives and/or LED/GPIO is toggled  |  |  |
+
+
+#### Temperature Test
+
+Run the C3 procedures in a temperature controlled environment set to 85 C.
+Run the C3 procedures in a temperature controlled environment set to -40 C.
+
+                          |                              |
+------------------------- | ---------------------------- |
+Test Case Name            | Functionality Test           |
+Test ID#                  | Temp_1.00                    |
+Test Writer               | James Heath                  | 
+Description               | The purpose of this test is to demonstrate the functionality of the board at the requirement range limits. |
+Tester Information        |    |
+Name of Tester            |    |
+Time/Date                 |    |
+Hardware Version          |    |
+Setup                     |    |
+
+Step | Action | Expected Result | Pass/Fail | Comments |
+---- | ------ | --------------- | --------- | -------- |
+1 | Set Environmental temperature to -40C and Transmit radio and/or toggle LED or GPIO | Other module receives and/or LED/GPIO is toggled  |  |  |
+2 | Set Environmental temperature to 80C and Transmit radio and/or toggle LED or GPIO | Other module receives and/or LED/GPIO is toggled  |  |  |
+
+#### Force Test
+
+Tie a rope to the board and run C3 procedures while swinging the board in a circle until at least reaching 15Gs. Check to see if functions properly at this force over a period of time.
+
+#### Vacuum Test
+
+Test C3 procedures while board is in a vacuum chamber.
+
+### System Tests
 
 #### Radio Communication Test
 
@@ -100,7 +158,7 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 **Overall Test Result:**
 
-#### System controller Test
+#### Control Test
 
 The system controller is the guardian of the system. It is present to ensure that the system is functioning correctly and that if any unintended event causes component latch-up or system errors, the system can be cycled or rebooted to return stability. This control system is the other half of the project. Eventually, this system will consist of a radiation hardened microcontroller (ATMegaS128) with supporting radiation hardened LDO. For the purpose of prototyping, the controller is a standard, off-the-shelf ATMega128 chip.
 
@@ -108,7 +166,7 @@ To test the control system, a method to simulate a latch-up event will be used t
 
                           |                              |
 ------------------------- | ---------------------------- |
-Test Case Name            | System Controller Test       |
+Test Case Name            | Control Test       |
 Test ID#                  | ATM_1.00                     |
 Test Writer               | Shan Quinney                 | 
 Description               | The purpose of this test is to demonstrate the effectiveness of the watchdog to restart key system functionality after radiation events. |
