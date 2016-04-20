@@ -11,7 +11,7 @@ Rad-Hard Analog: N/A
 Part No.: AAT3215  
 [Datasheet](http://www.skyworksinc.com/uploads/documents/AAT3215_202408B.pdf)  
 Reasons: Low noise rejection. Cheap. Available from practicum.  
-Alternative: TPS789xx  
+**Alternative:** TPS789xx  
 [Datasheet](http://www.mouser.com/ds/2/405/tps789-558350.pdf)  
 Reasons: Works, but went with the same LDO as the LNA for simplicity and cost effectiveness.  
 
@@ -28,7 +28,7 @@ Part No.: w25q80dv
 [Datasheet](http://www.winbond-usa.com/resource-files/w25q80dv_revf_02112015.pdf)  
 Reasons: 8MB worth of storage. Easy hardware implementation.  
 
-Alternative   
+**Alternative**   
 Part No.: LE25FU406BMB 
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LE25FU406B.pdf)  
 Reasons: 4MB storage. Unfortunately it was vaporware at the time.  
