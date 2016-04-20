@@ -1,6 +1,6 @@
 # Sputnik Capstone Test Plan
 
-written by Shan Quinney, William Harrington
+written by Shan Quinney, William Harrington, and James Heath
 
 **Table of Contents**
 * [Revision History](https://github.com/wrh2/sputnik/blob/master/Phase1/Test_Plan/Test_Plan_Sputnik_Capstone.md#revision-history)
@@ -33,7 +33,11 @@ written by Shan Quinney, William Harrington
 
 03/04/16 - Converted to markdown, proofreading changes (Will)
 
-04/17/16 - Changed Communications Test, added functionalty test, added Command test, changed incorrect links in ToC (Jake)
+04/17/16 - Changed Communications Test, added functionalty test and grid, added Command test, changed incorrect links in ToC (Jake)
+
+04/17/16 - Added component test section and all component tests and grids: Crystal, supply range, temperature, force, and vacuum. (Jake) 
+
+04/20/16 - Fixed ToC link error (Jake)
 
 ### Introduction
 
