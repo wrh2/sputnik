@@ -5,6 +5,7 @@ Part No.: MKW01Z128
 [Datasheet](http://cache.nxp.com/files/microcontrollers/doc/data_sheet/MKW01Z128.pdf)  
 Reasons: Requirement for the project  
 Rad-Hard Analog: N/A  
+  
 
 
 ##### KW0x LDO:
@@ -14,14 +15,14 @@ Reasons: Low noise rejection. Cheap. Available from practicum.
 **Alternative:** TPS789xx  
 [Datasheet](http://www.mouser.com/ds/2/405/tps789-558350.pdf)  
 Reasons: Works, but went with the same LDO as the LNA for simplicity and cost effectiveness.  
-
+  
 
 ##### System Controller MCU:
 Part No.: ATmega128  
 [Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
 [Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)  
 Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
-
+  
 
 ##### SPI Cache:
 Part No.: w25q80dv  
@@ -32,13 +33,13 @@ Reasons: 8MB worth of storage. Easy hardware implementation.
 Part No.: LE25FU406BMB 
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LE25FU406B.pdf)  
 Reasons: 4MB storage. Unfortunately it was vaporware at the time.  
-
+  
 
 ##### LNA LDO:
 Part No.: AAT3215  
 [Datasheet](http://www.skyworksinc.com/uploads/documents/AAT3215_202408B.pdf)  
 Reasons: Same LDO as MCU so easy to access and cheaper to buy. Again, it also has low noise rejection.  
-
+  
 ##### PA LDO:
 <http://www.st.com/web/en/resource/technical/document/datasheet/DM00102135.pdf>
 
