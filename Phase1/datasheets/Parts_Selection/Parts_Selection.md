@@ -7,7 +7,7 @@ Reasons: Requirement for the project
 Rad-Hard Analog: N/A  
 
 
-##### KW0x LDO:  
+##### KW0x LDO:
 Part No.: AAT3215  
 [Datasheet](http://www.skyworksinc.com/uploads/documents/AAT3215_202408B.pdf)  
 Reasons: Low noise rejection. Cheap. Available from practicum.  
@@ -16,14 +16,14 @@ Reasons: Low noise rejection. Cheap. Available from practicum.
 Reasons: Works, but went with the same LDO as the LNA for simplicity and cost effectiveness.  
 
 
-##### System Controller MCU:  
+##### System Controller MCU:
 Part No.: ATmega128  
 [Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
 [Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)  
 Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
 
 
-##### SPI Cache:  
+##### SPI Cache:
 Part No.: w25q80dv  
 [Datasheet](http://www.winbond-usa.com/resource-files/w25q80dv_revf_02112015.pdf)  
 Reasons: 8MB worth of storage. Easy hardware implementation.  
