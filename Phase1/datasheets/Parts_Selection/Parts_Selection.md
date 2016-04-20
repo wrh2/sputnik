@@ -18,8 +18,8 @@ Reasons: Works, but went with the same LDO as the LNA for simplicity and cost ef
 
 ##### System Controller MCU:  
 Part No.: ATmega128  
-non-hardened: <http://www.atmel.com/images/doc2467.pdf>  
-Rad-hard: <http://aerosupport.atmel.com/Atmel/doc41036S.pdf>    
+[Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)
+[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)
 Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
 
 
