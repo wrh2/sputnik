@@ -11,15 +11,15 @@ Rad-Hard Analog: N/A
 Part No.: AAT3215  
 [Datasheet](http://www.skyworksinc.com/uploads/documents/AAT3215_202408B.pdf)  
 Reasons: Low noise rejection. Cheap. Available from practicum.  
-Alternative: TPS789xx
+Alternative: TPS789xx  
 [Datasheet](http://www.mouser.com/ds/2/405/tps789-558350.pdf)  
 Reasons: Works, but went with the same LDO as the LNA for simplicity and cost effectiveness.  
 
 
 ##### System Controller MCU:  
 Part No.: ATmega128  
-[Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)
-[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)
+[Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
+[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)  
 Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
 
 
