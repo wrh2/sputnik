@@ -67,7 +67,7 @@ The Sputnik Capstone project is composed of two separate modules: The radio modu
 
 #### Operational Description
 
-The Portland State Aerospace Society is sponsoring this capstone based on the need for a command, control, and communications system for their CubeSat project. The focus of this capstone will be rapidly prototyping the radio module and the control module. Sputnik will eventually be responsible for long distance communications to and from a 400km low earth orbit, as well as, controlling and communicating with a payload that is housed within the CubeSat. On top of fulfilling these duties, once space bound, it will need to be able to deal with a temperature range of -40C to 50C and radiation events that could cause components to latch up.
+The Portland State Aerospace Society is needed a command, control, and communications system for their CubeSat project. In this capstone project, we rapidly prototyped the radio module and the control module. Sputnik will eventually be responsible for long distance communications to and from a 400km low earth orbit, as well as, controlling and communicating with the CubeSat science and data modules. Once in space it will need to be able to deal with a temperature range of -40C to 85C and radiation events that could cause components to latch up.
 
 ### Pre-test preparation
 
@@ -221,40 +221,41 @@ Step | Action | Expected Result | Pass/Fail | Comments |
 
 #### Control Test
 
-The system controller is the guardian of the system. It is present to ensure that the system is functioning correctly and that if any unintended event causes component latch-up or system errors, the system can be cycled or rebooted to return stability. This control system is the other half of the project. Eventually, this system will consist of a radiation hardened microcontroller (ATMegaS128) with supporting radiation hardened LDO. For the purpose of prototyping, the controller is a standard, off-the-shelf ATMega128 chip.
+The system controller is the guardian of the system. It is present to ensure that the system is functioning correctly and that if any unintended event causes component latch-up or system errors, the system can be cycled or rebooted to return stability. The other modules in the CubeSat will send periodic signals to the system controller letting it know that the modules are still alive.
 
-To test the control system, a method to simulate a latch-up event will be used to trigger the watchdog into action. Outlined is the kwox lock-up test. In this test, the crystal on the kwox will be shorted to cause an error in the radio system. The ATMega should sense that the radio is no longer functioning properly and trigger the reset line on the kwox to initiate a reboot.
+To test the system controller, a method to simulate a module failure will be used. The UART transmit line of the LGR will be interrupted causing the "I'm alive" signal to cease. The ATMega will wait a short time to make sure that the radio is no longer functioning properly. The system controller will then trigger the reset line on the LGR to initiate a reboot. After turning the LGR back on the system controller will wait until the LGR has had time to boot up before expecting the "I'm alive" signal.
 
                           |                              |
 ------------------------- | ---------------------------- |
 Test Case Name            | Control Test       |
 Test ID#                  | ATM_1.00                     |
-Test Writer               | Shan Quinney                 | 
-Description               | The purpose of this test is to demonstrate the effectiveness of the watchdog to restart key system functionality after radiation events. |
+Test Writer               | Shan Quinney, Michael Mathis         | 
+Description               | The purpose of this test is to demonstrate the effectiveness of the system controller to restart key systems when UART "I'm alive" signals are lost. |
 Tester Information        |    |
 Name of Tester            |    |
 Time/Date                 |    |
-Hardware Version          |  Board Rev.1, Filter Rev.1, Wire antenna  |
+Hardware Version          |  Board Rev.1, Filter Rev.1 |
 Setup                     |    |
 
 Step | Action | Expected Result | Pass/Fail | Comments |
 ---- | ------ | --------------- | --------- | -------- |
-1 | Use a metal tool to cause a short across the crystal | The kwox will loose the signal from the crystal.  |  |  |
-2 | Probe the UART line between the controller and the kwox to determine that the life line signal is lost | The UART line will be free of any signal between the kwox and the controller.  |  |  |
+1 | Remove the wire connecting the system conroller UART rx and the LGR tx | The system controller will loose the signal from the LGR.  |  |  |
+2 | Probe the UART line between the controller and the LGR to determine that the life line signal is lost | The UART line will be free of any signal between the LGR and the controller.  |  |  |
 3 | Monitor the controller to ensure that the reset line on the kwox has been activated | The reset line on the kwox will be activated in an effort to reboot the device.  |  |  |
+4 | After 4 seconds make sure that the "I'm alive" signal from the LGR is found again      | The system controller will be receiving the life line signal from the LGR   |   |    |
 
 **Overall Test Result:**
 
 #### Command Test
 
-Send command to module, blink an LED or toggle GPIO pin
+This test will show that the LGR can relay commands that it receives to the system controller. A command to turn on an LED will be received by the LGR from another unit. The LGR will then relay that command via UART to the system controller. When the system controller receives the command via UART it will blink and LED.
 
                           |                              |
 ------------------------- | ---------------------------- |
 Test Case Name            | Command Test                 |
 Test ID#                  | CMD_1.00                     |
 Test Writer               | Will Harrington              | 
-Description               | The purpose of this test is to demonstrate the effectiveness of the system controller to execute commands |
+Description               | The purpose of this test is to demonstrate that the system controller can receive and execute commands |
 Tester Information        |    |
 Name of Tester            |    |
 Time/Date                 |    |
@@ -263,8 +264,8 @@ Setup                     |    |
 
 Step | Action | Expected Result | Pass/Fail | Comments |
 ---- | ------ | --------------- | --------- | -------- |
-1 | Send command | Successful send  |  |  |
-2 | Observe LED on prototype | LED lights up  |  |  |
+1 | Send command from base station LGR | The receiving LGR will blink an LED showing that it received a packet  |  |  |
+2 | Observe the system controller | the LED that was commanded to turn on lights up  |  |  |
 
 **Overall Test Result:**
 
